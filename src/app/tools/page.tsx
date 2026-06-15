@@ -9,6 +9,7 @@ export default function ToolsPage() {
       link: "/tools/checkup",
     },
     {
+      
       title: "Privacy Checkup",
       description:
         "Evaluate your privacy habits and discover ways to better protect your personal information.",
@@ -25,7 +26,14 @@ export default function ToolsPage() {
       description:
         "Test password strength and learn how to create safer passwords using cybersecurity best practices.",
       link: "/tools/password-strength-checker",
-    }
+    },
+
+    {
+      title: "🛡️ Digital Safety Assessment",
+      description:
+        "Answer simple questions and receive a digital safety score with practical recommendations.",
+      link: "/tools/digital-safety-assessment",
+    },
   ];
 
 
