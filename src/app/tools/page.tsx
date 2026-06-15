@@ -21,10 +21,10 @@ export default function ToolsPage() {
       link: "/tools/misinformation-check",
     },
     {
-      title: "Password Strength Advisor",
+      title: "🔐 Password Strength Checker",
       description:
-        "Check whether your password follows good security practices.",
-      link: "/tools/password-strength",
+        "Test password strength and learn how to create safer passwords using cybersecurity best practices.",
+      link: "/tools/password-strength-checker",
     }
   ];
 
