@@ -21,8 +21,8 @@ Current Working Hypothesis:
 The biggest opportunity is ensuring that safety-critical clinical information reaches the right person, at the right time, in the right format, with clear accountability for action.
 
 Completed:
-✓ Wireframe Planning
-✓ System Architecture Planning
+✓ Database Design
+✓ AI and NLP Design
 
 Last Updated:
 June 2026
