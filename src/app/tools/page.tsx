@@ -14,6 +14,12 @@ export default function ToolsPage() {
         "Answer simple questions and receive a digital safety score with practical recommendations.",
       link: "/tools/digital-safety-assessment",
     },
+    {
+      title: "🤖 AI Literacy Assessment",
+      description:
+        "Check your understanding of AI tools, deepfakes, hallucinations, bias, and responsible AI use.",
+      link: "/tools/ai-literacy-assessment",
+    },
   ];
 
   const comingSoonTools = [
@@ -32,40 +38,43 @@ export default function ToolsPage() {
       description:
         "Evaluate online claims, headlines, and social media posts using a structured critical-thinking framework.",
     },
-    {
-      title: "🤖 AI Literacy Assessment",
-      description:
-        "Check your understanding of AI tools, deepfakes, bias, and responsible AI use.",
-    },
   ];
 
   return (
     <main className="max-w-6xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">Digital Tools</h1>
+      <h1 className="text-4xl font-bold text-blue-900">
+        Digital Tools
+      </h1>
 
       <p className="mt-6 max-w-3xl text-lg text-gray-700">
         Explore interactive tools designed to help digital citizens build
-        confidence, improve privacy, and strengthen critical thinking.
+        confidence, improve privacy, strengthen cybersecurity awareness,
+        and develop critical thinking skills.
       </p>
 
+      {/* Available Tools */}
       <section className="mt-12">
-        <h2 className="text-2xl font-bold text-blue-900">Available Tools</h2>
+        <h2 className="text-2xl font-bold text-blue-900">
+          Available Tools
+        </h2>
 
-        <div className="mt-6 grid gap-6 md:grid-cols-2">
+        <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {availableTools.map((tool) => (
             <div
               key={tool.title}
-              className="rounded-xl border bg-white p-6 shadow-sm"
+              className="rounded-xl border bg-white p-6 shadow-sm transition hover:shadow-md"
             >
-              <h3 className="text-2xl font-bold text-blue-900">
+              <h3 className="text-xl font-bold text-blue-900">
                 {tool.title}
               </h3>
 
-              <p className="mt-3 text-gray-600">{tool.description}</p>
+              <p className="mt-3 text-gray-600">
+                {tool.description}
+              </p>
 
               <Link
                 href={tool.link}
-                className="inline-block mt-5 rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white"
+                className="inline-block mt-5 rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700"
               >
                 Open Tool
               </Link>
@@ -74,20 +83,25 @@ export default function ToolsPage() {
         </div>
       </section>
 
+      {/* Coming Soon */}
       <section className="mt-16">
-        <h2 className="text-2xl font-bold text-blue-900">Coming Soon</h2>
+        <h2 className="text-2xl font-bold text-blue-900">
+          Coming Soon
+        </h2>
 
-        <div className="mt-6 grid gap-6 md:grid-cols-3">
+        <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {comingSoonTools.map((tool) => (
             <div
               key={tool.title}
               className="rounded-xl border bg-gray-50 p-6 shadow-sm"
             >
-              <h3 className="text-2xl font-bold text-blue-900">
+              <h3 className="text-xl font-bold text-blue-900">
                 {tool.title}
               </h3>
 
-              <p className="mt-3 text-gray-600">{tool.description}</p>
+              <p className="mt-3 text-gray-600">
+                {tool.description}
+              </p>
 
               <span className="inline-block mt-5 rounded-lg bg-gray-200 px-5 py-3 font-semibold text-gray-700">
                 Coming Soon
