@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 
 export default function ToolsPage() {
@@ -20,21 +22,22 @@ export default function ToolsPage() {
         "Check your understanding of AI tools, deepfakes, hallucinations, bias, and responsible AI use.",
       link: "/tools/ai-literacy-assessment",
     },
+    {
+      title: "🔒 Privacy Checkup",
+      description:
+        "Assess your privacy habits and discover ways to better protect your personal information.",
+      link: "/tools/privacy-checkup",
+    },
   ];
 
   const comingSoonTools = [
     {
-      title: "Digital Citizenship Checkup",
+      title: "🌐 Digital Citizenship Checkup",
       description:
         "Assess your digital habits and receive a simple awareness score.",
     },
     {
-      title: "Privacy Checkup",
-      description:
-        "Evaluate your privacy habits and discover ways to better protect your personal information.",
-    },
-    {
-      title: "Misinformation Evaluation Tool",
+      title: "📰 Misinformation Evaluation Tool",
       description:
         "Evaluate online claims, headlines, and social media posts using a structured critical-thinking framework.",
     },
