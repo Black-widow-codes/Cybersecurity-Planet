@@ -1,8 +1,8 @@
-\# Cybersecurity Planet — Project Roadmap
+﻿# Cybersecurity Planet - Project Roadmap
 
 
 
-\## 1. Project Overview
+## 1. Project Overview
 
 
 
@@ -18,11 +18,11 @@ The goal is not simply to provide information. Cybersecurity Planet should help 
 
 
 
-\---
+---
 
 
 
-\## 2. Vision
+## 2. Vision
 
 
 
@@ -30,11 +30,11 @@ To make cybersecurity and digital literacy education understandable, practical, 
 
 
 
-\---
+---
 
 
 
-\## 3. Mission
+## 3. Mission
 
 
 
@@ -42,29 +42,29 @@ Cybersecurity Planet empowers people to make safer and better-informed decisions
 
 
 
-\- Beginner-friendly education
+- Beginner-friendly education
 
-\- Interactive assessments and tools
+- Interactive assessments and tools
 
-\- Practical cybersecurity guidance
+- Practical cybersecurity guidance
 
-\- Privacy awareness
+- Privacy awareness
 
-\- AI literacy
+- AI literacy
 
-\- Media and misinformation literacy
+- Media and misinformation literacy
 
-\- Responsible digital citizenship
+- Responsible digital citizenship
 
-\- Digital health awareness
-
-
-
-\---
+- Digital health awareness
 
 
 
-\## 4. Core Principles
+---
+
+
+
+## 4. Core Principles
 
 
 
@@ -72,53 +72,53 @@ Cybersecurity Planet should be:
 
 
 
-\### Educational
+### Educational
 
 Every feature should help the user learn something useful.
 
 
 
-\### Practical
+### Practical
 
 Users should leave with knowledge or actions they can apply in real life.
 
 
 
-\### Beginner-Friendly
+### Beginner-Friendly
 
 Content should not assume advanced technical knowledge.
 
 
 
-\### Privacy-Conscious
+### Privacy-Conscious
 
 Tools should avoid unnecessarily collecting or storing sensitive user information.
 
 
 
-\### Accessible
+### Accessible
 
 Content and interfaces should be usable by people with different levels of technical knowledge and ability.
 
 
 
-\### Trustworthy
+### Trustworthy
 
 Educational material should be accurate, responsible, and clearly presented.
 
 
 
-\### Human-Centred
+### Human-Centred
 
 Technology should serve people rather than overwhelm them.
 
 
 
-\---
+---
 
 
 
-\# 5. Current Platform Structure
+# 5. Current Platform Structure
 
 
 
@@ -126,17 +126,17 @@ The current application uses:
 
 
 
-\- Next.js
+- Next.js
 
-\- React
+- React
 
-\- TypeScript
+- TypeScript
 
-\- Tailwind CSS
+- Tailwind CSS
 
-\- Git and GitHub
+- Git and GitHub
 
-\- Node.js 22 LTS development environment
+- Node.js 22 LTS development environment
 
 
 
@@ -147,44 +147,23 @@ Main application structure:
 ```text
 
 Cybersecurity Planet
-
-│
-
-├── Home
-
-│
-
-├── Learn
-
-│   ├── Digital Safety
-
-│   ├── Digital Citizenship
-
-│   ├── AI Literacy
-
-│   ├── Media Literacy
-
-│   ├── Privacy \& Rights
-
-│   └── Digital Health
-
-│
-
-├── Tools
-
-│
-
-├── Resources
-
-│
-
-├── Insights
-
-│
-
-├── About
-
-│
-
-└── Contact
-
+|
+|-- Home
+|
+|-- Learn
+|   |-- Digital Safety
+|   |-- Digital Citizenship
+|   |-- AI Literacy
+|   |-- Media Literacy
+|   |-- Privacy & Rights
+|   `-- Digital Health
+|
+|-- Tools
+|
+|-- Resources
+|
+|-- Insights
+|
+|-- About
+|
+`-- Contact
