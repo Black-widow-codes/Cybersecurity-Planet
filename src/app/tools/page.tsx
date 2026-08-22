@@ -5,10 +5,10 @@ import Link from "next/link";
 export default function ToolsPage() {
   const availableTools = [
     {
-      title: "🔐 Password Strength Checker",
+      title: "🌐 Digital Citizenship Checkup",
       description:
-        "Test password strength and learn how to create safer passwords using cybersecurity best practices.",
-      link: "/tools/password-strength-checker",
+        "Assess your everyday digital habits and receive feedback on responsible online behaviour.",
+      link: "/tools/digital-citizenship-checkup",
     },
     {
       title: "🛡️ Digital Safety Assessment",
@@ -31,13 +31,9 @@ export default function ToolsPage() {
   ];
 
   const comingSoonTools = [
+    
     {
-      title: "🌐 Digital Citizenship Checkup",
-      description:
-        "Assess your digital habits and receive a simple awareness score.",
-    },
-    {
-      title: "📰 Misinformation Evaluation Tool",
+      title: "�️ Digital Safety Assessment",
       description:
         "Evaluate online claims, headlines, and social media posts using a structured critical-thinking framework.",
     },
