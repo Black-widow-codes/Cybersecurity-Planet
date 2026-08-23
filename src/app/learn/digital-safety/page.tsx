@@ -14,6 +14,12 @@ export default function DigitalSafetyPage() {
         "Learn the common warning signs of phishing emails, text messages, fake links, and fraudulent login pages.",
       link: "/learn/digital-safety/how-to-recognize-a-phishing-message",
     },
+    {
+      title: "How Online Scams Manipulate You",
+      description:
+        "Learn how scammers use urgency, fear, trust, excitement, and pressure to influence your decisions online.",
+      link: "/learn/digital-safety/how-online-scams-manipulate-you",
+    },
   ];
 
   return (
