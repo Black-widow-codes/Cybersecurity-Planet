@@ -26,6 +26,12 @@ export default function DigitalSafetyPage() {
         "Learn what malware is, how it reaches devices, common warning signs, and practical ways to reduce your risk.",
       link: "/learn/digital-safety/what-is-malware-and-how-does-it-spread",
     },
+    {
+      title: "How to Download Files Safely",
+      description:
+        "Learn how to recognize risky downloads, choose trusted sources, and reduce the chance of installing malicious software.",
+      link: "/learn/digital-safety/how-to-download-files-safely",
+    },
   ];
 
   return (
