@@ -8,6 +8,12 @@ export default function DigitalSafetyPage() {
         "Learn how to create strong passwords, avoid password reuse, and better protect your online accounts.",
       link: "/learn/digital-safety/what-makes-a-strong-password",
     },
+    {
+      title: "How to Recognize a Phishing Message",
+      description:
+        "Learn the common warning signs of phishing emails, text messages, fake links, and fraudulent login pages.",
+      link: "/learn/digital-safety/how-to-recognize-a-phishing-message",
+    },
   ];
 
   return (
