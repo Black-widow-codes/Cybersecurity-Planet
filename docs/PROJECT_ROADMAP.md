@@ -257,6 +257,7 @@ Status: In Progress
 - [x] Publish fourth dedicated Digital Citizenship article - How to Evaluate Information Before Sharing It
 - [x] Publish fifth dedicated Digital Citizenship article - Digital Wellbeing and Responsible Technology Use
 - [x] Add Digital Citizenship articles
+- [x] Publish first dedicated AI Literacy article - What Is Artificial Intelligence?
 - [ ] Add AI Literacy articles
 - [ ] Add Media Literacy articles
 - [ ] Add Privacy & Rights articles
