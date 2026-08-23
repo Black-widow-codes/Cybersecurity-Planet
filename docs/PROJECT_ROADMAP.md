@@ -253,6 +253,7 @@ Status: In Progress
 - [x] Expand Digital Safety articles
 - [x] Publish first dedicated Digital Citizenship article - Think Before You Share
 - [x] Publish second dedicated Digital Citizenship article - Understanding Your Digital Footprint
+- [x] Publish third dedicated Digital Citizenship article - How to Communicate Respectfully Online
 - [ ] Add Digital Citizenship articles
 - [ ] Add AI Literacy articles
 - [ ] Add Media Literacy articles
