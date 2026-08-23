@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function DigitalCitizenshipPage() {
   const principles = [
     {
@@ -21,7 +22,15 @@ export default function DigitalCitizenshipPage() {
         "Check sources, evidence, and context before trusting or sharing information.",
     },
   ];
-
+  
+  const articles = [
+    {
+      title: "Think Before You Share",
+      description:
+        "Learn why pausing before posting, forwarding, or reacting online can protect your privacy, reputation, and relationships.",
+      link: "/learn/digital-citizenship/think-before-you-share",
+    },
+  ];
   return (
     <main className="max-w-6xl mx-auto px-6 py-20">
       <h1 className="text-4xl font-bold text-blue-900">
@@ -70,6 +79,35 @@ export default function DigitalCitizenshipPage() {
           ))}
         </div>
       </section>
+      <section className="mt-12">
+  <h2 className="text-3xl font-bold text-blue-900">
+    Articles
+  </h2>
+
+  <div className="mt-8 grid gap-6 md:grid-cols-2">
+    {articles.map((article) => (
+      <article
+        key={article.title}
+        className="rounded-xl border bg-white p-6 shadow-sm transition hover:shadow-md"
+      >
+        <h3 className="text-xl font-bold text-blue-900">
+          {article.title}
+        </h3>
+
+        <p className="mt-3 text-gray-600">
+          {article.description}
+        </p>
+
+        <Link
+          href={article.link}
+          className="mt-5 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700"
+        >
+          Read Article
+        </Link>
+      </article>
+    ))}
+  </div>
+</section>
 
       <section className="mt-12 rounded-2xl bg-gray-50 p-8">
         <h2 className="text-3xl font-bold text-blue-900">
