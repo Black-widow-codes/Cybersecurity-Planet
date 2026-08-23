@@ -248,6 +248,7 @@ Status: In Progress
 - [x] Publish first dedicated Digital Safety article - What Makes a Strong Password?
 - [x] Publish second dedicated Digital Safety article - How to Recognize a Phishing Message
 - [x] Publish third dedicated Digital Safety article - How Online Scams Manipulate You
+- [x] Publish fourth dedicated Digital Safety article - What Is Malware and How Does It Spread?
 - [ ] Expand Digital Safety articles
 - [ ] Add Digital Citizenship articles
 - [ ] Add AI Literacy articles
