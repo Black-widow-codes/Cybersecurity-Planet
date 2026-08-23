@@ -43,6 +43,24 @@ const questions = [
       { label: "Yes", score: 0 },
     ],
   },
+  {
+    question:
+      "Is the date and context of the information clear and current?",
+    options: [
+      { label: "Yes", score: 2 },
+      { label: "Not sure", score: 1 },
+      { label: "No", score: 0 },
+    ],
+  },
+  {
+    question:
+      "Have you considered whether the image, video, audio, or text could be AI-generated or manipulated?",
+    options: [
+      { label: "Yes", score: 2 },
+      { label: "Not sure", score: 1 },
+      { label: "No", score: 0 },
+    ],
+  },
 ];
 
 export default function MisinformationCheckPage() {
@@ -58,11 +76,11 @@ export default function MisinformationCheckPage() {
   }
 
   function getResultMessage() {
-    if (score >= 8) {
+    if (score >= 11) {
       return "This information appears more credible, but still verify it before sharing.";
     }
 
-    if (score >= 5) {
+    if (score >= 7) {
       return "This information has some warning signs. Review the source and evidence carefully.";
     }
 
