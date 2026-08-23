@@ -227,12 +227,13 @@ Current learning areas:
 - [x] How to Evaluate Information Before Sharing
 - [x] Digital Wellbeing and Responsible Technology Use
 
-**AI Literacy - 2 articles**
+**AI Literacy - 3 articles**
 
 - [x] What Is Artificial Intelligence?
 - [x] How Algorithms Shape What You See Online
+- [x] Deepfakes: How AI Can Manipulate Media
 
-**Current dedicated article total: 12**
+**Current dedicated article total: 13**
 
 ---
 
@@ -280,6 +281,7 @@ Status: In Progress
 - [x] Add Digital Citizenship articles
 - [x] Publish first dedicated AI Literacy article - What Is Artificial Intelligence?
 - [x] Publish second dedicated AI Literacy article - How Algorithms Shape What You See Online
+- [x] Publish third dedicated AI Literacy article - Deepfakes: How AI Can Manipulate Media
 - [ ] Add AI Literacy articles
 - [ ] Add Media Literacy articles
 - [ ] Add Privacy & Rights articles
