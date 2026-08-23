@@ -36,6 +36,12 @@ export default function DigitalCitizenshipPage() {
         "Learn how your online activity creates a digital footprint and how it can affect privacy, reputation, and future opportunities.",
       link: "/learn/digital-citizenship/understanding-your-digital-footprint",
     },
+    {
+      title: "How to Communicate Respectfully Online",
+      description:
+        "Learn practical ways to handle disagreements, respect boundaries, and communicate responsibly in digital spaces.",
+      link: "/learn/digital-citizenship/how-to-communicate-respectfully-online",
+    },
   ];
   return (
     <main className="max-w-6xl mx-auto px-6 py-20">
