@@ -30,6 +30,12 @@ export default function DigitalCitizenshipPage() {
         "Learn why pausing before posting, forwarding, or reacting online can protect your privacy, reputation, and relationships.",
       link: "/learn/digital-citizenship/think-before-you-share",
     },
+    {
+      title: "Understanding Your Digital Footprint",
+      description:
+        "Learn how your online activity creates a digital footprint and how it can affect privacy, reputation, and future opportunities.",
+      link: "/learn/digital-citizenship/understanding-your-digital-footprint",
+    },
   ];
   return (
     <main className="max-w-6xl mx-auto px-6 py-20">
