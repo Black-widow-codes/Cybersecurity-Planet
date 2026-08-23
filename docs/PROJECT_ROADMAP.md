@@ -252,6 +252,7 @@ Status: In Progress
 - [x] Publish fifth dedicated Digital Safety article - How to Download Files Safely
 - [x] Expand Digital Safety articles
 - [x] Publish first dedicated Digital Citizenship article - Think Before You Share
+- [x] Publish second dedicated Digital Citizenship article - Understanding Your Digital Footprint
 - [ ] Add Digital Citizenship articles
 - [ ] Add AI Literacy articles
 - [ ] Add Media Literacy articles
