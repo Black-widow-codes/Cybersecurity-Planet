@@ -245,7 +245,8 @@ Status: Completed
 Status: In Progress
 
 - [x] Establish six core learning areas
-- [x] Publish first dedicated Digital Safety article
+- [x] Publish first dedicated Digital Safety article - What Makes a Strong Password?
+- [x] Publish second dedicated Digital Safety article - How to Recognize a Phishing Message
 - [ ] Expand Digital Safety articles
 - [ ] Add Digital Citizenship articles
 - [ ] Add AI Literacy articles
