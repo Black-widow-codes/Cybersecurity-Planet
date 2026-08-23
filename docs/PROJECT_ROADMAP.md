@@ -227,11 +227,12 @@ Current learning areas:
 - [x] How to Evaluate Information Before Sharing
 - [x] Digital Wellbeing and Responsible Technology Use
 
-**AI Literacy - 1 article**
+**AI Literacy - 2 articles**
 
 - [x] What Is Artificial Intelligence?
+- [x] How Algorithms Shape What You See Online
 
-**Current dedicated article total: 11**
+**Current dedicated article total: 12**
 
 ---
 
@@ -278,6 +279,7 @@ Status: In Progress
 - [x] Publish fifth dedicated Digital Citizenship article - Digital Wellbeing and Responsible Technology Use
 - [x] Add Digital Citizenship articles
 - [x] Publish first dedicated AI Literacy article - What Is Artificial Intelligence?
+- [x] Publish second dedicated AI Literacy article - How Algorithms Shape What You See Online
 - [ ] Add AI Literacy articles
 - [ ] Add Media Literacy articles
 - [ ] Add Privacy & Rights articles
