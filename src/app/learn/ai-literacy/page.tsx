@@ -45,6 +45,12 @@ export default function AILiteracyPage() {
           "Learn how algorithms rank, recommend, and personalize digital content, and why those systems influence what you see online.",
         link: "/learn/ai-literacy/how-algorithms-shape-what-you-see-online",
       },
+      {
+        title: "Deepfakes: How AI Can Manipulate Media",
+        description:
+          "Learn how AI can create or manipulate images, audio, and video, and how to evaluate suspicious digital media.",
+        link: "/learn/ai-literacy/deepfakes-how-ai-can-manipulate-media",
+      },
     ];
   
     return (
