@@ -20,6 +20,12 @@ export default function DigitalSafetyPage() {
         "Learn how scammers use urgency, fear, trust, excitement, and pressure to influence your decisions online.",
       link: "/learn/digital-safety/how-online-scams-manipulate-you",
     },
+    {
+      title: "What Is Malware and How Does It Spread?",
+      description:
+        "Learn what malware is, how it reaches devices, common warning signs, and practical ways to reduce your risk.",
+      link: "/learn/digital-safety/what-is-malware-and-how-does-it-spread",
+    },
   ];
 
   return (
