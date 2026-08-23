@@ -209,9 +209,29 @@ Current learning areas:
 - [x] Privacy & Rights
 - [x] Digital Health
 
-Completed dedicated article:
+#### Published Articles
+
+**Digital Safety - 5 articles**
 
 - [x] What Makes a Strong Password?
+- [x] How to Recognize a Phishing Message
+- [x] How Online Scams Manipulate You
+- [x] What Is Malware and How Does It Spread?
+- [x] How to Download Files Safely
+
+**Digital Citizenship - 5 articles**
+
+- [x] Think Before You Share
+- [x] Understanding Your Digital Footprint
+- [x] How to Communicate Respectfully Online
+- [x] How to Evaluate Information Before Sharing
+- [x] Digital Wellbeing and Responsible Technology Use
+
+**AI Literacy - 1 article**
+
+- [x] What Is Artificial Intelligence?
+
+**Current dedicated article total: 11**
 
 ---
 
