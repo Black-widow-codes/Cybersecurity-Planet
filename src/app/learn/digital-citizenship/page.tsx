@@ -48,6 +48,12 @@ export default function DigitalCitizenshipPage() {
         "Learn how to check sources, evidence, dates, context, and credibility before forwarding or posting information online.",
       link: "/learn/digital-citizenship/how-to-evaluate-information-before-sharing",
     },
+    {
+      title: "Digital Wellbeing and Responsible Technology Use",
+      description:
+        "Learn how to build healthier technology habits, protect your attention, manage digital boundaries, and use technology responsibly.",
+      link: "/learn/digital-citizenship/digital-wellbeing-and-responsible-technology-use",
+    },
   ];
   return (
     <main className="max-w-6xl mx-auto px-6 py-20">
