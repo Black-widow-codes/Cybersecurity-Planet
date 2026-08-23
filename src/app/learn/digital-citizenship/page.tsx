@@ -76,20 +76,12 @@ export default function DigitalCitizenshipPage() {
           Real-Life Examples
         </h2>
 
-        <ul className="mt-6 space-y-4 text-gray-700">
-          <li>
-            • Checking whether a health claim is credible before sharing it.
-          </li>
-          <li>
-            • Reviewing privacy settings before posting personal information.
-          </li>
-          <li>
-            • Using respectful language during online disagreements.
-          </li>
-          <li>
-            • Understanding how AI-generated content can influence opinions.
-          </li>
-        </ul>
+        <ul className="mt-6 list-disc space-y-4 pl-6 text-gray-700">
+  <li>Checking whether a health claim is credible before sharing it.</li>
+  <li>Reviewing privacy settings before posting personal information.</li>
+  <li>Using respectful language during online disagreements.</li>
+  <li>Understanding how AI-generated content can influence opinions.</li>
+</ul>
       </section>
 
       <section className="mt-12">
@@ -98,12 +90,12 @@ export default function DigitalCitizenshipPage() {
         </h2>
 
         <ul className="mt-6 space-y-3 text-gray-700">
-          <li>✓ Use strong passwords and multi-factor authentication.</li>
-          <li>✓ Review privacy settings on apps and social media.</li>
-          <li>✓ Verify information before sharing it.</li>
-          <li>✓ Think about how your digital footprint represents you.</li>
-          <li>✓ Use technology in ways that support wellbeing and respect.</li>
-        </ul>
+  <li>✓ Use strong passwords and multi-factor authentication.</li>
+  <li>✓ Review privacy settings on apps and social media.</li>
+  <li>✓ Verify information before sharing it.</li>
+  <li>✓ Think about how your digital footprint represents you.</li>
+  <li>✓ Use technology in ways that support wellbeing and respect.</li>
+</ul>
       </section>
 
       <section className="mt-12 rounded-2xl bg-blue-900 p-8 text-white">

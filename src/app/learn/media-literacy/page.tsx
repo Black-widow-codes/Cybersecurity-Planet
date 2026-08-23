@@ -80,13 +80,13 @@ export default function MediaLiteracyPage() {
             Real-World Examples
           </h2>
   
-          <ul className="mt-6 space-y-4 text-gray-700">
-            <li>• A viral health claim spreads without evidence.</li>
-            <li>• An old photo is shared as if it happened today.</li>
-            <li>• A headline exaggerates a study to attract clicks.</li>
-            <li>• A fake account shares emotionally charged information.</li>
-            <li>• An AI-generated image is mistaken for a real event.</li>
-          </ul>
+          <ul className="mt-6 list-disc space-y-4 pl-6 text-gray-700">
+  <li>A viral health claim spreads without evidence.</li>
+  <li>An old photo is shared as if it happened today.</li>
+  <li>A headline exaggerates a study to attract clicks.</li>
+  <li>A fake account shares emotionally charged information.</li>
+  <li>An AI-generated image is mistaken for a real event.</li>
+</ul>
         </section>
   
         <section className="mt-12">
@@ -95,12 +95,12 @@ export default function MediaLiteracyPage() {
           </h2>
   
           <ul className="mt-6 space-y-3 text-gray-700">
-            <li>✓ Check the original source before sharing information.</li>
-            <li>✓ Look for evidence, dates, author names, and context.</li>
-            <li>✓ Be cautious with content that creates strong emotional reactions.</li>
-            <li>✓ Compare important claims with trusted sources.</li>
-            <li>✓ Use verification tools before trusting health, AI, or crisis-related claims.</li>
-          </ul>
+  <li>✓ Check the original source before sharing information.</li>
+  <li>✓ Look for evidence, dates, author names, and context.</li>
+  <li>✓ Be cautious with content that creates strong emotional reactions.</li>
+  <li>✓ Compare important claims with trusted sources.</li>
+  <li>✓ Use verification tools before trusting health, AI, or crisis-related claims.</li>
+</ul>
         </section>
   
         <section className="mt-12 rounded-2xl bg-blue-900 p-8 text-white">
