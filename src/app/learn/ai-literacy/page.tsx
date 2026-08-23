@@ -39,6 +39,12 @@ export default function AILiteracyPage() {
           "Learn what AI is, what AI systems can do, where they appear in everyday life, and why their limits matter.",
         link: "/learn/ai-literacy/what-is-artificial-intelligence",
       },
+      {
+        title: "How Algorithms Shape What You See Online",
+        description:
+          "Learn how algorithms rank, recommend, and personalize digital content, and why those systems influence what you see online.",
+        link: "/learn/ai-literacy/how-algorithms-shape-what-you-see-online",
+      },
     ];
   
     return (
