@@ -5,39 +5,47 @@ import Link from "next/link";
 export default function ToolsPage() {
   const availableTools = [
     {
-      title: "🌐 Digital Citizenship Checkup",
+      title: "Password Strength Checker",
       description:
-        "Assess your everyday digital habits and receive feedback on responsible online behaviour.",
-      link: "/tools/digital-citizenship-checkup",
+        "Test password strength and learn how to create safer passwords using cybersecurity best practices.",
+      link: "/tools/password-strength-checker",
     },
     {
-      title: "🛡️ Digital Safety Assessment",
+      title: "Digital Safety Assessment",
       description:
         "Answer simple questions and receive a digital safety score with practical recommendations.",
       link: "/tools/digital-safety-assessment",
     },
     {
-      title: "🤖 AI Literacy Assessment",
+      title: "AI Literacy Assessment",
       description:
         "Check your understanding of AI tools, deepfakes, hallucinations, bias, and responsible AI use.",
       link: "/tools/ai-literacy-assessment",
     },
     {
-      title: "🔒 Privacy Checkup",
+      title: "Privacy Checkup",
       description:
         "Assess your privacy habits and discover ways to better protect your personal information.",
       link: "/tools/privacy-checkup",
     },
-  ];
-
-  const comingSoonTools = [
-    
     {
-      title: "�️ Digital Safety Assessment",
+      title: "Digital Citizenship Checkup",
+      description:
+        "Assess your everyday digital habits and receive feedback on responsible online behaviour.",
+      link: "/tools/digital-citizenship-checkup",
+    },
+    {
+      title: "Misinformation Evaluation Tool",
       description:
         "Evaluate online claims, headlines, and social media posts using a structured critical-thinking framework.",
+      link: "/tools/misinformation-check",
     },
   ];
+  
+  const comingSoonTools: {
+    title: string;
+    description: string;
+  }[] = [];
 
   return (
     <main className="max-w-6xl mx-auto px-6 py-20">
