@@ -255,7 +255,8 @@ Status: In Progress
 - [x] Publish second dedicated Digital Citizenship article - Understanding Your Digital Footprint
 - [x] Publish third dedicated Digital Citizenship article - How to Communicate Respectfully Online
 - [x] Publish fourth dedicated Digital Citizenship article - How to Evaluate Information Before Sharing It
-- [ ] Add Digital Citizenship articles
+- [x] Publish fifth dedicated Digital Citizenship article - Digital Wellbeing and Responsible Technology Use
+- [x] Add Digital Citizenship articles
 - [ ] Add AI Literacy articles
 - [ ] Add Media Literacy articles
 - [ ] Add Privacy & Rights articles
