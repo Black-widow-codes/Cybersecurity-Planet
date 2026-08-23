@@ -250,7 +250,8 @@ Status: In Progress
 - [x] Publish third dedicated Digital Safety article - How Online Scams Manipulate You
 - [x] Publish fourth dedicated Digital Safety article - What Is Malware and How Does It Spread?
 - [x] Publish fifth dedicated Digital Safety article - How to Download Files Safely
-- - [x] Expand Digital Safety articles
+- [x] Expand Digital Safety articles
+- [x] Publish first dedicated Digital Citizenship article - Think Before You Share
 - [ ] Add Digital Citizenship articles
 - [ ] Add AI Literacy articles
 - [ ] Add Media Literacy articles
