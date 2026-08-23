@@ -42,6 +42,12 @@ export default function DigitalCitizenshipPage() {
         "Learn practical ways to handle disagreements, respect boundaries, and communicate responsibly in digital spaces.",
       link: "/learn/digital-citizenship/how-to-communicate-respectfully-online",
     },
+    {
+      title: "How to Evaluate Information Before Sharing It",
+      description:
+        "Learn how to check sources, evidence, dates, context, and credibility before forwarding or posting information online.",
+      link: "/learn/digital-citizenship/how-to-evaluate-information-before-sharing",
+    },
   ];
   return (
     <main className="max-w-6xl mx-auto px-6 py-20">
