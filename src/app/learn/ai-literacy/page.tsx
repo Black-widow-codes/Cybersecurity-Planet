@@ -63,6 +63,12 @@ export default function AILiteracyPage() {
           "Learn how AI is used in healthcare and why accuracy, privacy, bias, and human oversight matter.",
         link: "/learn/ai-literacy/ai-in-healthcare",
       },
+      {
+        title: "Responsible AI Use",
+        description:
+          "Learn how to use AI carefully by protecting privacy, checking accuracy, recognizing bias, and keeping human judgment involved.",
+        link: "/learn/ai-literacy/responsible-ai-use",
+      },
     ];
   
     return (
