@@ -51,6 +51,12 @@ export default function AILiteracyPage() {
           "Learn how AI can create or manipulate images, audio, and video, and how to evaluate suspicious digital media.",
         link: "/learn/ai-literacy/deepfakes-how-ai-can-manipulate-media",
       },
+      {
+        title: "Understanding AI Bias",
+        description:
+          "Learn how biased data and system design can affect AI decisions, and why fairness and human oversight matter.",
+        link: "/learn/ai-literacy/understanding-ai-bias",
+      },
     ];
   
     return (
