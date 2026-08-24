@@ -64,6 +64,12 @@ export default function MediaLiteracyPage() {
           "Learn how AI-generated text, images, audio, and video can appear realistic, and how to evaluate suspicious digital content.",
         link: "/learn/media-literacy/how-to-recognize-ai-generated-content",
       },
+      {
+        title: "How to Fact-Check Information Online",
+        description:
+          "Learn practical steps for checking claims, sources, dates, context, evidence, images, and independent confirmation.",
+        link: "/learn/media-literacy/how-to-fact-check-information-online",
+      },
     ];
   
     return (
