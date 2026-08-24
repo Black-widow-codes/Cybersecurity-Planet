@@ -57,6 +57,12 @@ export default function AILiteracyPage() {
           "Learn how biased data and system design can affect AI decisions, and why fairness and human oversight matter.",
         link: "/learn/ai-literacy/understanding-ai-bias",
       },
+      {
+        title: "AI in Healthcare",
+        description:
+          "Learn how AI is used in healthcare and why accuracy, privacy, bias, and human oversight matter.",
+        link: "/learn/ai-literacy/ai-in-healthcare",
+      },
     ];
   
     return (
