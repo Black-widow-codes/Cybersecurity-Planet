@@ -52,6 +52,12 @@ export default function MediaLiteracyPage() {
           "Learn how deliberately false or misleading information is created to manipulate people, influence opinions, or cause harm.",
         link: "/learn/media-literacy/understanding-disinformation",
       },
+      {
+        title: "How Online Content Manipulates Your Emotions",
+        description:
+          "Learn how fear, anger, urgency, outrage, and excitement can influence how people react to online content.",
+        link: "/learn/media-literacy/how-online-content-manipulates-your-emotions",
+      },
     ];
   
     return (
