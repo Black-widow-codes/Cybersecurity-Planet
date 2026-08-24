@@ -46,6 +46,12 @@ export default function MediaLiteracyPage() {
           "Learn what misinformation is, why false or misleading information spreads online, and how to reduce the risk of sharing it.",
         link: "/learn/media-literacy/understanding-misinformation",
       },
+      {
+        title: "Understanding Disinformation",
+        description:
+          "Learn how deliberately false or misleading information is created to manipulate people, influence opinions, or cause harm.",
+        link: "/learn/media-literacy/understanding-disinformation",
+      },
     ];
   
     return (
