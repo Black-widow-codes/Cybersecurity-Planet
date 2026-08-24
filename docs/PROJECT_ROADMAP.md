@@ -236,11 +236,12 @@ Current learning areas:
 - [x] AI in Healthcare
 - [x] Responsible AI Use
 
-**Media Literacy - 1 article**
+**Media Literacy - 2 articles**
 
 - [x] How to Evaluate an Online Source
+- [x] Understanding Misinformation
 
-**Current dedicated article total: 17**
+**Current dedicated article total: 18**
 
 ---
 
@@ -294,6 +295,7 @@ Status: In Progress
 - [x] Publish sixth dedicated AI Literacy article - Responsible AI Use
 - [x] Add AI Literacy articles
 - [x] Publish first dedicated Media Literacy article - How to Evaluate an Online Source
+- [x] Publish second dedicated Media Literacy article - Understanding Misinformation
 - [ ] Add Media Literacy articles
 - [ ] Add Privacy & Rights articles
 - [ ] Add Digital Health articles
