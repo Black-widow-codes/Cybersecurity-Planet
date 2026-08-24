@@ -236,15 +236,16 @@ Current learning areas:
 - [x] AI in Healthcare
 - [x] Responsible AI Use
 
-**Media Literacy - 5 articles**
+**Media Literacy - 6 articles**
 
 - [x] How to Evaluate an Online Source
 - [x] Understanding Misinformation
 - [x] Understanding Disinformation
 - [x] How Online Content Manipulates Your Emotions
 - [x] How to Recognize AI-Generated Content
+- [x] How to Fact-Check Information Online
 
-**Current dedicated article total: 21**
+**Current dedicated article total: 22**
 
 ---
 
@@ -302,7 +303,8 @@ Status: In Progress
 - [x] Publish third dedicated Media Literacy article - Understanding Disinformation
 - [x] Publish fourth dedicated Media Literacy article - How Online Content Manipulates Your Emotions
 - [x] Publish fifth dedicated Media Literacy article - How to Recognize AI-Generated Content
-- [ ] Add Media Literacy articles
+- [x] Publish sixth dedicated Media Literacy article - How to Fact-Check Information Online
+- [x] Add Media Literacy articles
 - [ ] Add Privacy & Rights articles
 - [ ] Add Digital Health articles
 - [ ] Connect learning content with related tools
