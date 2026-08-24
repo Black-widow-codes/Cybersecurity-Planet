@@ -58,6 +58,12 @@ export default function MediaLiteracyPage() {
           "Learn how fear, anger, urgency, outrage, and excitement can influence how people react to online content.",
         link: "/learn/media-literacy/how-online-content-manipulates-your-emotions",
       },
+      {
+        title: "How to Recognize AI-Generated Content",
+        description:
+          "Learn how AI-generated text, images, audio, and video can appear realistic, and how to evaluate suspicious digital content.",
+        link: "/learn/media-literacy/how-to-recognize-ai-generated-content",
+      },
     ];
   
     return (
