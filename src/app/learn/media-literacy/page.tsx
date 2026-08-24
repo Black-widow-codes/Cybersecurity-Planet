@@ -40,6 +40,12 @@ export default function MediaLiteracyPage() {
           "Learn how to check who created online information, why it was published, and whether the source is trustworthy.",
         link: "/learn/media-literacy/how-to-evaluate-an-online-source",
       },
+      {
+        title: "Understanding Misinformation",
+        description:
+          "Learn what misinformation is, why false or misleading information spreads online, and how to reduce the risk of sharing it.",
+        link: "/learn/media-literacy/understanding-misinformation",
+      },
     ];
   
     return (
