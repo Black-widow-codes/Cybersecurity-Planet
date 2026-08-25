@@ -254,7 +254,11 @@ Current learning areas:
 - [x] How to Protect Your Personal Data Online
 - [x] Understanding Digital Surveillance
 
-**Current dedicated article total: 28**
+**Digital Health - 1 article**
+
+- [x] How to Evaluate Health Information Online
+
+**Current dedicated article total: 29**
 
 ---
 
@@ -321,6 +325,7 @@ Status: In Progress
 - [x] Publish fifth dedicated Privacy & Rights article - How to Protect Your Personal Data Online
 - [x] Publish sixth dedicated Privacy & Rights article - Understanding Digital Surveillance
 - [x] Add Privacy & Rights articles
+- [x] Publish first dedicated Digital Health article - How to Evaluate Health Information Online
 - [ ] Add Digital Health articles
 - [ ] Connect learning content with related tools
 
