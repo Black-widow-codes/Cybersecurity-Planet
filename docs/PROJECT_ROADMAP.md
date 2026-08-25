@@ -245,7 +245,11 @@ Current learning areas:
 - [x] How to Recognize AI-Generated Content
 - [x] How to Fact-Check Information Online
 
-**Current dedicated article total: 22**
+**Privacy & Rights - 1 article**
+
+- [x] What Is Personal Data and Why Does It Matter?
+
+**Current dedicated article total: 23**
 
 ---
 
@@ -305,6 +309,7 @@ Status: In Progress
 - [x] Publish fifth dedicated Media Literacy article - How to Recognize AI-Generated Content
 - [x] Publish sixth dedicated Media Literacy article - How to Fact-Check Information Online
 - [x] Add Media Literacy articles
+- [x] Publish first dedicated Privacy & Rights article - What Is Personal Data and Why Does It Matter?
 - [ ] Add Privacy & Rights articles
 - [ ] Add Digital Health articles
 - [ ] Connect learning content with related tools
