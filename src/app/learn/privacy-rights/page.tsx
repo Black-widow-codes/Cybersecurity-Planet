@@ -51,6 +51,12 @@ export default function PrivacyRightsPage() {
           "Learn how cookies, app permissions, location data, device identifiers, and profiling can be used to track digital activity.",
         link: "/learn/privacy-rights/how-websites-and-apps-track-you",
       },
+      {
+        title: "Understanding Your Digital Privacy Rights",
+        description:
+          "Learn about privacy rights involving personal information, transparency, access, correction, consent, security, and control.",
+        link: "/learn/privacy-rights/understanding-your-digital-privacy-rights",
+      },
     ];
   
     return (
