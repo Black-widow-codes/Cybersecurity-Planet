@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function DigitalHealthPage() {
     const topics = [
       {
@@ -29,6 +30,14 @@ export default function DigitalHealthPage() {
         title: "Health Misinformation",
         description:
           "Develop skills to evaluate online health claims before trusting or sharing them.",
+      },
+    ];
+    const articles = [
+      {
+        title: "How to Evaluate Health Information Online",
+        description:
+          "Learn how to evaluate online health information, recognize warning signs, verify medical claims, and find more trustworthy sources.",
+        link: "/learn/digital-health/how-to-evaluate-health-information-online",
       },
     ];
   
@@ -74,6 +83,35 @@ export default function DigitalHealthPage() {
             </div>
           ))}
         </section>
+        <section className="mt-12">
+  <h2 className="text-3xl font-bold text-blue-900">
+    Articles
+  </h2>
+
+  <div className="mt-8 grid gap-6 md:grid-cols-2">
+    {articles.map((article) => (
+      <article
+        key={article.title}
+        className="rounded-xl border bg-white p-6 shadow-sm transition hover:shadow-md"
+      >
+        <h3 className="text-xl font-bold text-blue-900">
+          {article.title}
+        </h3>
+
+        <p className="mt-3 text-gray-600">
+          {article.description}
+        </p>
+
+        <Link
+          href={article.link}
+          className="mt-5 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700"
+        >
+          Read Article
+        </Link>
+      </article>
+    ))}
+  </div>
+</section>
   
         <section className="mt-12 rounded-2xl bg-gray-50 p-8">
           <h2 className="text-3xl font-bold text-blue-900">
