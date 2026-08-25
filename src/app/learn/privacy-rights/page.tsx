@@ -39,6 +39,12 @@ export default function PrivacyRightsPage() {
           "Learn what personal data is, how digital services collect it, and how to reduce unnecessary exposure.",
         link: "/learn/privacy-rights/what-is-personal-data",
       },
+      {
+        title: "Understanding Digital Consent",
+        description:
+          "Learn what meaningful consent looks like when apps, websites, and online services collect or use personal information.",
+        link: "/learn/privacy-rights/understanding-digital-consent",
+      },
     ];
   
     return (
