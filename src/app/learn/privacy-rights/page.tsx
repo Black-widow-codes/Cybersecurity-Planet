@@ -45,6 +45,12 @@ export default function PrivacyRightsPage() {
           "Learn what meaningful consent looks like when apps, websites, and online services collect or use personal information.",
         link: "/learn/privacy-rights/understanding-digital-consent",
       },
+      {
+        title: "How Websites and Apps Track You Online",
+        description:
+          "Learn how cookies, app permissions, location data, device identifiers, and profiling can be used to track digital activity.",
+        link: "/learn/privacy-rights/how-websites-and-apps-track-you",
+      },
     ];
   
     return (
