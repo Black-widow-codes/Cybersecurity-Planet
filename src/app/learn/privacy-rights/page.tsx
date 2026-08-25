@@ -57,6 +57,12 @@ export default function PrivacyRightsPage() {
           "Learn about privacy rights involving personal information, transparency, access, correction, consent, security, and control.",
         link: "/learn/privacy-rights/understanding-your-digital-privacy-rights",
       },
+      {
+        title: "How to Protect Your Personal Data Online",
+        description:
+          "Learn practical ways to protect personal information using stronger authentication, safer devices, careful sharing, and secure digital habits.",
+        link: "/learn/privacy-rights/how-to-protect-your-personal-data-online",
+      },
     ];
   
     return (
