@@ -39,6 +39,12 @@ export default function DigitalHealthPage() {
           "Learn how to evaluate online health information, recognize warning signs, verify medical claims, and find more trustworthy sources.",
         link: "/learn/digital-health/how-to-evaluate-health-information-online",
       },
+      {
+        title: "How to Use Telehealth Safely",
+        description:
+          "Learn how to prepare for virtual healthcare visits, protect your privacy, verify providers, and use telehealth services more safely.",
+        link: "/learn/digital-health/how-to-use-telehealth-safely",
+      },
     ];
   
     return (
