@@ -63,6 +63,12 @@ export default function PrivacyRightsPage() {
           "Learn practical ways to protect personal information using stronger authentication, safer devices, careful sharing, and secure digital habits.",
         link: "/learn/privacy-rights/how-to-protect-your-personal-data-online",
       },
+      {
+        title: "Understanding Digital Surveillance",
+        description:
+          "Learn how digital surveillance can involve monitoring devices, locations, communications, online activity, and other forms of personal data.",
+        link: "/learn/privacy-rights/understanding-digital-surveillance",
+      },
     ];
   
     return (
