@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function PrivacyRightsPage() {
     const topics = [
       {
@@ -29,6 +30,14 @@ export default function PrivacyRightsPage() {
         title: "Surveillance Awareness",
         description:
           "Recognize how digital systems can monitor behavior, location, communication, and online activity.",
+      },
+    ];
+    const articles = [
+      {
+        title: "What Is Personal Data and Why Does It Matter?",
+        description:
+          "Learn what personal data is, how digital services collect it, and how to reduce unnecessary exposure.",
+        link: "/learn/privacy-rights/what-is-personal-data",
       },
     ];
   
@@ -74,6 +83,35 @@ export default function PrivacyRightsPage() {
             </div>
           ))}
         </section>
+        <section className="mt-12">
+  <h2 className="text-3xl font-bold text-blue-900">
+    Articles
+  </h2>
+
+  <div className="mt-8 grid gap-6 md:grid-cols-2">
+    {articles.map((article) => (
+      <article
+        key={article.title}
+        className="rounded-xl border bg-white p-6 shadow-sm transition hover:shadow-md"
+      >
+        <h3 className="text-xl font-bold text-blue-900">
+          {article.title}
+        </h3>
+
+        <p className="mt-3 text-gray-600">
+          {article.description}
+        </p>
+
+        <Link
+          href={article.link}
+          className="mt-5 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700"
+        >
+          Read Article
+        </Link>
+      </article>
+    ))}
+  </div>
+</section>
   
         <section className="mt-12 rounded-2xl bg-gray-50 p-8">
           <h2 className="text-3xl font-bold text-blue-900">
