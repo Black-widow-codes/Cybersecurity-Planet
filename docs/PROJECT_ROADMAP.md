@@ -245,12 +245,13 @@ Current learning areas:
 - [x] How to Recognize AI-Generated Content
 - [x] How to Fact-Check Information Online
 
-**Privacy & Rights - 2 articles**
+**Privacy & Rights - 3 articles**
 
 - [x] What Is Personal Data and Why Does It Matter?
 - [x] Understanding Digital Consent
+- [x] How Websites and Apps Track You Online
 
-**Current dedicated article total: 24**
+**Current dedicated article total: 25**
 
 ---
 
@@ -312,6 +313,7 @@ Status: In Progress
 - [x] Add Media Literacy articles
 - [x] Publish first dedicated Privacy & Rights article - What Is Personal Data and Why Does It Matter?
 - [x] Publish second dedicated Privacy & Rights article - Understanding Digital Consent
+- [x] Publish third dedicated Privacy & Rights article - How Websites and Apps Track You Online
 - [ ] Add Privacy & Rights articles
 - [ ] Add Digital Health articles
 - [ ] Connect learning content with related tools
