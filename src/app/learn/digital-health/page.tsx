@@ -63,6 +63,12 @@ export default function DigitalHealthPage() {
           "Learn how artificial intelligence may be used in healthcare, what it can and cannot do, and what patients should know about privacy, bias, and human oversight.",
         link: "/learn/digital-health/understanding-ai-in-your-healthcare",
       },
+      {
+        title: "Understanding Health Misinformation Online",
+        description:
+          "Learn how misleading health claims spread online, why they can be convincing, and how to respond more safely.",
+        link: "/learn/digital-health/understanding-health-misinformation-online",
+      },
     ];
   
     return (
