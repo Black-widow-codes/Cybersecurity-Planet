@@ -18,7 +18,7 @@ export default function FeaturedToolSection() {
         </div>
 
         <Link
-          href="/tools/checkup"
+          href="/tools/digital-citizenship-checkup"
           className="mt-6 inline-block rounded-lg bg-cyan-600 px-6 py-3 font-semibold text-white md:mt-0"
         >
           Take the Checkup

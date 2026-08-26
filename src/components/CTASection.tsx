@@ -23,7 +23,7 @@ export default function CTASection() {
           </Link>
 
           <Link
-            href="/tools/checkup"
+            href="/tools/digital-citizenship-checkup"
             className="rounded-lg border border-white px-6 py-3 font-semibold"
           >
             Take the Checkup
