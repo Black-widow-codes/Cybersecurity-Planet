@@ -337,7 +337,7 @@ Status: In Progress
 - [x] Publish fifth dedicated Digital Health article - Understanding AI in Your Healthcare
 - [x] Publish sixth dedicated Digital Health article - Understanding Health Misinformation Online
 - [x] Add Digital Health articles
-- [ ] Connect learning content with related tools
+- [x] Connect learning content with related tools
 
 ### Phase 4 - Tools Expansion and Improvement
 
