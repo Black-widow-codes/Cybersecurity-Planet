@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { useState } from "react";
 
@@ -122,6 +123,23 @@ export default function PrivacyCheckupPage() {
           </button>
         </section>
       )}
+      <section className="mt-10 rounded-xl border bg-gray-50 p-6">
+  <h2 className="text-2xl font-bold text-blue-900">
+    Strengthen Your Privacy Knowledge
+  </h2>
+
+  <p className="mt-3 text-gray-700">
+    Explore lessons about personal data, digital consent, online tracking,
+    privacy rights, data protection, and digital surveillance.
+  </p>
+
+  <Link
+    href="/learn/privacy-rights"
+    className="mt-5 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700"
+  >
+    Explore Privacy & Rights Lessons
+  </Link>
+</section>
     </main>
   );
 }

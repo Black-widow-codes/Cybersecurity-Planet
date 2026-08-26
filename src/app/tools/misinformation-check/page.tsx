@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 
 const questions = [
@@ -120,7 +121,7 @@ export default function MisinformationCheckPage() {
             ))}
           </div>
         </section>
-      ) : (
+           ) : (
         <section className="mt-10 rounded-xl bg-gray-50 p-6">
           <h2 className="text-2xl font-bold text-blue-900">
             Credibility Score: {score} / {maxScore}
@@ -139,6 +140,24 @@ export default function MisinformationCheckPage() {
           </button>
         </section>
       )}
+
+      <section className="mt-10 rounded-xl border bg-gray-50 p-6">
+        <h2 className="text-2xl font-bold text-blue-900">
+          Strengthen Your Media Literacy
+        </h2>
+
+        <p className="mt-3 text-gray-700">
+          Explore lessons about misinformation, disinformation, fact-checking,
+          evaluating online sources, manipulated content, and AI-generated media.
+        </p>
+
+        <Link
+          href="/learn/media-literacy"
+          className="mt-5 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700"
+        >
+          Explore Media Literacy Lessons
+        </Link>
+      </section>
     </main>
   );
 }

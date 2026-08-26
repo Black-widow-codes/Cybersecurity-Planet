@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { useState } from "react";
 
@@ -139,6 +140,23 @@ export default function DigitalCitizenshipCheckupPage() {
           </button>
         </section>
       )}
+      <section className="mt-10 rounded-xl border bg-gray-50 p-6">
+  <h2 className="text-2xl font-bold text-blue-900">
+    Build Your Digital Citizenship Skills
+  </h2>
+
+  <p className="mt-3 text-gray-700">
+    Explore lessons about responsible sharing, digital footprints, respectful
+    communication, information evaluation, and digital wellbeing.
+  </p>
+
+  <Link
+    href="/learn/digital-citizenship"
+    className="mt-5 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700"
+  >
+    Explore Digital Citizenship Lessons
+  </Link>
+</section>
     </main>
   );
 }
