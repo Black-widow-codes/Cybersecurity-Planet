@@ -57,6 +57,12 @@ export default function DigitalHealthPage() {
           "Learn how wearable devices and health apps collect health information, their potential benefits, and the privacy and security issues to consider.",
         link: "/learn/digital-health/understanding-wearable-devices-and-health-apps",
       },
+      {
+        title: "Understanding AI in Your Healthcare",
+        description:
+          "Learn how artificial intelligence may be used in healthcare, what it can and cannot do, and what patients should know about privacy, bias, and human oversight.",
+        link: "/learn/digital-health/understanding-ai-in-your-healthcare",
+      },
     ];
   
     return (
