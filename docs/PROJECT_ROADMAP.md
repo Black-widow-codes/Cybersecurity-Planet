@@ -254,15 +254,16 @@ Current learning areas:
 - [x] How to Protect Your Personal Data Online
 - [x] Understanding Digital Surveillance
 
-**Digital Health - 5 articles**
+**Digital Health - 6 articles**
 
 - [x] How to Evaluate Health Information Online
 - [x] How to Use Telehealth Safely
 - [x] How Your Health Data Is Collected and Protected
 - [x] Understanding Wearable Devices and Health Apps
 - [x] Understanding AI in Your Healthcare
+- [x] Understanding Health Misinformation Online
 
-**Current dedicated article total: 33**
+**Current dedicated article total: 34**
 
 ---
 
@@ -334,7 +335,8 @@ Status: In Progress
 - [x] Publish third dedicated Digital Health article - How Your Health Data Is Collected and Protected
 - [x] Publish fourth dedicated Digital Health article - Understanding Wearable Devices and Health Apps
 - [x] Publish fifth dedicated Digital Health article - Understanding AI in Your Healthcare
-- [ ] Add Digital Health articles
+- [x] Publish sixth dedicated Digital Health article - Understanding Health Misinformation Online
+- [x] Add Digital Health articles
 - [ ] Connect learning content with related tools
 
 ### Phase 4 - Tools Expansion and Improvement
