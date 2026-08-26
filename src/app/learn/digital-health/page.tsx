@@ -45,6 +45,12 @@ export default function DigitalHealthPage() {
           "Learn how to prepare for virtual healthcare visits, protect your privacy, verify providers, and use telehealth services more safely.",
         link: "/learn/digital-health/how-to-use-telehealth-safely",
       },
+      {
+        title: "How Your Health Data Is Collected and Protected",
+        description:
+          "Learn how health information is collected, stored, shared, and protected across healthcare systems, apps, portals, and digital services.",
+        link: "/learn/digital-health/how-your-health-data-is-collected-and-protected",
+      },
     ];
   
     return (
