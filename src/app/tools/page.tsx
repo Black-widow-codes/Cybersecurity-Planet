@@ -40,6 +40,12 @@ export default function ToolsPage() {
         "Evaluate online claims, headlines, and social media posts using a structured critical-thinking framework.",
       link: "/tools/misinformation-check",
     },
+{
+  title: "Health Misinformation Check",
+  description:
+    "Evaluate online health claims for credibility, evidence, miracle-cure promises, and other misinformation warning signs.",
+  link: "/tools/health-misinformation-check",
+},
   ];
   
   const comingSoonTools: {
