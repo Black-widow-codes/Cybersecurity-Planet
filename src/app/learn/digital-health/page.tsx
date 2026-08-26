@@ -51,6 +51,12 @@ export default function DigitalHealthPage() {
           "Learn how health information is collected, stored, shared, and protected across healthcare systems, apps, portals, and digital services.",
         link: "/learn/digital-health/how-your-health-data-is-collected-and-protected",
       },
+      {
+        title: "Understanding Wearable Devices and Health Apps",
+        description:
+          "Learn how wearable devices and health apps collect health information, their potential benefits, and the privacy and security issues to consider.",
+        link: "/learn/digital-health/understanding-wearable-devices-and-health-apps",
+      },
     ];
   
     return (
