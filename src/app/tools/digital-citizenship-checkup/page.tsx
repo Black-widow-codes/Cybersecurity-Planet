@@ -1,6 +1,6 @@
 "use client";
-import Link from "next/link";
 
+import Link from "next/link";
 import { useState } from "react";
 
 const questions = [
@@ -101,12 +101,18 @@ export default function DigitalCitizenshipCheckupPage() {
       </p>
 
       {!completed ? (
-        <section className="mt-10 rounded-xl border bg-white p-6 shadow-sm">
+        <section
+          className="mt-10 rounded-xl border bg-white p-6 shadow-sm"
+          aria-labelledby="citizenship-question"
+        >
           <p className="text-sm text-gray-500">
             Question {currentQuestion + 1} of {questions.length}
           </p>
 
-          <h2 className="mt-3 text-2xl font-bold text-blue-900">
+          <h2
+            id="citizenship-question"
+            className="mt-3 text-2xl font-bold text-blue-900"
+          >
             {questions[currentQuestion].question}
           </h2>
 
@@ -116,7 +122,7 @@ export default function DigitalCitizenshipCheckupPage() {
                 key={option.label}
                 type="button"
                 onClick={() => handleAnswer(option.score)}
-                className="w-full rounded-lg border px-4 py-3 text-left hover:bg-gray-50"
+                className="w-full rounded-lg border px-4 py-3 text-left hover:bg-gray-50 focus-visible:outline-2 focus-visible:outline-offset-2"
               >
                 {option.label}
               </button>
@@ -124,7 +130,10 @@ export default function DigitalCitizenshipCheckupPage() {
           </div>
         </section>
       ) : (
-        <section className="mt-10 rounded-xl bg-gray-50 p-6">
+        <section
+          className="mt-10 rounded-xl bg-gray-50 p-6"
+          aria-live="polite"
+        >
           <h2 className="text-2xl font-bold text-blue-900">
             Digital Citizenship Score: {score} / {maxScore}
           </h2>
@@ -134,29 +143,31 @@ export default function DigitalCitizenshipCheckupPage() {
           <button
             type="button"
             onClick={resetCheckup}
-            className="mt-6 rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700"
+            className="mt-6 rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700 focus-visible:outline-2 focus-visible:outline-offset-2"
           >
             Try Again
           </button>
         </section>
       )}
+
       <section className="mt-10 rounded-xl border bg-gray-50 p-6">
-  <h2 className="text-2xl font-bold text-blue-900">
-    Build Your Digital Citizenship Skills
-  </h2>
+        <h2 className="text-2xl font-bold text-blue-900">
+          Build Your Digital Citizenship Skills
+        </h2>
 
-  <p className="mt-3 text-gray-700">
-    Explore lessons about responsible sharing, digital footprints, respectful
-    communication, information evaluation, and digital wellbeing.
-  </p>
+        <p className="mt-3 text-gray-700">
+          Explore lessons about responsible sharing, digital footprints,
+          respectful communication, information evaluation, and digital
+          wellbeing.
+        </p>
 
-  <Link
-    href="/learn/digital-citizenship"
-    className="mt-5 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700"
-  >
-    Explore Digital Citizenship Lessons
-  </Link>
-</section>
+        <Link
+          href="/learn/digital-citizenship"
+          className="mt-5 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700 focus-visible:outline-2 focus-visible:outline-offset-2"
+        >
+          Explore Digital Citizenship Lessons
+        </Link>
+      </section>
     </main>
   );
 }

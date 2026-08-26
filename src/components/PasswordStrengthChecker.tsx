@@ -26,20 +26,31 @@ export default function PasswordStrengthChecker() {
     <section className="mx-auto max-w-2xl rounded-2xl border p-6 shadow-sm">
       <h2 className="text-2xl font-bold mb-3">Password Strength Checker</h2>
 
-      <p className="mb-4 text-gray-600">
-        Test how strong your password is. Do not enter your real password.
+      <p id="password-warning" className="mb-4 text-gray-600">
+        Test how strong a sample password is. For your privacy, do not enter a
+        real password.
       </p>
 
+      <label
+        htmlFor="password-sample"
+        className="mb-2 block font-semibold text-gray-800"
+      >
+        Sample password
+      </label>
+
       <input
+        id="password-sample"
         type="password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
         placeholder="Type a sample password"
+        autoComplete="off"
+        aria-describedby="password-warning password-strength"
         className="w-full rounded-lg border px-4 py-3 mb-4"
       />
 
       <div className="mb-4">
-        <p className="font-semibold">
+        <p id="password-strength" className="font-semibold" aria-live="polite">
           Strength: <span>{strength}</span>
         </p>
       </div>

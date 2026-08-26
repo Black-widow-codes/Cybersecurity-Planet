@@ -1,11 +1,12 @@
 "use client";
-import Link from "next/link";
 
+import Link from "next/link";
 import { useState } from "react";
 
 const questions = [
   {
-    question: "Does the health claim come from a qualified medical or public health source?",
+    question:
+      "Does the health claim come from a qualified medical or public health source?",
     options: [
       { label: "Yes", score: 2 },
       { label: "Somewhat", score: 1 },
@@ -13,7 +14,8 @@ const questions = [
     ],
   },
   {
-    question: "Does the claim provide evidence from credible research or health organizations?",
+    question:
+      "Does the claim provide evidence from credible research or health organizations?",
     options: [
       { label: "Yes", score: 2 },
       { label: "Somewhat", score: 1 },
@@ -46,8 +48,8 @@ export default function HealthMisinformationCheckPage() {
   const maxScore = questions.length * 2;
 
   function handleAnswer(value: number) {
-    setScore(score + value);
-    setCurrentQuestion(currentQuestion + 1);
+    setScore((currentScore) => currentScore + value);
+    setCurrentQuestion((question) => question + 1);
   }
 
   function getResultMessage() {
@@ -62,6 +64,11 @@ export default function HealthMisinformationCheckPage() {
     return "This health information has strong misinformation warning signs. Do not rely on it without checking trusted medical or public health sources.";
   }
 
+  function resetCheckup() {
+    setCurrentQuestion(0);
+    setScore(0);
+  }
+
   return (
     <main className="max-w-3xl mx-auto px-6 py-20">
       <h1 className="text-4xl font-bold text-blue-900">
@@ -69,16 +76,23 @@ export default function HealthMisinformationCheckPage() {
       </h1>
 
       <p className="mt-4 text-gray-700">
-        Use this tool to evaluate online health claims before trusting or sharing them.
+        Use this tool to evaluate online health claims before trusting or
+        sharing them.
       </p>
 
       {!completed ? (
-        <section className="mt-10 rounded-xl border bg-white p-6 shadow-sm">
+        <section
+          className="mt-10 rounded-xl border bg-white p-6 shadow-sm"
+          aria-labelledby="health-misinformation-question"
+        >
           <p className="text-sm text-gray-500">
             Question {currentQuestion + 1} of {questions.length}
           </p>
 
-          <h2 className="mt-3 text-2xl font-bold text-blue-900">
+          <h2
+            id="health-misinformation-question"
+            className="mt-3 text-2xl font-bold text-blue-900"
+          >
             {questions[currentQuestion].question}
           </h2>
 
@@ -86,8 +100,9 @@ export default function HealthMisinformationCheckPage() {
             {questions[currentQuestion].options.map((option) => (
               <button
                 key={option.label}
+                type="button"
                 onClick={() => handleAnswer(option.score)}
-                className="w-full rounded-lg border px-4 py-3 text-left hover:bg-gray-50"
+                className="w-full rounded-lg border px-4 py-3 text-left hover:bg-gray-50 focus-visible:outline-2 focus-visible:outline-offset-2"
               >
                 {option.label}
               </button>
@@ -95,7 +110,10 @@ export default function HealthMisinformationCheckPage() {
           </div>
         </section>
       ) : (
-        <section className="mt-10 rounded-xl bg-gray-50 p-6">
+        <section
+          className="mt-10 rounded-xl bg-gray-50 p-6"
+          aria-live="polite"
+        >
           <h2 className="text-2xl font-bold text-blue-900">
             Health Claim Score: {score} / {maxScore}
           </h2>
@@ -103,33 +121,33 @@ export default function HealthMisinformationCheckPage() {
           <p className="mt-4 text-gray-700">{getResultMessage()}</p>
 
           <button
-            onClick={() => {
-              setCurrentQuestion(0);
-              setScore(0);
-            }}
-            className="mt-6 rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white"
+            type="button"
+            onClick={resetCheckup}
+            className="mt-6 rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700 focus-visible:outline-2 focus-visible:outline-offset-2"
           >
             Try Again
           </button>
         </section>
       )}
-  <section className="mt-10 rounded-xl border bg-gray-50 p-6">
-  <h2 className="text-2xl font-bold text-blue-900">
-    Learn More About Digital Health
-  </h2>
 
-  <p className="mt-3 text-gray-700">
-    Explore lessons about evaluating health information, telehealth, health data
-    privacy, wearable devices, AI in healthcare, and health misinformation.
-  </p>
+      <section className="mt-10 rounded-xl border bg-gray-50 p-6">
+        <h2 className="text-2xl font-bold text-blue-900">
+          Learn More About Digital Health
+        </h2>
 
-  <Link
-    href="/learn/digital-health"
-    className="mt-5 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700"
-  >
-    Explore Digital Health Lessons
-  </Link>
-</section>
+        <p className="mt-3 text-gray-700">
+          Explore lessons about evaluating health information, telehealth,
+          health data privacy, wearable devices, AI in healthcare, and health
+          misinformation.
+        </p>
+
+        <Link
+          href="/learn/digital-health"
+          className="mt-5 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700 focus-visible:outline-2 focus-visible:outline-offset-2"
+        >
+          Explore Digital Health Lessons
+        </Link>
+      </section>
     </main>
   );
 }
