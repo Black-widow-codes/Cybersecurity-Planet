@@ -294,7 +294,7 @@ Status: Completed
 
 ### Phase 3 - Learning Library Expansion
 
-Status: In Progress
+Status: Completed
 
 - [x] Establish six core learning areas
 - [x] Publish first dedicated Digital Safety article - What Makes a Strong Password?
@@ -349,12 +349,11 @@ Status: Completed
 - [x] Evaluate duplicate or overlapping tool routes
 - [x] Evaluate the need for additional educational tools
 
-### Phase 5 - Resources and Insights
-
 Status: Planned
-
-- [ ] Build useful Resources library
-- [ ] Organize trusted cybersecurity and digital-literacy resources
+### Phase 5 - Resources and Insights
+Status: In Progress
+- [x] Build useful Resources library
+- [x] Organize trusted cybersecurity and digital-literacy resources
 - [ ] Expand Insights with educational articles and commentary
 - [ ] Create clearer connections between Learn, Tools, Resources, and Insights
 
