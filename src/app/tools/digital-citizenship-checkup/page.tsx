@@ -3,10 +3,30 @@
 import Link from "next/link";
 import { useState } from "react";
 
-const questions = [
+type Option = {
+  label: string;
+  score: number;
+};
+
+type Question = {
+  id: string;
+  question: string;
+  recommendation: string;
+  options: Option[];
+};
+
+type Answer = {
+  questionId: string;
+  score: number;
+};
+
+const questions: Question[] = [
   {
+    id: "think-before-sharing",
     question:
       "Do you pause and think before posting or sharing something online?",
+    recommendation:
+      "Before posting or sharing, consider whether the content is accurate, necessary, respectful, and something you would be comfortable having connected to your name later.",
     options: [
       { label: "Always", score: 5 },
       { label: "Sometimes", score: 3 },
@@ -14,8 +34,11 @@ const questions = [
     ],
   },
   {
+    id: "check-information",
     question:
       "Do you check whether information is credible before sharing it?",
+    recommendation:
+      "Check the source, evidence, date, author, and other reliable sources before sharing important information. Avoid passing along claims simply because they are popular or emotionally convincing.",
     options: [
       { label: "Always", score: 5 },
       { label: "Sometimes", score: 3 },
@@ -23,8 +46,11 @@ const questions = [
     ],
   },
   {
+    id: "privacy-settings",
     question:
       "Do you review privacy settings on your apps and social media accounts?",
+    recommendation:
+      "Review your privacy settings regularly and decide who can see your posts, profile details, location, contacts, and other personal information.",
     options: [
       { label: "Always", score: 5 },
       { label: "Sometimes", score: 3 },
@@ -32,8 +58,11 @@ const questions = [
     ],
   },
   {
+    id: "digital-footprint",
     question:
       "Do you think about how your online activity affects your digital footprint?",
+    recommendation:
+      "Remember that posts, comments, images, searches, and account activity can contribute to your digital footprint. Think about the possible long-term effects before sharing publicly.",
     options: [
       { label: "Always", score: 5 },
       { label: "Sometimes", score: 3 },
@@ -41,8 +70,11 @@ const questions = [
     ],
   },
   {
+    id: "respectful-communication",
     question:
       "Do you communicate respectfully during online disagreements?",
+    recommendation:
+      "Disagree with ideas without attacking people. Avoid insults, harassment, threats, or posting in anger, and step away from conversations that are becoming harmful.",
     options: [
       { label: "Always", score: 5 },
       { label: "Sometimes", score: 3 },
@@ -50,8 +82,11 @@ const questions = [
     ],
   },
   {
+    id: "digital-wellbeing",
     question:
       "Do you use technology in ways that support your wellbeing and responsibilities?",
+    recommendation:
+      "Pay attention to how technology affects your sleep, concentration, relationships, school, work, and other responsibilities. Set boundaries when online activity begins interfering with your wellbeing.",
     options: [
       { label: "Always", score: 5 },
       { label: "Sometimes", score: 3 },
@@ -62,42 +97,69 @@ const questions = [
 
 export default function DigitalCitizenshipCheckupPage() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [score, setScore] = useState(0);
+  const [answers, setAnswers] = useState<Answer[]>([]);
 
   const completed = currentQuestion === questions.length;
   const maxScore = questions.length * 5;
+  const score = answers.reduce((total, answer) => total + answer.score, 0);
 
   function handleAnswer(value: number) {
-    setScore((currentScore) => currentScore + value);
-    setCurrentQuestion((question) => question + 1);
-  }
+    const question = questions[currentQuestion];
 
-  function getResult() {
-    if (score >= 25) {
-      return "You show strong digital citizenship habits. Keep making thoughtful, respectful, and responsible choices online.";
-    }
+    setAnswers((currentAnswers) => [
+      ...currentAnswers,
+      {
+        questionId: question.id,
+        score: value,
+      },
+    ]);
 
-    if (score >= 15) {
-      return "You have several good digital habits, but there are still areas where you can become a more responsible and informed digital citizen.";
-    }
-
-    return "Your digital citizenship habits could use more attention. Focus on privacy, respectful communication, responsible sharing, and checking information before trusting it.";
+    setCurrentQuestion((questionIndex) => questionIndex + 1);
   }
 
   function resetCheckup() {
     setCurrentQuestion(0);
-    setScore(0);
+    setAnswers([]);
+  }
+
+  const strongAnswers = answers.filter((answer) => answer.score === 5);
+  const weakerAnswers = answers.filter((answer) => answer.score < 5);
+
+  const recommendations = weakerAnswers
+    .map((answer) =>
+      questions.find((question) => question.id === answer.questionId),
+    )
+    .filter((question): question is Question => Boolean(question));
+
+  let citizenshipLevel = "Not completed";
+  let resultExplanation =
+    "Complete all questions to receive your digital citizenship result.";
+
+  if (completed) {
+    if (score >= 25) {
+      citizenshipLevel = "Strong Digital Citizenship Habits";
+      resultExplanation =
+        "Your answers show that you regularly make thoughtful, responsible, and respectful choices online. You demonstrate awareness of information quality, privacy, digital footprints, communication, and digital wellbeing. Continue reviewing these habits as technology and online spaces change.";
+    } else if (score >= 15) {
+      citizenshipLevel = "Developing Digital Citizenship Habits";
+      resultExplanation =
+        "You already demonstrate several positive digital habits, but some areas are inconsistent. Strengthening the habits identified below can help you become a more informed, responsible, and intentional participant in digital spaces.";
+    } else {
+      citizenshipLevel = "Digital Citizenship Needs Attention";
+      resultExplanation =
+        "Several important digital citizenship habits are missing or used infrequently. This can affect your privacy, reputation, relationships, information choices, and wellbeing. Start with the recommended actions below and improve one habit at a time.";
+    }
   }
 
   return (
-    <main className="max-w-3xl mx-auto px-6 py-20">
+    <main className="mx-auto max-w-3xl px-6 py-20">
       <h1 className="text-4xl font-bold text-blue-900">
         Digital Citizenship Checkup
       </h1>
 
       <p className="mt-4 text-gray-700">
-        Check your everyday digital habits and learn how responsibly you
-        participate in online spaces.
+        Review how you share information, communicate, protect your privacy,
+        manage your digital footprint, and use technology responsibly.
       </p>
 
       {!completed ? (
@@ -130,15 +192,78 @@ export default function DigitalCitizenshipCheckupPage() {
           </div>
         </section>
       ) : (
-        <section
-          className="mt-10 rounded-xl bg-gray-50 p-6"
-          aria-live="polite"
-        >
-          <h2 className="text-2xl font-bold text-blue-900">
-            Digital Citizenship Score: {score} / {maxScore}
-          </h2>
+        <>
+          <section
+            className="mt-10 rounded-xl bg-gray-50 p-6"
+            aria-live="polite"
+            aria-atomic="true"
+          >
+            <h2 className="text-2xl font-bold text-blue-900">
+              Your Digital Citizenship Result
+            </h2>
 
-          <p className="mt-4 text-gray-700">{getResult()}</p>
+            <p className="mt-4 text-lg font-semibold">
+              Score: {score} / {maxScore}
+            </p>
+
+            <p className="mt-2 font-semibold">
+              Level: {citizenshipLevel}
+            </p>
+
+            <p className="mt-4 leading-7 text-gray-700">
+              {resultExplanation}
+            </p>
+          </section>
+
+          {strongAnswers.length > 0 && (
+            <section className="mt-6 rounded-xl border bg-white p-6">
+              <h2 className="text-2xl font-bold text-blue-900">
+                What You Are Doing Well
+              </h2>
+
+              <p className="mt-3 text-gray-700">
+                You reported consistently following {strongAnswers.length} of
+                the {questions.length} digital citizenship practices in this
+                checkup. Continue maintaining these habits in your everyday
+                online activity.
+              </p>
+            </section>
+          )}
+
+          {recommendations.length > 0 && (
+            <section className="mt-6 rounded-xl border bg-white p-6">
+              <h2 className="text-2xl font-bold text-blue-900">
+                Recommended Actions
+              </h2>
+
+              <p className="mt-3 text-gray-700">
+                Focus on the areas where you answered Sometimes or Rarely.
+                Improving these habits can help you participate online more
+                responsibly and intentionally.
+              </p>
+
+              <ul className="mt-4 list-disc space-y-3 pl-5 text-gray-700">
+                {recommendations.map((question) => (
+                  <li key={question.id}>{question.recommendation}</li>
+                ))}
+              </ul>
+            </section>
+          )}
+
+          {recommendations.length === 0 && (
+            <section className="mt-6 rounded-xl border bg-white p-6">
+              <h2 className="text-2xl font-bold text-blue-900">
+                Strong Digital Citizenship Foundation
+              </h2>
+
+              <p className="mt-3 leading-7 text-gray-700">
+                You reported consistently following all six practices in this
+                checkup. Keep evaluating information carefully, communicating
+                respectfully, protecting your privacy, and maintaining healthy
+                technology habits.
+              </p>
+            </section>
+          )}
 
           <button
             type="button"
@@ -147,7 +272,7 @@ export default function DigitalCitizenshipCheckupPage() {
           >
             Try Again
           </button>
-        </section>
+        </>
       )}
 
       <section className="mt-10 rounded-xl border bg-gray-50 p-6">
@@ -168,6 +293,13 @@ export default function DigitalCitizenshipCheckupPage() {
           Explore Digital Citizenship Lessons
         </Link>
       </section>
+
+      <p className="mt-6 text-sm leading-6 text-gray-500">
+        This checkup is an educational self-assessment rather than a formal
+        measure of digital citizenship. Responsible participation online also
+        depends on context, judgment, changing technology, and the communities
+        and services you use.
+      </p>
     </main>
   );
 }
