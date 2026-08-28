@@ -15,21 +15,6 @@ const insights = [
     href: "/insights/deepfakes-and-online-trust",
     category: "AI Literacy · Media Literacy",
   },
-  {
-    title:
-      "Why Data Breaches Still Matter Even When Your Password Wasn't Stolen",
-    description:
-      "A breach does not have to expose your password to create risk. Personal information can still make phishing, impersonation, and identity fraud more convincing.",
-    href: "/insights/why-data-breaches-still-matter",
-    category: "Privacy & Rights · Digital Safety",
-  },
-  {
-    title: "Can You Trust AI With Your Health Questions?",
-    description:
-      "AI can make health information easier to understand, but a confident answer is not always a reliable one. Learn where AI can help and where verification matters.",
-    href: "/insights/can-you-trust-ai-with-your-health-questions",
-    category: "Digital Health · AI Literacy",
-  },
 ];
 
 export default function InsightsPage() {
@@ -53,7 +38,7 @@ export default function InsightsPage() {
       </div>
 
       <section
-        className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3"
+        className="mt-12 grid gap-6 md:grid-cols-2"
         aria-label="Cybersecurity Planet insights"
       >
         {insights.map((insight) => (

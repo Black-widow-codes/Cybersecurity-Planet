@@ -351,11 +351,11 @@ Status: Completed
 
 Status: Planned
 ### Phase 5 - Resources and Insights
-Status: In Progress
+Status: Completed
 - [x] Build useful Resources library
 - [x] Organize trusted cybersecurity and digital-literacy resources
-- [ ] Expand Insights with educational articles and commentary
-- [ ] Create clearer connections between Learn, Tools, Resources, and Insights
+- [x] Expand Insights with educational articles and commentary
+- [x] Create clearer connections between Learn, Tools, Resources, and Insights
 
 ### Phase 6 - Platform Quality
 
