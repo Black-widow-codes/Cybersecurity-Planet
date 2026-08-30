@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { useState } from "react";
@@ -96,14 +96,15 @@ export default function PasswordStrengthChecker() {
 
   return (
     <section className="mx-auto max-w-2xl rounded-2xl border p-6 shadow-sm">
-      <h2 className="mb-3 text-2xl font-bold text-blue-900">
-        Password Strength Checker
-      </h2>
+      <h1 className="mb-3 text-3xl font-bold text-blue-900">
+  Password Strength Checker
+</h1>
 
-      <p id="password-warning" className="mb-4 text-gray-600">
-        Test the structure of a sample password. For your privacy, do not enter
-        a real password that you currently use.
-      </p>
+<p id="password-warning" className="mb-4 text-gray-600">
+  Test the structure of a sample password. Your entry is checked locally in
+  your browser and is not sent to Cybersecurity Planet. For your privacy, do
+  not enter a real password that you currently use.
+</p>
 
       <label
         htmlFor="password-sample"
@@ -218,7 +219,7 @@ export default function PasswordStrengthChecker() {
 
         <Link
           href="/learn/digital-safety/what-makes-a-strong-password"
-          className="mt-5 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+          className="mt-5 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
         >
           Learn About Strong Passwords
         </Link>
@@ -233,3 +234,4 @@ export default function PasswordStrengthChecker() {
     </section>
   );
 }
+

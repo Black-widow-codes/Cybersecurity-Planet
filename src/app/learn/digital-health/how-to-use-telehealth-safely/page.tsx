@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export const metadata = {
   title: "How to Use Telehealth Safely | Cybersecurity Planet",
@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function TelehealthSafetyPage() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-20">
+    <div className="max-w-4xl mx-auto px-6 py-20">
       <h1 className="text-4xl font-bold text-blue-900">
         How to Use Telehealth Safely
       </h1>
@@ -48,7 +48,7 @@ export default function TelehealthSafetyPage() {
 
         <p>
           If anything seems unusual, verify the appointment through the clinic
-          or healthcare organization's official contact information.
+          or healthcare organization&apos;s official contact information.
         </p>
 
         <h2 className="text-2xl font-bold text-blue-900">
@@ -208,12 +208,15 @@ export default function TelehealthSafetyPage() {
 
           <Link
             href="/tools/health-misinformation-check"
-            className="mt-4 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
           >
             Open Health Misinformation Check
           </Link>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
+
+
+

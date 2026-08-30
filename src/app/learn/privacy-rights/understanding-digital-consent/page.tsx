@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export const metadata = {
   title: "Understanding Digital Consent | Cybersecurity Planet",
@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function UnderstandingDigitalConsentPage() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-20">
+    <div className="max-w-4xl mx-auto px-6 py-20">
       <h1 className="text-4xl font-bold text-blue-900">
         Understanding Digital Consent
       </h1>
@@ -25,7 +25,7 @@ export default function UnderstandingDigitalConsentPage() {
         </h2>
 
         <p>
-          Meaningful consent requires more than clicking an "Accept" button.
+          Meaningful consent requires more than clicking an &quot;Accept&quot; button.
           People should be able to understand what information is being
           requested and why.
         </p>
@@ -59,7 +59,7 @@ export default function UnderstandingDigitalConsentPage() {
 
         <p>
           Before allowing access, consider whether the permission is reasonably
-          necessary for the app's main purpose.
+          necessary for the app&apos;s main purpose.
         </p>
 
         <h2 className="text-2xl font-bold text-blue-900">
@@ -88,7 +88,7 @@ export default function UnderstandingDigitalConsentPage() {
         </p>
 
         <ul className="list-disc space-y-2 pl-6">
-          <li>Making the "Accept" button much more visible than "Decline."</li>
+          <li>Making the &quot;Accept&quot; button much more visible than &quot;Decline.&quot;</li>
           <li>Using confusing wording to discourage privacy choices.</li>
           <li>Making it difficult to find account or privacy controls.</li>
           <li>Repeatedly asking for permission after you decline.</li>
@@ -101,7 +101,7 @@ export default function UnderstandingDigitalConsentPage() {
 
         <p>
           Agreeing to something once does not always mean permission should last
-          forever. People's circumstances and preferences can change.
+          forever. People&apos;s circumstances and preferences can change.
         </p>
 
         <p>
@@ -134,7 +134,7 @@ export default function UnderstandingDigitalConsentPage() {
         </p>
 
         <p>
-          Avoid uploading another person's private information without their
+          Avoid uploading another person&apos;s private information without their
           permission, and be cautious with your own sensitive information when
           you do not understand how the service handles data.
         </p>
@@ -178,12 +178,15 @@ export default function UnderstandingDigitalConsentPage() {
 
           <Link
             href="/tools/privacy-checkup"
-            className="mt-4 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
           >
             Open Privacy Checkup
           </Link>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
+
+
+

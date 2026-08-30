@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export const metadata = {
   title: "Insights | Cybersecurity Planet",
@@ -21,7 +21,7 @@ const insights = [
     description:
       "A breach does not have to expose your password to create risk. Personal information can still make phishing, impersonation, and identity fraud more convincing.",
     href: "/insights/why-data-breaches-still-matter",
-    category: "Privacy & Rights · Digital Safety",
+    category: "Privacy & Digital Rights · Digital Safety",
   },
   {
     title: "Can You Trust AI With Your Health Questions?",
@@ -34,7 +34,7 @@ const insights = [
 
 export default function InsightsPage() {
   return (
-    <main className="max-w-6xl mx-auto px-6 py-20">
+    <div className="max-w-6xl mx-auto px-6 py-20">
       <div className="max-w-3xl">
         <h1 className="text-4xl font-bold text-blue-900">
           Insights
@@ -75,7 +75,7 @@ export default function InsightsPage() {
 
             <Link
               href={insight.href}
-              className="mt-6 inline-block self-start rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:ring-offset-2"
+              className="mt-6 inline-block self-start rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:ring-offset-2"
             >
               Read Insight
             </Link>
@@ -97,26 +97,30 @@ export default function InsightsPage() {
         <div className="mt-5 flex flex-wrap gap-5">
           <Link
             href="/learn"
-            className="font-semibold text-cyan-700 hover:underline"
+            className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
           >
             Explore Learn
           </Link>
 
           <Link
             href="/tools"
-            className="font-semibold text-cyan-700 hover:underline"
+            className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
           >
             Explore Tools
           </Link>
 
           <Link
             href="/resources"
-            className="font-semibold text-cyan-700 hover:underline"
+            className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
           >
             Explore Resources
           </Link>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
+
+
+
+

@@ -1,9 +1,9 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export default function FeaturedToolSection() {
   return (
     <section className="bg-gray-50 px-6 py-20">
-      <div className="max-w-6xl mx-auto rounded-2xl bg-white border p-8 shadow-sm md:flex md:items-center md:justify-between">
+      <div className="mx-auto max-w-6xl rounded-2xl border bg-white p-8 shadow-sm md:flex md:items-center md:justify-between">
         <div>
           <p className="font-semibold text-cyan-600">Featured Tool</p>
 
@@ -19,7 +19,7 @@ export default function FeaturedToolSection() {
 
         <Link
           href="/tools/digital-citizenship-checkup"
-          className="mt-6 inline-block rounded-lg bg-cyan-600 px-6 py-3 font-semibold text-white md:mt-0"
+          className="mt-6 inline-block rounded-lg bg-cyan-700 px-6 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 md:mt-0"
         >
           Take the Checkup
         </Link>

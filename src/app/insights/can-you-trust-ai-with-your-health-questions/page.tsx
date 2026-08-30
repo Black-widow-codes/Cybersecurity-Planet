@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export const metadata = {
   title:
@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function CanYouTrustAIWithHealthQuestionsPage() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-20">
+    <div className="max-w-4xl mx-auto px-6 py-20">
       <article>
         <header>
           <p className="text-sm font-semibold text-cyan-700">
@@ -607,7 +607,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
               <p className="font-semibold text-gray-900">Learn</p>
               <Link
                 href="/learn/digital-health/understanding-ai-in-your-healthcare"
-                className="text-cyan-700 hover:underline"
+                className="rounded-sm text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
               >
                 Understanding AI in Your Healthcare
               </Link>
@@ -617,7 +617,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
               <p className="font-semibold text-gray-900">Try the Tool</p>
               <Link
                 href="/tools/health-misinformation-check"
-                className="text-cyan-700 hover:underline"
+                className="rounded-sm text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
               >
                 Health Misinformation Check
               </Link>
@@ -627,7 +627,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
               <p className="font-semibold text-gray-900">Use the Resource</p>
               <Link
                 href="/resources/digital-health-guide"
-                className="text-cyan-700 hover:underline"
+                className="rounded-sm text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
               >
                 Digital Health Guide
               </Link>
@@ -659,7 +659,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
                 href="https://www.who.int/publications/i/item/9789240084759"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-semibold text-cyan-700 hover:underline"
+                className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
               >
                 World Health Organization — Ethics and Governance of Artificial
                 Intelligence for Health: Guidance on Large Multi-Modal Models ↗
@@ -671,7 +671,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
                 href="https://www.who.int/teams/digital-health-and-innovation/harnessing-artificial-intelligence-for-health"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-semibold text-cyan-700 hover:underline"
+                className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
               >
                 World Health Organization — Harnessing Artificial Intelligence
                 for Health ↗
@@ -683,7 +683,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
                 href="https://www.who.int/news/item/18-01-2024-who-releases-ai-ethics-and-governance-guidance-for-large-multi-modal-models"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-semibold text-cyan-700 hover:underline"
+                className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
               >
                 World Health Organization — AI Ethics and Governance Guidance
                 for Large Multi-Modal Models ↗
@@ -695,7 +695,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
                 href="https://www.who.int/publications/i/item/9789240078871"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-semibold text-cyan-700 hover:underline"
+                className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
               >
                 World Health Organization — Regulatory Considerations on
                 Artificial Intelligence for Health ↗
@@ -707,12 +707,14 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
         <div className="mt-12">
           <Link
             href="/insights"
-            className="font-semibold text-cyan-700 hover:underline"
+            className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
           >
             ← Back to Insights
           </Link>
         </div>
       </article>
-    </main>
+    </div>
   );
 }
+
+

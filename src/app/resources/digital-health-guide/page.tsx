@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export const metadata = {
   title: "Digital Health Guide | Cybersecurity Planet",
@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function DigitalHealthGuidePage() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-20">
+    <div className="max-w-4xl mx-auto px-6 py-20">
       <h1 className="text-4xl font-bold text-blue-900">
         Digital Health Guide
       </h1>
@@ -153,7 +153,7 @@ export default function DigitalHealthGuidePage() {
 
           <Link
             href="/tools/health-misinformation-check"
-            className="mt-4 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
           >
             Open the Health Misinformation Check
           </Link>
@@ -172,7 +172,7 @@ export default function DigitalHealthGuidePage() {
 
           <Link
             href="/learn/digital-health"
-            className="mt-4 inline-block font-semibold text-cyan-700 hover:underline"
+            className="mt-4 inline-block rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
           >
             Explore Digital Health Learning
           </Link>
@@ -183,6 +183,8 @@ export default function DigitalHealthGuidePage() {
           advice, diagnosis, or treatment.
         </p>
       </section>
-    </main>
+    </div>
   );
 }
+
+

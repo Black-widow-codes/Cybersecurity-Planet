@@ -1,4 +1,3 @@
-
 import WelcomeSection from "@/components/WelcomeSection";
 import PillarsSection from "@/components/PillarsSection";
 import StatsSection from "@/components/StatsSection";
@@ -7,10 +6,9 @@ import FeaturedResourcesSection from "@/components/FeaturedResourcesSection";
 import WhyItMattersSection from "@/components/WhyItMattersSection";
 import CTASection from "@/components/CTASection";
 
-
 export default function Home() {
   return (
-    <main>
+    <>
       <WelcomeSection />
       <PillarsSection />
       <StatsSection />
@@ -18,6 +16,6 @@ export default function Home() {
       <FeaturedResourcesSection />
       <WhyItMattersSection />
       <CTASection />
-    </main>
+    </>
   );
 }

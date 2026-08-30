@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export const metadata = {
   title:
@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function WearablesHealthAppsPage() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-20">
+    <div className="max-w-4xl mx-auto px-6 py-20">
       <h1 className="text-4xl font-bold text-blue-900">
         Understanding Wearable Devices and Health Apps
       </h1>
@@ -118,7 +118,7 @@ export default function WearablesHealthAppsPage() {
         </p>
 
         <p>
-          Review the service's privacy information to understand what data is
+          Review the service&apos;s privacy information to understand what data is
           collected, where it may be stored, and whether it may be shared with
           other organizations.
         </p>
@@ -176,7 +176,7 @@ export default function WearablesHealthAppsPage() {
 
         <p>
           Deleting an app from your phone does not necessarily delete the
-          information stored in your account or on the provider's systems.
+          information stored in your account or on the provider&apos;s systems.
         </p>
 
         <p>
@@ -226,12 +226,15 @@ export default function WearablesHealthAppsPage() {
 
           <Link
             href="/tools/privacy-checkup"
-            className="mt-4 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
           >
             Open Privacy Checkup
           </Link>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
+
+
+

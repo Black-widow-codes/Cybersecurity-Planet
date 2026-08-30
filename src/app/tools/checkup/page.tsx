@@ -1,5 +1,5 @@
-import { redirect } from "next/navigation";
+import { permanentRedirect } from "next/navigation";
 
 export default function CheckupPage() {
-  redirect("/tools/digital-citizenship-checkup");
+  permanentRedirect("/tools/digital-citizenship-checkup");
 }

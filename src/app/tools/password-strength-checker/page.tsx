@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import PasswordStrengthChecker from "@/components/PasswordStrengthChecker";
 
 export const metadata = {
@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function PasswordStrengthCheckerPage() {
   return (
-    <main className="px-6 py-12">
+    <div className="px-6 py-12">
       <PasswordStrengthChecker />
 
       <section className="mx-auto mt-10 max-w-3xl rounded-xl border bg-gray-50 p-6">
@@ -24,11 +24,13 @@ export default function PasswordStrengthCheckerPage() {
 
         <Link
           href="/learn/digital-safety/what-makes-a-strong-password"
-          className="mt-5 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700"
+          className="mt-5 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
         >
           Read What Makes a Strong Password?
         </Link>
       </section>
-    </main>
+    </div>
   );
 }
+
+

@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export const metadata = {
   title: "Deepfakes: How AI Can Manipulate Media | Cybersecurity Planet",
@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function DeepfakesArticlePage() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-20">
+    <div className="max-w-4xl mx-auto px-6 py-20">
       <h1 className="text-4xl font-bold text-blue-900">
         Deepfakes: How AI Can Manipulate Media
       </h1>
@@ -50,7 +50,7 @@ export default function DeepfakesArticlePage() {
         <p>
           As the technology improves, obvious visual mistakes may become less
           common. This means people should not rely only on whether something
-          "looks fake."
+          &quot;looks fake.&quot;
         </p>
 
         <h2 className="text-2xl font-bold text-blue-900">
@@ -61,7 +61,7 @@ export default function DeepfakesArticlePage() {
           <li>Impersonating someone in a scam.</li>
           <li>Creating false statements attributed to a real person.</li>
           <li>Spreading political or social misinformation.</li>
-          <li>Damaging someone's reputation.</li>
+          <li>Damaging someone&apos;s reputation.</li>
           <li>Creating fake evidence of an event.</li>
           <li>Using cloned voices to pressure people into sending money.</li>
         </ul>
@@ -125,7 +125,7 @@ export default function DeepfakesArticlePage() {
         </p>
 
         <p>
-          If a message makes an unusual or urgent request, verify the person's
+          If a message makes an unusual or urgent request, verify the person&apos;s
           identity through a separate communication method before taking
           action.
         </p>
@@ -156,12 +156,15 @@ export default function DeepfakesArticlePage() {
 
           <Link
             href="/tools/ai-literacy-assessment"
-            className="mt-4 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
           >
             Open AI Literacy Assessment
           </Link>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
+
+
+

@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export const metadata = {
   title: "Understanding Your Digital Privacy Rights | Cybersecurity Planet",
@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function DigitalPrivacyRightsPage() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-20">
+    <div className="max-w-4xl mx-auto px-6 py-20">
       <h1 className="text-4xl font-bold text-blue-900">
         Understanding Your Digital Privacy Rights
       </h1>
@@ -136,7 +136,7 @@ export default function DigitalPrivacyRightsPage() {
 
         <p>
           Services may retain certain information for legal, security,
-          operational, or other legitimate reasons. Review the service's
+          operational, or other legitimate reasons. Review the service&apos;s
           privacy information to understand what happens after deletion.
         </p>
 
@@ -212,12 +212,15 @@ export default function DigitalPrivacyRightsPage() {
 
           <Link
             href="/tools/privacy-checkup"
-            className="mt-4 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
           >
             Open Privacy Checkup
           </Link>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
+
+
+

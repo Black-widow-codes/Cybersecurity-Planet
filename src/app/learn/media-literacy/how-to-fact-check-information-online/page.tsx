@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export const metadata = {
   title: "How to Fact-Check Information Online | Cybersecurity Planet",
@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function FactCheckInformationOnlinePage() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-20">
+    <div className="max-w-4xl mx-auto px-6 py-20">
       <h1 className="text-4xl font-bold text-blue-900">
         How to Fact-Check Information Online
       </h1>
@@ -79,7 +79,7 @@ export default function FactCheckInformationOnlinePage() {
         <p>
           Be cautious when evidence consists only of anonymous claims,
           screenshots without context, unsupported statistics, or phrases such
-          as "everyone knows" or "experts say."
+          as &quot;everyone knows&quot; or &quot;experts say.&quot;
         </p>
 
         <h2 className="text-2xl font-bold text-blue-900">
@@ -194,7 +194,7 @@ export default function FactCheckInformationOnlinePage() {
         </p>
 
         <p>
-          "I do not know yet" is often better than sharing an uncertain claim as
+          &quot;I do not know yet&quot; is often better than sharing an uncertain claim as
           fact.
         </p>
 
@@ -211,12 +211,15 @@ export default function FactCheckInformationOnlinePage() {
 
           <Link
             href="/tools/misinformation-check"
-            className="mt-4 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
           >
             Open Misinformation Evaluation Tool
           </Link>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
+
+
+

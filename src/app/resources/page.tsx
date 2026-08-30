@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export const metadata = {
   title: "Resource Library | Cybersecurity Planet",
@@ -40,7 +40,7 @@ const resources = [
     description:
       "Review privacy settings, app permissions, account security, personal information sharing, and digital consent.",
     href: "/resources/privacy-protection-checklist",
-    category: "Privacy & Rights",
+    category: "Privacy & Digital Rights",
   },
   {
     title: "Digital Health Guide",
@@ -73,7 +73,7 @@ const trustedResources = [
     description:
       "Information about privacy rights, protecting personal information, privacy laws, and filing privacy complaints in Canada.",
     href: "https://www.priv.gc.ca/en/",
-    topics: "Privacy & Rights",
+    topics: "Privacy & Digital Rights",
     scope: "Canada",
   },
   {
@@ -121,7 +121,7 @@ const trustedResources = [
     description:
       "Practical guidance for protecting communications, personal information, accounts, and privacy against digital surveillance.",
     href: "https://ssd.eff.org/",
-    topics: "Privacy & Rights · Digital Safety",
+    topics: "Privacy & Digital Rights · Digital Safety",
     scope: "International",
   },
   {
@@ -129,7 +129,7 @@ const trustedResources = [
     description:
       "Practical guides for protecting personal data, controlling online tracking, improving account privacy, and understanding digital surveillance.",
     href: "https://www.privacyinternational.org/guides",
-    topics: "Privacy & Rights",
+    topics: "Privacy & Digital Rights",
     scope: "International",
   },
   {
@@ -192,7 +192,7 @@ const trustedResources = [
 
 export default function ResourcesPage() {
   return (
-    <main className="max-w-6xl mx-auto px-6 py-20">
+    <div className="max-w-6xl mx-auto px-6 py-20">
       <div className="max-w-3xl">
         <h1 className="text-4xl font-bold text-blue-900">
           Resource Library
@@ -243,7 +243,7 @@ export default function ResourcesPage() {
 
               <Link
                 href={resource.href}
-                className="mt-6 inline-block self-start rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:ring-offset-2"
+                className="mt-6 inline-block self-start rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:ring-offset-2"
               >
                 View Resource
               </Link>
@@ -330,6 +330,10 @@ export default function ResourcesPage() {
           Explore the Learning Library
         </Link>
       </section>
-    </main>
+    </div>
   );
 }
+
+
+
+

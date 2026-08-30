@@ -1,5 +1,5 @@
-import { redirect } from "next/navigation";
+import { permanentRedirect } from "next/navigation";
 
 export default function PasswordStrengthPage() {
-  redirect("/tools/password-strength-checker");
+  permanentRedirect("/tools/password-strength-checker");
 }

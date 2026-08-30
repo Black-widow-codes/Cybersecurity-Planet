@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export const metadata = {
   title: "How to Evaluate Health Information Online | Cybersecurity Planet",
@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function EvaluateHealthInformationPage() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-20">
+    <div className="max-w-4xl mx-auto px-6 py-20">
       <h1 className="text-4xl font-bold text-blue-900">
         How to Evaluate Health Information Online
       </h1>
@@ -93,11 +93,11 @@ export default function EvaluateHealthInformationPage() {
         </p>
 
         <ul className="list-disc space-y-2 pl-6">
-          <li>"Guaranteed cure."</li>
-          <li>"Doctors do not want you to know this."</li>
-          <li>"Works for everyone."</li>
-          <li>"No risks or side effects."</li>
-          <li>"One simple trick cures multiple diseases."</li>
+          <li>&quot;Guaranteed cure.&quot;</li>
+          <li>&quot;Doctors do not want you to know this.&quot;</li>
+          <li>&quot;Works for everyone.&quot;</li>
+          <li>&quot;No risks or side effects.&quot;</li>
+          <li>&quot;One simple trick cures multiple diseases.&quot;</li>
         </ul>
 
         <h2 className="text-2xl font-bold text-blue-900">
@@ -106,7 +106,7 @@ export default function EvaluateHealthInformationPage() {
 
         <p>
           Testimonials can feel convincing because they describe real or
-          emotional experiences. However, one person's experience cannot show
+          emotional experiences. However, one person&apos;s experience cannot show
           that a treatment will be safe or effective for everyone.
         </p>
 
@@ -195,7 +195,7 @@ export default function EvaluateHealthInformationPage() {
 
         <ul className="list-disc space-y-2 pl-6">
           <li>Identify the source.</li>
-          <li>Check the author's expertise.</li>
+          <li>Check the author&apos;s expertise.</li>
           <li>Look for supporting evidence.</li>
           <li>Check the publication or review date.</li>
           <li>Look for commercial interests.</li>
@@ -215,12 +215,15 @@ export default function EvaluateHealthInformationPage() {
 
           <Link
             href="/tools/health-misinformation-check"
-            className="mt-4 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
           >
             Open Health Misinformation Check
           </Link>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
+
+
+

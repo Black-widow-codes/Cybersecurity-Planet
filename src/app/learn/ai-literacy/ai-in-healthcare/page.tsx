@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export const metadata = {
   title: "AI in Healthcare | Cybersecurity Planet",
@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function AIInHealthcarePage() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-20">
+    <div className="max-w-4xl mx-auto px-6 py-20">
       <h1 className="text-4xl font-bold text-blue-900">
         AI in Healthcare
       </h1>
@@ -29,7 +29,7 @@ export default function AIInHealthcarePage() {
         <p>
           AI systems can process large amounts of health information and look
           for patterns that may help healthcare professionals understand a
-          patient's condition or manage clinical work more efficiently.
+          patient&apos;s condition or manage clinical work more efficiently.
         </p>
 
         <ul className="list-disc space-y-2 pl-6">
@@ -160,12 +160,15 @@ export default function AIInHealthcarePage() {
 
           <Link
             href="/tools/ai-literacy-assessment"
-            className="mt-4 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
           >
             Open AI Literacy Assessment
           </Link>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
+
+
+

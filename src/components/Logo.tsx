@@ -1,7 +1,7 @@
-export default function Logo() {
+﻿export default function Logo() {
     return (
       <div className="flex items-center gap-2">
-        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-600 text-white font-bold shadow">
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-700 text-white font-bold shadow">
           CP
         </div>
   

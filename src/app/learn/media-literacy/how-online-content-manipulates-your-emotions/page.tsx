@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export const metadata = {
   title: "How Online Content Manipulates Your Emotions | Cybersecurity Planet",
@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function EmotionalManipulationPage() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-20">
+    <div className="max-w-4xl mx-auto px-6 py-20">
       <h1 className="text-4xl font-bold text-blue-900">
         How Online Content Manipulates Your Emotions
       </h1>
@@ -86,8 +86,8 @@ export default function EmotionalManipulationPage() {
         </p>
 
         <p>
-          Phrases such as "everyone is talking about this" or "share before it
-          gets deleted" can create pressure to participate without careful
+          Phrases such as &quot;everyone is talking about this&quot; or &quot;share before it
+          gets deleted&quot; can create pressure to participate without careful
           evaluation.
         </p>
 
@@ -151,8 +151,8 @@ export default function EmotionalManipulationPage() {
         </h2>
 
         <p>
-          Before reacting, ask yourself: "Is this content helping me understand
-          something, or is it mainly trying to make me feel something?"
+          Before reacting, ask yourself: &quot;Is this content helping me understand
+          something, or is it mainly trying to make me feel something?&quot;
         </p>
 
         <div className="rounded-xl border bg-gray-50 p-6">
@@ -168,12 +168,15 @@ export default function EmotionalManipulationPage() {
 
           <Link
             href="/tools/misinformation-check"
-            className="mt-4 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
           >
             Open Misinformation Evaluation Tool
           </Link>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
+
+
+

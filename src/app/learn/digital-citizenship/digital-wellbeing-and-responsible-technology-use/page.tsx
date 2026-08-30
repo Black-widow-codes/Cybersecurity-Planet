@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export const metadata = {
   title: "Digital Wellbeing and Responsible Technology Use | Cybersecurity Planet",
@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function DigitalWellbeingArticlePage() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-20">
+    <div className="max-w-4xl mx-auto px-6 py-20">
       <h1 className="text-4xl font-bold text-blue-900">
         Digital Wellbeing and Responsible Technology Use
       </h1>
@@ -115,12 +115,14 @@ export default function DigitalWellbeingArticlePage() {
 
           <Link
             href="/tools/digital-citizenship-checkup"
-            className="mt-4 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
           >
             Open Digital Citizenship Checkup
           </Link>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
+
+

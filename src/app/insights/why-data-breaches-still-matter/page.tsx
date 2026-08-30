@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export const metadata = {
   title:
@@ -9,11 +9,11 @@ export const metadata = {
 
 export default function WhyDataBreachesStillMatterPage() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-20">
+    <div className="max-w-4xl mx-auto px-6 py-20">
       <article>
         <header>
           <p className="text-sm font-semibold text-cyan-700">
-            Privacy & Rights · Digital Safety
+            Privacy & Digital Rights · Digital Safety
           </p>
 
           <h1 className="mt-3 text-4xl font-bold leading-tight text-blue-900">
@@ -620,7 +620,7 @@ export default function WhyDataBreachesStillMatterPage() {
               <p className="font-semibold text-gray-900">Learn</p>
               <Link
                 href="/learn/digital-safety/how-online-scams-manipulate-you"
-                className="text-cyan-700 hover:underline"
+                className="rounded-sm text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
               >
                 How Online Scams Manipulate You
               </Link>
@@ -630,7 +630,7 @@ export default function WhyDataBreachesStillMatterPage() {
               <p className="font-semibold text-gray-900">Try the Tool</p>
               <Link
                 href="/tools/digital-safety-assessment"
-                className="text-cyan-700 hover:underline"
+                className="rounded-sm text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
               >
                 Digital Safety Assessment
               </Link>
@@ -640,7 +640,7 @@ export default function WhyDataBreachesStillMatterPage() {
               <p className="font-semibold text-gray-900">Use the Resource</p>
               <Link
                 href="/resources/digital-safety-guide"
-                className="text-cyan-700 hover:underline"
+                className="rounded-sm text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
               >
                 Digital Safety Guide
               </Link>
@@ -659,7 +659,7 @@ export default function WhyDataBreachesStillMatterPage() {
                 href="https://www.priv.gc.ca/en/privacy-topics/information-and-advice-for-individuals/gd_bn_201909/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-semibold text-cyan-700 hover:underline"
+                className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
               >
                 Office of the Privacy Commissioner of Canada — What to Do When
                 You Receive a Privacy Breach Notification ↗
@@ -671,7 +671,7 @@ export default function WhyDataBreachesStillMatterPage() {
                 href="https://www.priv.gc.ca/en/privacy-topics/identities/identity-theft/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-semibold text-cyan-700 hover:underline"
+                className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
               >
                 Office of the Privacy Commissioner of Canada — Identity Theft ↗
               </a>
@@ -682,7 +682,7 @@ export default function WhyDataBreachesStillMatterPage() {
                 href="https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-semibold text-cyan-700 hover:underline"
+                className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
               >
                 National Institute of Standards and Technology — Phishing ↗
               </a>
@@ -693,7 +693,7 @@ export default function WhyDataBreachesStillMatterPage() {
                 href="https://consumer.ftc.gov/articles/protect-your-personal-information-hackers-and-scammers"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-semibold text-cyan-700 hover:underline"
+                className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
               >
                 U.S. Federal Trade Commission — Protect Your Personal
                 Information From Hackers and Scammers ↗
@@ -705,12 +705,15 @@ export default function WhyDataBreachesStillMatterPage() {
         <div className="mt-12">
           <Link
             href="/insights"
-            className="font-semibold text-cyan-700 hover:underline"
+            className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
           >
             ← Back to Insights
           </Link>
         </div>
       </article>
-    </main>
+    </div>
   );
 }
+
+
+

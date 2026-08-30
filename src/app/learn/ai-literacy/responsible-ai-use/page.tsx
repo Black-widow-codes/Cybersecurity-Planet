@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export const metadata = {
   title: "Responsible AI Use | Cybersecurity Planet",
@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function ResponsibleAIUsePage() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-20">
+    <div className="max-w-4xl mx-auto px-6 py-20">
       <h1 className="text-4xl font-bold text-blue-900">
         Responsible AI Use
       </h1>
@@ -125,7 +125,7 @@ export default function ResponsibleAIUsePage() {
 
         <p>
           Human judgment is especially important when decisions affect another
-          person's rights, opportunities, safety, privacy, or wellbeing.
+          person&apos;s rights, opportunities, safety, privacy, or wellbeing.
         </p>
 
         <h2 className="text-2xl font-bold text-blue-900">
@@ -162,18 +162,21 @@ export default function ResponsibleAIUsePage() {
 
           <p className="mt-2">
             Responsible AI use brings together many of the ideas covered in
-            Cybersecurity Planet's AI Literacy section, including accuracy,
+            Cybersecurity Planet&apos;s AI Literacy section, including accuracy,
             algorithms, deepfakes, bias, privacy, and human oversight.
           </p>
 
           <Link
             href="/tools/ai-literacy-assessment"
-            className="mt-4 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
           >
             Open AI Literacy Assessment
           </Link>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
+
+
+

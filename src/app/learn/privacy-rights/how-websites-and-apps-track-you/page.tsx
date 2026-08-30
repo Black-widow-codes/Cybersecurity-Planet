@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export const metadata = {
   title: "How Websites and Apps Track You Online | Cybersecurity Planet",
@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function TrackingTechnologiesPage() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-20">
+    <div className="max-w-4xl mx-auto px-6 py-20">
       <h1 className="text-4xl font-bold text-blue-900">
         How Websites and Apps Track You Online
       </h1>
@@ -100,7 +100,7 @@ export default function TrackingTechnologiesPage() {
 
         <p>
           Tracking information can be combined to create profiles about a
-          person's interests, preferences, habits, or likely behavior.
+          person&apos;s interests, preferences, habits, or likely behavior.
         </p>
 
         <p>
@@ -184,12 +184,15 @@ export default function TrackingTechnologiesPage() {
 
           <Link
             href="/tools/privacy-checkup"
-            className="mt-4 inline-block rounded-lg bg-cyan-600 px-5 py-3 font-semibold text-white hover:bg-cyan-700"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
           >
             Open Privacy Checkup
           </Link>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
+
+
+
