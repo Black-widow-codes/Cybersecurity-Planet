@@ -98,11 +98,11 @@ const actions = [
 export default function PrivacyRightsPage() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         Privacy & Digital Rights
       </h1>
 
-      <p className="mt-6 max-w-3xl text-lg text-gray-700">
+      <p className="mt-6 max-w-3xl text-lg text-gray-700 transition-colors dark:text-slate-300">
         Privacy and digital rights help people understand how their personal
         information is collected, used, shared, and protected in digital
         environments. These rights are important for safety, dignity, autonomy,
@@ -110,11 +110,11 @@ export default function PrivacyRightsPage() {
       </p>
 
       <section className="mt-12">
-        <h2 className="text-3xl font-bold text-blue-900">
+        <h2 className="text-3xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Why Privacy Matters
         </h2>
 
-        <p className="mt-4 max-w-3xl text-lg text-gray-700">
+        <p className="mt-4 max-w-3xl text-lg text-gray-700 transition-colors dark:text-slate-300">
           Every time people use apps, websites, social media, health platforms,
           or AI tools, data may be collected about them. Understanding privacy
           helps digital citizens make informed choices, reduce risk, and protect
@@ -123,7 +123,7 @@ export default function PrivacyRightsPage() {
       </section>
 
       <section className="mt-12">
-        <h2 className="text-3xl font-bold text-blue-900">
+        <h2 className="text-3xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Key Topics
         </h2>
 
@@ -131,13 +131,13 @@ export default function PrivacyRightsPage() {
           {topics.map((topic) => (
             <article
               key={topic.title}
-              className="rounded-xl border bg-white p-6 shadow-sm"
+              className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-colors dark:border-slate-700 dark:bg-slate-800"
             >
-              <h3 className="text-xl font-bold text-blue-900">
+              <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
                 {topic.title}
               </h3>
 
-              <p className="mt-3 text-gray-600">
+              <p className="mt-3 text-gray-600 transition-colors dark:text-slate-300">
                 {topic.description}
               </p>
             </article>
@@ -146,7 +146,7 @@ export default function PrivacyRightsPage() {
       </section>
 
       <section className="mt-12">
-        <h2 className="text-3xl font-bold text-blue-900">
+        <h2 className="text-3xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Articles
         </h2>
 
@@ -154,19 +154,19 @@ export default function PrivacyRightsPage() {
           {articles.map((article) => (
             <article
               key={article.link}
-              className="rounded-xl border bg-white p-6 shadow-sm transition hover:shadow-md"
+              className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition hover:shadow-md dark:border-slate-700 dark:bg-slate-800"
             >
-              <h3 className="text-xl font-bold text-blue-900">
+              <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
                 {article.title}
               </h3>
 
-              <p className="mt-3 text-gray-600">
+              <p className="mt-3 text-gray-600 transition-colors dark:text-slate-300">
                 {article.description}
               </p>
 
               <Link
                 href={article.link}
-                className="mt-5 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+                className="mt-5 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white transition-colors hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
               >
                 Read Article
               </Link>
@@ -175,12 +175,12 @@ export default function PrivacyRightsPage() {
         </div>
       </section>
 
-      <section className="mt-12 rounded-2xl bg-gray-50 p-8">
-        <h2 className="text-3xl font-bold text-blue-900">
+      <section className="mt-12 rounded-2xl bg-gray-50 p-8 transition-colors dark:bg-slate-900">
+        <h2 className="text-3xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Real-World Examples
         </h2>
 
-        <ul className="mt-6 list-disc space-y-4 pl-6 text-gray-700">
+        <ul className="mt-6 list-disc space-y-4 pl-6 text-gray-700 transition-colors dark:text-slate-300">
           {examples.map((example) => (
             <li key={example}>{example}</li>
           ))}
@@ -188,23 +188,27 @@ export default function PrivacyRightsPage() {
       </section>
 
       <section className="mt-12">
-        <h2 className="text-3xl font-bold text-blue-900">
+        <h2 className="text-3xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What You Can Do
         </h2>
 
-        <ul className="mt-6 space-y-3 text-gray-700">
+        <ul className="mt-6 space-y-3 text-gray-700 transition-colors dark:text-slate-300">
           {actions.map((action) => (
             <li key={action} className="flex gap-3">
-              <span aria-hidden="true" className="font-bold text-cyan-700">
-               ✓
+              <span
+                aria-hidden="true"
+                className="font-bold text-cyan-700 dark:text-cyan-300"
+              >
+                ✓
               </span>
+
               <span>{action}</span>
             </li>
           ))}
         </ul>
       </section>
 
-      <section className="mt-12 rounded-2xl bg-blue-900 p-8 text-white">
+      <section className="mt-12 rounded-2xl bg-blue-900 p-8 text-white dark:bg-blue-950">
         <h2 className="text-3xl font-bold">
           Key Takeaway
         </h2>

@@ -21,7 +21,7 @@ const principles = [
   {
     title: "Respect Others Online",
     description:
-    "Communicate responsibly and avoid harmful, abusive, or misleading behaviour.",
+      "Communicate responsibly and avoid harmful, abusive, or misleading behaviour.",
   },
   {
     title: "Evaluate Information",
@@ -74,11 +74,11 @@ const actions = [
 export default function DigitalCitizenshipPage() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         Digital Citizenship
       </h1>
 
-      <p className="mt-6 max-w-3xl text-lg text-gray-700">
+      <p className="mt-6 max-w-3xl text-lg text-gray-700 transition-colors dark:text-slate-300">
         Digital citizenship means using technology responsibly, safely,
         ethically, and confidently. It includes how we communicate, share
         information, protect privacy, manage our digital footprint, and
@@ -86,11 +86,11 @@ export default function DigitalCitizenshipPage() {
       </p>
 
       <section className="mt-12">
-        <h2 className="text-3xl font-bold text-blue-900">
+        <h2 className="text-3xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Why It Matters
         </h2>
 
-        <p className="mt-4 max-w-3xl text-lg text-gray-700">
+        <p className="mt-4 max-w-3xl text-lg text-gray-700 transition-colors dark:text-slate-300">
           Technology affects education, work, healthcare, relationships, public
           information, and personal identity. Being a digital citizen means
           understanding both the opportunities and responsibilities that come
@@ -99,7 +99,7 @@ export default function DigitalCitizenshipPage() {
       </section>
 
       <section className="mt-12">
-        <h2 className="text-3xl font-bold text-blue-900">
+        <h2 className="text-3xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Key Principles
         </h2>
 
@@ -107,13 +107,13 @@ export default function DigitalCitizenshipPage() {
           {principles.map((principle) => (
             <article
               key={principle.title}
-              className="rounded-xl border bg-white p-6 shadow-sm"
+              className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-colors dark:border-slate-700 dark:bg-slate-800"
             >
-              <h3 className="text-xl font-bold text-blue-900">
+              <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
                 {principle.title}
               </h3>
 
-              <p className="mt-3 text-gray-600">
+              <p className="mt-3 text-gray-600 transition-colors dark:text-slate-300">
                 {principle.description}
               </p>
             </article>
@@ -122,7 +122,7 @@ export default function DigitalCitizenshipPage() {
       </section>
 
       <section className="mt-12">
-        <h2 className="text-3xl font-bold text-blue-900">
+        <h2 className="text-3xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Articles
         </h2>
 
@@ -130,19 +130,19 @@ export default function DigitalCitizenshipPage() {
           {articles.map((article) => (
             <article
               key={article.link}
-              className="rounded-xl border bg-white p-6 shadow-sm transition hover:shadow-md"
+              className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition hover:shadow-md dark:border-slate-700 dark:bg-slate-800"
             >
-              <h3 className="text-xl font-bold text-blue-900">
+              <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
                 {article.title}
               </h3>
 
-              <p className="mt-3 text-gray-600">
+              <p className="mt-3 text-gray-600 transition-colors dark:text-slate-300">
                 {article.description}
               </p>
 
               <Link
                 href={article.link}
-                className="mt-5 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+                className="mt-5 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white transition-colors hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
               >
                 Read Article
               </Link>
@@ -151,12 +151,12 @@ export default function DigitalCitizenshipPage() {
         </div>
       </section>
 
-      <section className="mt-12 rounded-2xl bg-gray-50 p-8">
-        <h2 className="text-3xl font-bold text-blue-900">
+      <section className="mt-12 rounded-2xl bg-gray-50 p-8 transition-colors dark:bg-slate-900">
+        <h2 className="text-3xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Real-Life Examples
         </h2>
 
-        <ul className="mt-6 list-disc space-y-4 pl-6 text-gray-700">
+        <ul className="mt-6 list-disc space-y-4 pl-6 text-gray-700 transition-colors dark:text-slate-300">
           <li>Checking whether a health claim is credible before sharing it.</li>
           <li>Reviewing privacy settings before posting personal information.</li>
           <li>Using respectful language during online disagreements.</li>
@@ -165,23 +165,27 @@ export default function DigitalCitizenshipPage() {
       </section>
 
       <section className="mt-12">
-        <h2 className="text-3xl font-bold text-blue-900">
+        <h2 className="text-3xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What You Can Do
         </h2>
 
-        <ul className="mt-6 space-y-3 text-gray-700">
+        <ul className="mt-6 space-y-3 text-gray-700 transition-colors dark:text-slate-300">
           {actions.map((action) => (
             <li key={action} className="flex gap-3">
-              <span aria-hidden="true" className="font-bold text-cyan-700">
-  ✓
-</span>
+              <span
+                aria-hidden="true"
+                className="font-bold text-cyan-700 dark:text-cyan-300"
+              >
+                ✓
+              </span>
+
               <span>{action}</span>
             </li>
           ))}
         </ul>
       </section>
 
-      <section className="mt-12 rounded-2xl bg-blue-900 p-8 text-white">
+      <section className="mt-12 rounded-2xl bg-blue-900 p-8 text-white dark:bg-blue-950">
         <h2 className="text-3xl font-bold">
           Key Takeaway
         </h2>

@@ -8,19 +8,19 @@ export const metadata = {
 
 export default function EvaluateOnlineSourcePage() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+    <div className="mx-auto max-w-4xl px-6 py-20">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         How to Evaluate an Online Source
       </h1>
 
-      <p className="mt-4 text-lg text-gray-700">
+      <p className="mt-4 text-lg text-gray-700 transition-colors dark:text-slate-300">
         Not every website, social media account, video, or article is equally
         trustworthy. Evaluating the source is one of the most important steps
         you can take before believing or sharing online information.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Start With the Creator
         </h2>
 
@@ -36,7 +36,7 @@ export default function EvaluateOnlineSourcePage() {
           false, but it is a reason to investigate more carefully.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Check the Purpose
         </h2>
 
@@ -51,7 +51,7 @@ export default function EvaluateOnlineSourcePage() {
           may be selective, exaggerated, or designed mainly to attract clicks.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Look for Evidence
         </h2>
 
@@ -63,11 +63,11 @@ export default function EvaluateOnlineSourcePage() {
 
         <p>
           Be cautious when a source makes major claims but provides no evidence
-          or relies only on vague phrases such as &quot;experts say&quot; or &quot;studies
-          prove.&quot;
+          or relies only on vague phrases such as &quot;experts say&quot; or
+          &quot;studies prove.&quot;
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Check the Date and Context
         </h2>
 
@@ -82,7 +82,7 @@ export default function EvaluateOnlineSourcePage() {
           context still applies.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Examine the Website or Account
         </h2>
 
@@ -94,7 +94,7 @@ export default function EvaluateOnlineSourcePage() {
           <li>Does the content contain obvious errors or misleading headlines?</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Compare With Other Sources
         </h2>
 
@@ -109,7 +109,7 @@ export default function EvaluateOnlineSourcePage() {
           account, that is a reason to be cautious.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Watch for Emotional Pressure
         </h2>
 
@@ -124,7 +124,7 @@ export default function EvaluateOnlineSourcePage() {
           information before sharing it.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Questions to Ask
         </h2>
 
@@ -137,7 +137,7 @@ export default function EvaluateOnlineSourcePage() {
           <li>Is the content trying to manipulate my emotions?</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What You Can Do
         </h2>
 
@@ -149,8 +149,8 @@ export default function EvaluateOnlineSourcePage() {
           <li>Be cautious when content creates strong emotional pressure.</li>
         </ul>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 transition-colors dark:border-slate-700 dark:bg-slate-800">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Evaluate a Claim
           </h3>
 
@@ -162,7 +162,7 @@ export default function EvaluateOnlineSourcePage() {
 
           <Link
             href="/tools/misinformation-check"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white transition-colors hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open Misinformation Evaluation Tool
           </Link>
@@ -171,6 +171,3 @@ export default function EvaluateOnlineSourcePage() {
     </div>
   );
 }
-
-
-

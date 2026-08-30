@@ -1,8 +1,36 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --surface: #ffffff;
+  --surface-muted: #f8fafc;
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+
+  --brand-primary: #0f3b8f;
+  --brand-accent: #0891b2;
+
+  --border-color: #e2e8f0;
+}
+
+html.dark {
+  --background: #020617;
+  --foreground: #e2e8f0;
+
+  --surface: #0f172a;
+  --surface-muted: #111827;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+
+  --brand-primary: #60a5fa;
+  --brand-accent: #22d3ee;
+
+  --border-color: #334155;
 }
 
 @theme inline {
@@ -11,8 +39,91 @@
   --font-sans: var(--font-geist-sans);
 }
 
+html {
+  background: var(--background);
+}
+
 body {
+  margin: 0;
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  transition:
+    background-color 200ms ease,
+    color 200ms ease;
+}
+
+/* Navbar globe animation */
+
+@keyframes globe-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.globe-logo-rotate {
+  transform-origin: center;
+  animation: globe-logo-spin 40s linear infinite;
+}
+
+/* Hero globe animation */
+
+.hero-globe-shell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(100%, 34rem);
+  aspect-ratio: 1;
+}
+
+.hero-globe {
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  animation: hero-globe-spin 42s linear infinite;
+}
+
+@keyframes hero-globe-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Compass inner globe animation */
+
+.compass-globe-inner {
+  transform-origin: 180px 180px;
+  animation: compass-globe-inner-spin 60s linear infinite;
+}
+
+@keyframes compass-globe-inner-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    transition: none;
+  }
+
+  .globe-logo-rotate,
+  .hero-globe,
+  .compass-globe-inner {
+    animation: none;
+  }
 }
