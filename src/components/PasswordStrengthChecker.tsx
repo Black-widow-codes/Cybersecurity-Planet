@@ -95,20 +95,23 @@ export default function PasswordStrengthChecker() {
   }
 
   return (
-    <section className="mx-auto max-w-2xl rounded-2xl border p-6 shadow-sm">
-      <h1 className="mb-3 text-3xl font-bold text-blue-900">
-  Password Strength Checker
-</h1>
+    <section className="mx-auto max-w-2xl rounded-2xl border border-gray-200 p-6 shadow-sm transition-colors dark:border-slate-700 dark:bg-slate-900">
+      <h1 className="mb-3 text-3xl font-bold text-blue-900 dark:text-blue-200">
+        Password Strength Checker
+      </h1>
 
-<p id="password-warning" className="mb-4 text-gray-600">
-  Test the structure of a sample password. Your entry is checked locally in
-  your browser and is not sent to Cybersecurity Planet. For your privacy, do
-  not enter a real password that you currently use.
-</p>
+      <p
+        id="password-warning"
+        className="mb-4 text-gray-600 dark:text-slate-400"
+      >
+        Test the structure of a sample password. Your entry is checked locally in
+        your browser and is not sent to Cybersecurity Planet. For your privacy, do
+        not enter a real password that you currently use.
+      </p>
 
       <label
         htmlFor="password-sample"
-        className="mb-2 block font-semibold text-gray-800"
+        className="mb-2 block font-semibold text-gray-800 dark:text-slate-200"
       >
         Sample password
       </label>
@@ -121,30 +124,36 @@ export default function PasswordStrengthChecker() {
         placeholder="Type a sample password"
         autoComplete="off"
         aria-describedby="password-warning password-strength"
-        className="mb-4 w-full rounded-lg border px-4 py-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+        className="mb-4 w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 transition-colors placeholder:text-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:border-slate-600 dark:bg-slate-950 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-900"
       />
 
       <div
         id="password-strength"
-        className="rounded-xl bg-gray-50 p-5"
+        className="rounded-xl border border-gray-200 bg-gray-50 p-5 transition-colors dark:border-slate-700 dark:bg-slate-800"
         aria-live="polite"
         aria-atomic="true"
       >
-        <h3 className="text-xl font-bold text-blue-900">Your Result</h3>
+        <h3 className="text-xl font-bold text-blue-900 dark:text-blue-200">
+          Your Result
+        </h3>
 
-        <p className="mt-3 text-lg font-semibold">Strength: {strength}</p>
+        <p className="mt-3 text-lg font-semibold text-gray-900 dark:text-slate-100">
+          Strength: {strength}
+        </p>
 
-        <p className="mt-3 leading-7 text-gray-700">{explanation}</p>
+        <p className="mt-3 leading-7 text-gray-700 dark:text-slate-300">
+          {explanation}
+        </p>
       </div>
 
       {hasPassword && (
         <>
-          <div className="mt-6 rounded-xl border p-5">
-            <h3 className="text-xl font-bold text-blue-900">
+          <div className="mt-6 rounded-xl border border-gray-200 p-5 transition-colors dark:border-slate-700 dark:bg-slate-800">
+            <h3 className="text-xl font-bold text-blue-900 dark:text-blue-200">
               Password Characteristics
             </h3>
 
-            <ul className="mt-4 space-y-2 text-gray-700">
+            <ul className="mt-4 space-y-2 text-gray-700 dark:text-slate-300">
               <li>
                 {checks.minimumLength ? "Pass:" : "Needs improvement:"} At least
                 8 characters
@@ -177,12 +186,12 @@ export default function PasswordStrengthChecker() {
           </div>
 
           {recommendations.length > 0 && (
-            <div className="mt-6 rounded-xl border p-5">
-              <h3 className="text-xl font-bold text-blue-900">
+            <div className="mt-6 rounded-xl border border-gray-200 p-5 transition-colors dark:border-slate-700 dark:bg-slate-800">
+              <h3 className="text-xl font-bold text-blue-900 dark:text-blue-200">
                 Recommended Improvements
               </h3>
 
-              <ul className="mt-4 list-disc space-y-3 pl-5 text-gray-700">
+              <ul className="mt-4 list-disc space-y-3 pl-5 text-gray-700 dark:text-slate-300">
                 {recommendations.map((recommendation) => (
                   <li key={recommendation}>{recommendation}</li>
                 ))}
@@ -191,12 +200,12 @@ export default function PasswordStrengthChecker() {
           )}
 
           {strength === "Very Strong" && (
-            <div className="mt-6 rounded-xl border p-5">
-              <h3 className="text-xl font-bold text-blue-900">
+            <div className="mt-6 rounded-xl border border-gray-200 p-5 transition-colors dark:border-slate-700 dark:bg-slate-800">
+              <h3 className="text-xl font-bold text-blue-900 dark:text-blue-200">
                 Strong Password Structure
               </h3>
 
-              <p className="mt-3 leading-7 text-gray-700">
+              <p className="mt-3 leading-7 text-gray-700 dark:text-slate-300">
                 This sample meets the strongest structural checks used by this
                 tool. For real accounts, also make every password unique, avoid
                 personal information, use a password manager when possible, and
@@ -207,25 +216,25 @@ export default function PasswordStrengthChecker() {
         </>
       )}
 
-      <section className="mt-6 rounded-xl border bg-gray-50 p-5">
-        <h3 className="text-xl font-bold text-blue-900">
+      <section className="mt-6 rounded-xl border border-gray-200 bg-gray-50 p-5 transition-colors dark:border-slate-700 dark:bg-slate-800">
+        <h3 className="text-xl font-bold text-blue-900 dark:text-blue-200">
           Learn More About Password Safety
         </h3>
 
-        <p className="mt-3 text-gray-700">
+        <p className="mt-3 text-gray-700 dark:text-slate-300">
           Learn why password length, uniqueness, password managers, and
           multi-factor authentication matter for account security.
         </p>
 
         <Link
           href="/learn/digital-safety/what-makes-a-strong-password"
-          className="mt-5 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+          className="mt-5 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white transition-colors hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
         >
           Learn About Strong Passwords
         </Link>
       </section>
 
-      <p className="mt-6 text-sm leading-6 text-gray-500">
+      <p className="mt-6 text-sm leading-6 text-gray-500 dark:text-slate-400">
         This tool provides an educational estimate based on password length and
         character variety. It does not test whether a password has been exposed
         in a data breach, reused on another account, or based on predictable
@@ -234,4 +243,3 @@ export default function PasswordStrengthChecker() {
     </section>
   );
 }
-

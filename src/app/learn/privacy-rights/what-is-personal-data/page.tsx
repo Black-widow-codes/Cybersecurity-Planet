@@ -9,18 +9,18 @@ export const metadata = {
 export default function PersonalDataPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         What Is Personal Data and Why Does It Matter?
       </h1>
 
-      <p className="mt-4 text-lg text-gray-700">
+      <p className="mt-4 text-lg text-gray-700 transition-colors dark:text-slate-300">
         Personal data is information that relates to you or can be used to
         identify, describe, locate, or learn something about you. Every time you
         use digital services, you may create or share personal data.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What Counts as Personal Data?
         </h2>
 
@@ -40,7 +40,7 @@ export default function PersonalDataPage() {
           <li>Your health information.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Some Personal Data Is More Sensitive
         </h2>
 
@@ -56,7 +56,7 @@ export default function PersonalDataPage() {
           to understand why it is being requested and how it will be protected.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           How Is Personal Data Collected?
         </h2>
 
@@ -76,7 +76,7 @@ export default function PersonalDataPage() {
           <li>Interacting with posts, advertisements, or videos.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Your Activity Can Create Data
         </h2>
 
@@ -92,7 +92,7 @@ export default function PersonalDataPage() {
           where you connected from.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Data Can Reveal More Than You Expect
         </h2>
 
@@ -108,7 +108,7 @@ export default function PersonalDataPage() {
           hiding individual facts.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Why Organizations Collect Data
         </h2>
 
@@ -125,7 +125,7 @@ export default function PersonalDataPage() {
           privacy decisions.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Why Personal Data Matters
         </h2>
 
@@ -141,7 +141,7 @@ export default function PersonalDataPage() {
           information you share and what digital services collect about you.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Think Before You Provide Information
         </h2>
 
@@ -160,7 +160,7 @@ export default function PersonalDataPage() {
           <li>What could happen if the information were exposed?</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Practical Ways to Reduce Exposure
         </h2>
 
@@ -174,7 +174,7 @@ export default function PersonalDataPage() {
           <li>Delete accounts or information you no longer need where possible.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Privacy Is About Control
         </h2>
 
@@ -184,8 +184,8 @@ export default function PersonalDataPage() {
           choices, and using available controls to reduce unnecessary exposure.
         </p>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Review Your Privacy Habits
           </h3>
 
@@ -197,7 +197,7 @@ export default function PersonalDataPage() {
 
           <Link
             href="/tools/privacy-checkup"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open Privacy Checkup
           </Link>
@@ -206,5 +206,6 @@ export default function PersonalDataPage() {
     </div>
   );
 }
+
 
 

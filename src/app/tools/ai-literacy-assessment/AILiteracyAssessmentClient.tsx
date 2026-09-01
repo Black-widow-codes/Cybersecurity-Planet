@@ -75,30 +75,33 @@ export default function AILiteracyAssessmentClient() {
   }
 
   const recommendations = questions.filter(
-    (question) => answers[question.id] === false
+    (question) => answers[question.id] === false,
   );
 
   return (
     <section
-      className="mx-auto max-w-3xl rounded-2xl border bg-white p-6 shadow-sm"
+      className="mx-auto max-w-3xl rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-colors dark:border-slate-700 dark:bg-slate-800"
       aria-labelledby="ai-literacy-assessment-title"
     >
       <h1
         id="ai-literacy-assessment-title"
-        className="text-3xl font-bold text-blue-900"
+        className="text-3xl font-bold text-blue-900 transition-colors dark:text-blue-200"
       >
         AI Literacy Assessment
       </h1>
 
-      <p className="mt-3 text-gray-600">
+      <p className="mt-3 text-gray-600 transition-colors dark:text-slate-300">
         Answer these simple questions to check your understanding of AI tools,
         risks, and responsible use.
       </p>
 
       <div className="mt-8 space-y-6">
         {questions.map((item) => (
-          <fieldset key={item.id} className="rounded-xl border p-4">
-            <legend className="font-semibold text-gray-800">
+          <fieldset
+            key={item.id}
+            className="rounded-xl border border-gray-200 p-4 transition-colors dark:border-slate-600 dark:bg-slate-900/40"
+          >
+            <legend className="font-semibold text-gray-800 transition-colors dark:text-slate-200">
               {item.question}
             </legend>
 
@@ -107,10 +110,10 @@ export default function AILiteracyAssessmentClient() {
                 type="button"
                 aria-pressed={answers[item.id] === true}
                 onClick={() => handleAnswer(item.id, true)}
-                className={`rounded-lg px-4 py-2 font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 ${
+                className={`rounded-lg px-4 py-2 font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600 dark:focus-visible:outline-cyan-400 ${
                   answers[item.id] === true
-                    ? "bg-cyan-700 text-white"
-                    : "bg-gray-100 text-gray-800"
+                    ? "bg-cyan-700 text-white dark:bg-cyan-600"
+                    : "bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-slate-600"
                 }`}
               >
                 Yes
@@ -120,10 +123,10 @@ export default function AILiteracyAssessmentClient() {
                 type="button"
                 aria-pressed={answers[item.id] === false}
                 onClick={() => handleAnswer(item.id, false)}
-                className={`rounded-lg px-4 py-2 font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 ${
+                className={`rounded-lg px-4 py-2 font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600 dark:focus-visible:outline-cyan-400 ${
                   answers[item.id] === false
-                    ? "bg-cyan-700 text-white"
-                    : "bg-gray-100 text-gray-800"
+                    ? "bg-cyan-700 text-white dark:bg-cyan-600"
+                    : "bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-slate-600"
                 }`}
               >
                 No
@@ -134,26 +137,34 @@ export default function AILiteracyAssessmentClient() {
       </div>
 
       <div
-        className="mt-8 rounded-xl bg-gray-50 p-5"
+        className="mt-8 rounded-xl border border-gray-200 bg-gray-50 p-5 transition-colors dark:border-slate-700 dark:bg-slate-900"
         aria-live="polite"
         aria-atomic="true"
       >
-        <h2 className="text-xl font-bold text-blue-900">Your Result</h2>
+        <h2 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
+          Your Result
+        </h2>
 
-        <p className="mt-3 text-lg font-semibold">Score: {score}/100</p>
+        <p className="mt-3 text-lg font-semibold text-gray-900 dark:text-slate-100">
+          Score: {score}/100
+        </p>
 
-        <p className="mt-2 font-semibold">Level: {level}</p>
+        <p className="mt-2 font-semibold text-gray-900 dark:text-slate-100">
+          Level: {level}
+        </p>
 
-        <p className="mt-2 text-gray-700">{message}</p>
+        <p className="mt-2 text-gray-700 transition-colors dark:text-slate-300">
+          {message}
+        </p>
       </div>
 
       {completed && recommendations.length > 0 && (
-        <div className="mt-6 rounded-xl border p-5">
-          <h2 className="text-xl font-bold text-blue-900">
+        <div className="mt-6 rounded-xl border border-gray-200 bg-white p-5 transition-colors dark:border-slate-700 dark:bg-slate-900">
+          <h2 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Recommended Learning
           </h2>
 
-          <ul className="mt-4 list-disc space-y-2 pl-5 text-gray-700">
+          <ul className="mt-4 list-disc space-y-2 pl-5 text-gray-700 transition-colors dark:text-slate-300">
             {recommendations.map((item) => (
               <li key={item.id}>{item.recommendation}</li>
             ))}
@@ -162,12 +173,12 @@ export default function AILiteracyAssessmentClient() {
       )}
 
       {completed && recommendations.length === 0 && (
-        <div className="mt-6 rounded-xl border p-5">
-          <h2 className="text-xl font-bold text-blue-900">
+        <div className="mt-6 rounded-xl border border-gray-200 bg-white p-5 transition-colors dark:border-slate-700 dark:bg-slate-900">
+          <h2 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Strong AI Literacy
           </h2>
 
-          <p className="mt-3 text-gray-700">
+          <p className="mt-3 text-gray-700 transition-colors dark:text-slate-300">
             You answered yes to all questions. Keep reviewing new AI risks,
             capabilities, and responsible-use practices as the technology
             changes.

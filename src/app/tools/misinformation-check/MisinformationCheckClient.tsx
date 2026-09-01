@@ -180,11 +180,11 @@ export default function MisinformationCheckClient() {
 
   return (
     <div className="mx-auto max-w-3xl px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         Misinformation Evaluation Tool
       </h1>
 
-      <p className="mt-4 text-gray-700">
+      <p className="mt-4 text-gray-700 transition-colors dark:text-slate-300">
         Use this tool to examine the source, evidence, context, emotional
         language, and possible manipulation behind online information before
         trusting or sharing it.
@@ -192,10 +192,10 @@ export default function MisinformationCheckClient() {
 
       {!completed ? (
         <section
-          className="mt-10 rounded-xl border bg-white p-6 shadow-sm"
+          className="mt-10 rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-colors dark:border-slate-700 dark:bg-slate-800"
           aria-labelledby="misinformation-question"
         >
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-500 transition-colors dark:text-slate-400">
             Question {currentQuestion + 1} of {questions.length}
           </p>
 
@@ -203,7 +203,7 @@ export default function MisinformationCheckClient() {
             ref={questionHeadingRef}
             id="misinformation-question"
             tabIndex={-1}
-            className="mt-3 text-2xl font-bold text-blue-900 focus:outline-none"
+            className="mt-3 text-2xl font-bold text-blue-900 transition-colors focus:outline-none dark:text-blue-200"
           >
             {questions[currentQuestion].question}
           </h2>
@@ -214,7 +214,7 @@ export default function MisinformationCheckClient() {
                 key={option.label}
                 type="button"
                 onClick={() => handleAnswer(option.score)}
-                className="w-full rounded-lg border px-4 py-3 text-left hover:bg-gray-50 focus-visible:outline-2 focus-visible:outline-offset-2"
+                className="w-full rounded-lg border border-gray-200 bg-white px-4 py-3 text-left text-gray-800 transition-colors hover:bg-gray-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-700 dark:focus-visible:outline-cyan-400"
               >
                 {option.label}
               </button>
@@ -224,38 +224,38 @@ export default function MisinformationCheckClient() {
       ) : (
         <>
           <section
-            className="mt-10 rounded-xl bg-gray-50 p-6"
+            className="mt-10 rounded-xl border border-gray-200 bg-gray-50 p-6 transition-colors dark:border-slate-700 dark:bg-slate-800"
             aria-live="polite"
             aria-atomic="true"
           >
             <h2
               ref={resultHeadingRef}
               tabIndex={-1}
-              className="text-2xl font-bold text-blue-900 focus:outline-none"
+              className="text-2xl font-bold text-blue-900 transition-colors focus:outline-none dark:text-blue-200"
             >
               Your Evaluation Result
             </h2>
 
-            <p className="mt-4 text-lg font-semibold">
+            <p className="mt-4 text-lg font-semibold text-gray-900 dark:text-slate-100">
               Credibility Score: {score} / {maxScore}
             </p>
 
-            <p className="mt-2 font-semibold">
+            <p className="mt-2 font-semibold text-gray-900 dark:text-slate-100">
               Evaluation: {credibilityLevel}
             </p>
 
-            <p className="mt-4 leading-7 text-gray-700">
+            <p className="mt-4 leading-7 text-gray-700 transition-colors dark:text-slate-300">
               {resultExplanation}
             </p>
           </section>
 
           {strongAnswers.length > 0 && (
-            <section className="mt-6 rounded-xl border bg-white p-6">
-              <h2 className="text-2xl font-bold text-blue-900">
+            <section className="mt-6 rounded-xl border border-gray-200 bg-white p-6 transition-colors dark:border-slate-700 dark:bg-slate-800">
+              <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
                 Positive Credibility Signals
               </h2>
 
-              <p className="mt-3 text-gray-700">
+              <p className="mt-3 text-gray-700 transition-colors dark:text-slate-300">
                 You identified {strongAnswers.length} of the {questions.length}{" "}
                 stronger credibility signals covered by this evaluation. These
                 are useful signs, but no single signal proves that information
@@ -265,18 +265,18 @@ export default function MisinformationCheckClient() {
           )}
 
           {recommendations.length > 0 && (
-            <section className="mt-6 rounded-xl border bg-white p-6">
-              <h2 className="text-2xl font-bold text-blue-900">
+            <section className="mt-6 rounded-xl border border-gray-200 bg-white p-6 transition-colors dark:border-slate-700 dark:bg-slate-800">
+              <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
                 What to Check Before Sharing
               </h2>
 
-              <p className="mt-3 text-gray-700">
+              <p className="mt-3 text-gray-700 transition-colors dark:text-slate-300">
                 Review the areas where the information received a partial or
                 weak score. These are the places where additional verification
                 is most important.
               </p>
 
-              <ul className="mt-4 list-disc space-y-3 pl-5 text-gray-700">
+              <ul className="mt-4 list-disc space-y-3 pl-5 text-gray-700 transition-colors dark:text-slate-300">
                 {recommendations.map((question) => (
                   <li key={question.id}>{question.recommendation}</li>
                 ))}
@@ -285,14 +285,14 @@ export default function MisinformationCheckClient() {
           )}
 
           {recommendations.length === 0 && (
-            <section className="mt-6 rounded-xl border bg-white p-6">
-              <h2 className="text-2xl font-bold text-blue-900">
+            <section className="mt-6 rounded-xl border border-gray-200 bg-white p-6 transition-colors dark:border-slate-700 dark:bg-slate-800">
+              <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
                 Stronger Credibility Signals
               </h2>
 
-              <p className="mt-3 leading-7 text-gray-700">
-                The information received the strongest response across all seven
-                checks. Even so, treat the result as a reason to continue
+              <p className="mt-3 leading-7 text-gray-700 transition-colors dark:text-slate-300">
+                The information received the strongest response across all
+                seven checks. Even so, treat the result as a reason to continue
                 verifying rather than proof that the information is true.
                 Reliable evaluation requires checking the actual evidence and
                 sources behind important claims.
@@ -303,19 +303,19 @@ export default function MisinformationCheckClient() {
           <button
             type="button"
             onClick={resetCheckup}
-            className="mt-6 rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-2 focus-visible:outline-offset-2"
+            className="mt-6 rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white transition-colors hover:bg-cyan-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:outline-cyan-400"
           >
             Evaluate Another Claim
           </button>
         </>
       )}
 
-      <section className="mt-10 rounded-xl border bg-gray-50 p-6">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-10 rounded-xl border border-gray-200 bg-gray-50 p-6 transition-colors dark:border-slate-700 dark:bg-slate-800">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Strengthen Your Media Literacy
         </h2>
 
-        <p className="mt-3 text-gray-700">
+        <p className="mt-3 text-gray-700 transition-colors dark:text-slate-300">
           Explore lessons about misinformation, disinformation, fact-checking,
           evaluating online sources, manipulated content, and AI-generated
           media.
@@ -323,13 +323,13 @@ export default function MisinformationCheckClient() {
 
         <Link
           href="/learn/media-literacy"
-          className="mt-5 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-2 focus-visible:outline-offset-2"
+          className="mt-5 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white transition-colors hover:bg-cyan-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:outline-cyan-400"
         >
           Explore Media Literacy Lessons
         </Link>
       </section>
 
-      <p className="mt-6 text-sm leading-6 text-gray-500">
+      <p className="mt-6 text-sm leading-6 text-gray-500 transition-colors dark:text-slate-400">
         This tool is an educational checklist, not an automated fact-checker. A
         high score does not prove that a claim is true, and a low score does not
         automatically prove that it is false. Verify important claims using

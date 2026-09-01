@@ -12,22 +12,22 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
     <div className="max-w-4xl mx-auto px-6 py-20">
       <article>
         <header>
-          <p className="text-sm font-semibold text-cyan-700">
+          <p className="text-sm font-semibold text-cyan-700 dark:text-cyan-400">
             Digital Health · AI Literacy
           </p>
 
-          <h1 className="mt-3 text-4xl font-bold leading-tight text-blue-900">
+          <h1 className="mt-3 text-4xl font-bold leading-tight text-blue-900 dark:text-blue-200">
             Can You Trust AI With Your Health Questions?
           </h1>
 
-          <p className="mt-6 text-xl leading-8 text-gray-700">
+          <p className="mt-6 text-xl leading-8 text-gray-700 dark:text-slate-300">
             AI can make complicated health information easier to understand.
             But when an answer could influence a real health decision,
             convenience should not automatically become trust.
           </p>
         </header>
 
-        <div className="mt-12 space-y-10 text-lg leading-8 text-gray-700">
+        <div className="mt-12 space-y-10 text-lg leading-8 text-gray-700 dark:text-slate-300">
           <section>
             <p>It is late at night.</p>
 
@@ -49,8 +49,8 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
               So you open an AI chatbot and type:
             </p>
 
-            <div className="mt-6 rounded-xl border-l-4 border-cyan-600 bg-gray-50 p-6">
-              <p className="text-xl font-bold text-blue-900">
+            <div className="mt-6 rounded-xl border-l-4 border-cyan-600 bg-gray-50 p-6 transition-colors dark:border-cyan-400 dark:bg-slate-800">
+              <p className="text-xl font-bold text-blue-900 dark:text-blue-200">
                 &quot;What could this mean?&quot;
               </p>
             </div>
@@ -74,13 +74,13 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
               response:
             </p>
 
-            <p className="mt-4 text-xl font-bold text-blue-900">
+            <p className="mt-4 text-xl font-bold text-blue-900 dark:text-blue-200">
               How much should you trust it?
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               Why People Are Turning to AI for Health Questions
             </h2>
 
@@ -115,14 +115,14 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
               healthcare.
             </p>
 
-            <p className="mt-4 font-semibold text-blue-900">
+            <p className="mt-4 font-semibold text-blue-900 dark:text-blue-200">
               The problem begins when helpful information starts feeling like
               professional judgment.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               A Confident Answer Is Not the Same as a Correct Answer
             </h2>
 
@@ -166,12 +166,12 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
               questions:
             </p>
 
-            <div className="mt-6 rounded-xl border bg-gray-50 p-6">
-              <p className="font-semibold text-blue-900">
+            <div className="mt-6 rounded-xl border border-gray-200 bg-gray-50 p-6 transition-colors dark:border-slate-700 dark:bg-slate-800">
+              <p className="font-semibold text-blue-900 dark:text-blue-200">
                 Does this sound convincing?
               </p>
 
-              <p className="mt-3 font-semibold text-blue-900">
+              <p className="mt-3 font-semibold text-blue-900 dark:text-blue-200">
                 Is this medically reliable?
               </p>
             </div>
@@ -182,7 +182,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               Imagine the Answer Tells You Not to Worry
             </h2>
 
@@ -194,7 +194,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
               It responds:
             </p>
 
-            <div className="mt-6 rounded-xl border bg-gray-50 p-6">
+            <div className="mt-6 rounded-xl border border-gray-200 bg-gray-50 p-6 transition-colors dark:border-slate-700 dark:bg-slate-800">
               <p>
                 &quot;This is commonly associated with a minor condition and
                 usually resolves on its own.&quot;
@@ -228,14 +228,14 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
               information you provide may itself be incomplete.
             </p>
 
-            <p className="mt-4 font-semibold text-blue-900">
+            <p className="mt-4 font-semibold text-blue-900 dark:text-blue-200">
               AI can answer the question you typed without necessarily knowing
               whether you asked the right question.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               AI Can Be Useful Without Being Your Doctor
             </h2>
 
@@ -273,7 +273,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
               That is very different from asking:
             </p>
 
-            <ul className="mt-5 space-y-3 font-semibold text-blue-900">
+            <ul className="mt-5 space-y-3 font-semibold text-blue-900 dark:text-blue-200">
               <li>&quot;Do I have this disease?&quot;</li>
               <li>&quot;Should I stop taking this medication?&quot;</li>
               <li>&quot;Do I need emergency care?&quot;</li>
@@ -291,14 +291,14 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
               healthcare.
             </p>
 
-            <p className="mt-4 font-semibold text-blue-900">
+            <p className="mt-4 font-semibold text-blue-900 dark:text-blue-200">
               That does not automatically make it responsible for your
               healthcare.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               Where Did the Answer Come From?
             </h2>
 
@@ -326,7 +326,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
               So try asking:
             </p>
 
-            <p className="mt-4 text-xl font-bold text-blue-900">
+            <p className="mt-4 text-xl font-bold text-blue-900 dark:text-blue-200">
               &quot;What reliable sources support this answer?&quot;
             </p>
 
@@ -340,7 +340,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
               current.
             </p>
 
-            <p className="mt-4 font-semibold text-blue-900">
+            <p className="mt-4 font-semibold text-blue-900 dark:text-blue-200">
               For important health questions, verification should happen
               outside the chatbot, not only inside the same conversation that
               produced the answer.
@@ -348,7 +348,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               Your Private Health Information Matters Too
             </h2>
 
@@ -380,8 +380,8 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
               stop and ask:
             </p>
 
-            <div className="mt-6 rounded-xl border-l-4 border-cyan-600 bg-gray-50 p-6">
-              <p className="text-xl font-bold text-blue-900">
+            <div className="mt-6 rounded-xl border-l-4 border-cyan-600 bg-gray-50 p-6 transition-colors dark:border-cyan-400 dark:bg-slate-800">
+              <p className="text-xl font-bold text-blue-900 dark:text-blue-200">
                 Do I understand what happens to the information I enter here?
               </p>
             </div>
@@ -404,7 +404,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               Bias Can Enter the Conversation
             </h2>
 
@@ -433,14 +433,14 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
               potentially contributing to inaccurate or biased results.
             </p>
 
-            <p className="mt-4 font-semibold text-blue-900">
+            <p className="mt-4 font-semibold text-blue-900 dark:text-blue-200">
               Technology does not become neutral simply because a computer
               produced the answer.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               What Does Responsible Use Look Like?
             </h2>
 
@@ -473,8 +473,8 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
               decision, verification becomes much more important.
             </p>
 
-            <div className="mt-6 rounded-xl border-l-4 border-cyan-600 bg-gray-50 p-6">
-              <p className="text-xl font-bold text-blue-900">
+            <div className="mt-6 rounded-xl border-l-4 border-cyan-600 bg-gray-50 p-6 transition-colors dark:border-cyan-400 dark:bg-slate-800">
+              <p className="text-xl font-bold text-blue-900 dark:text-blue-200">
                 Is this helping me understand, or am I allowing it to decide?
               </p>
             </div>
@@ -485,7 +485,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               Do Not Let Convenience Become Authority
             </h2>
 
@@ -493,7 +493,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
               AI has something powerful working in its favour:
             </p>
 
-            <p className="mt-4 font-semibold text-blue-900">
+            <p className="mt-4 font-semibold text-blue-900 dark:text-blue-200">
               It is convenient.
             </p>
 
@@ -515,7 +515,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
               The challenge is not simply learning how to use new technology.
             </p>
 
-            <p className="mt-4 font-semibold text-blue-900">
+            <p className="mt-4 font-semibold text-blue-900 dark:text-blue-200">
               It is learning when technology has reached the edge of what we
               should ask it to do.
             </p>
@@ -535,7 +535,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               The Question to Ask Before Acting
             </h2>
 
@@ -561,7 +561,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
               The goal should not be fear of AI.
             </p>
 
-            <p className="mt-4 font-semibold text-blue-900">
+            <p className="mt-4 font-semibold text-blue-900 dark:text-blue-200">
               It should be better judgment around AI.
             </p>
 
@@ -570,7 +570,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
               ask:
             </p>
 
-            <p className="mt-4 font-semibold text-blue-900">
+            <p className="mt-4 font-semibold text-blue-900 dark:text-blue-200">
               &quot;What does the AI say?&quot;
             </p>
 
@@ -578,8 +578,8 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
               Ask:
             </p>
 
-            <div className="mt-6 rounded-xl border-l-4 border-cyan-600 bg-gray-50 p-6">
-              <p className="text-xl font-bold text-blue-900">
+            <div className="mt-6 rounded-xl border-l-4 border-cyan-600 bg-gray-50 p-6 transition-colors dark:border-cyan-400 dark:bg-slate-800">
+              <p className="text-xl font-bold text-blue-900 dark:text-blue-200">
                 &quot;What would I need to verify before I allow this answer to
                 influence a real health decision?&quot;
               </p>
@@ -597,37 +597,37 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
           </section>
         </div>
 
-        <section className="mt-16 rounded-xl border bg-gray-50 p-8">
-          <h2 className="text-2xl font-bold text-blue-900">
+        <section className="mt-16 rounded-xl border border-gray-200 bg-gray-50 p-8 transition-colors dark:border-slate-700 dark:bg-slate-800">
+          <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
             Continue Exploring
           </h2>
 
           <div className="mt-6 space-y-5">
             <div>
-              <p className="font-semibold text-gray-900">Learn</p>
+              <p className="font-semibold text-gray-900 dark:text-blue-200">Learn</p>
               <Link
                 href="/learn/digital-health/understanding-ai-in-your-healthcare"
-                className="rounded-sm text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+                className="rounded-sm text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:text-cyan-400 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
               >
                 Understanding AI in Your Healthcare
               </Link>
             </div>
 
             <div>
-              <p className="font-semibold text-gray-900">Try the Tool</p>
+              <p className="font-semibold text-gray-900 dark:text-blue-200">Try the Tool</p>
               <Link
                 href="/tools/health-misinformation-check"
-                className="rounded-sm text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+                className="rounded-sm text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:text-cyan-400 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
               >
                 Health Misinformation Check
               </Link>
             </div>
 
             <div>
-              <p className="font-semibold text-gray-900">Use the Resource</p>
+              <p className="font-semibold text-gray-900 dark:text-blue-200">Use the Resource</p>
               <Link
                 href="/resources/digital-health-guide"
-                className="rounded-sm text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+                className="rounded-sm text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:text-cyan-400 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
               >
                 Digital Health Guide
               </Link>
@@ -635,12 +635,12 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
           </div>
         </section>
 
-        <section className="mt-12 rounded-xl border border-amber-200 bg-amber-50 p-6">
-          <h2 className="text-xl font-bold text-blue-900">
+        <section className="mt-12 rounded-xl border border-amber-200 bg-amber-50 p-6 transition-colors dark:border-amber-700 dark:bg-amber-950/30">
+          <h2 className="text-xl font-bold text-blue-900 dark:text-blue-200">
             Health Information Notice
           </h2>
 
-          <p className="mt-3 text-base leading-7 text-gray-700">
+          <p className="mt-3 text-base leading-7 text-gray-700 dark:text-slate-300">
             This article is for educational purposes and is not medical advice.
             AI-generated health information should not replace diagnosis,
             treatment, emergency care, or advice from a qualified healthcare
@@ -648,8 +648,8 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
           </p>
         </section>
 
-        <section className="mt-12 border-t pt-8">
-          <h2 className="text-xl font-bold text-blue-900">
+        <section className="mt-12 border-t border-gray-200 pt-8 dark:border-slate-700">
+          <h2 className="text-xl font-bold text-blue-900 dark:text-blue-200">
             Sources and Further Reading
           </h2>
 
@@ -659,7 +659,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
                 href="https://www.who.int/publications/i/item/9789240084759"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+                className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:text-cyan-400 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-900"
               >
                 World Health Organization — Ethics and Governance of Artificial
                 Intelligence for Health: Guidance on Large Multi-Modal Models ↗
@@ -671,7 +671,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
                 href="https://www.who.int/teams/digital-health-and-innovation/harnessing-artificial-intelligence-for-health"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+                className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:text-cyan-400 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-900"
               >
                 World Health Organization — Harnessing Artificial Intelligence
                 for Health ↗
@@ -683,7 +683,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
                 href="https://www.who.int/news/item/18-01-2024-who-releases-ai-ethics-and-governance-guidance-for-large-multi-modal-models"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+                className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:text-cyan-400 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-900"
               >
                 World Health Organization — AI Ethics and Governance Guidance
                 for Large Multi-Modal Models ↗
@@ -695,7 +695,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
                 href="https://www.who.int/publications/i/item/9789240078871"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+                className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:text-cyan-400 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-900"
               >
                 World Health Organization — Regulatory Considerations on
                 Artificial Intelligence for Health ↗
@@ -707,7 +707,7 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
         <div className="mt-12">
           <Link
             href="/insights"
-            className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:text-cyan-400 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-900"
           >
             ← Back to Insights
           </Link>
@@ -716,5 +716,6 @@ export default function CanYouTrustAIWithHealthQuestionsPage() {
     </div>
   );
 }
+
 
 

@@ -9,18 +9,18 @@ export const metadata = {
 export default function DeepfakesArticlePage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         Deepfakes: How AI Can Manipulate Media
       </h1>
 
-      <p className="mt-4 text-lg text-gray-700">
+      <p className="mt-4 text-lg text-gray-700 transition-colors dark:text-slate-300">
         Artificial intelligence can now generate or alter images, audio, and
         video in ways that can look and sound very realistic. This makes it more
         important than ever to evaluate digital media carefully.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What Is a Deepfake?
         </h2>
 
@@ -37,7 +37,7 @@ export default function DeepfakesArticlePage() {
           people.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Why Deepfakes Can Be Convincing
         </h2>
 
@@ -53,7 +53,7 @@ export default function DeepfakesArticlePage() {
           &quot;looks fake.&quot;
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Where Deepfakes Can Cause Harm
         </h2>
 
@@ -66,7 +66,7 @@ export default function DeepfakesArticlePage() {
           <li>Using cloned voices to pressure people into sending money.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Warning Signs to Consider
         </h2>
 
@@ -84,7 +84,7 @@ export default function DeepfakesArticlePage() {
           <li>The voice, movement, lighting, or timing appears unusual.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Do Not Trust Detection by Appearance Alone
         </h2>
 
@@ -100,7 +100,7 @@ export default function DeepfakesArticlePage() {
           what you are seeing.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           How to Verify Suspicious Media
         </h2>
 
@@ -113,7 +113,7 @@ export default function DeepfakesArticlePage() {
           <li>Pause before sharing content you cannot verify.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Deepfakes and Scams
         </h2>
 
@@ -130,7 +130,7 @@ export default function DeepfakesArticlePage() {
           action.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What You Can Do
         </h2>
 
@@ -142,8 +142,8 @@ export default function DeepfakesArticlePage() {
           <li>Be cautious when someone urgently requests money or information.</li>
         </ul>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Check Your AI Literacy
           </h3>
 
@@ -156,7 +156,7 @@ export default function DeepfakesArticlePage() {
 
           <Link
             href="/tools/ai-literacy-assessment"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open AI Literacy Assessment
           </Link>
@@ -165,6 +165,7 @@ export default function DeepfakesArticlePage() {
     </div>
   );
 }
+
 
 
 

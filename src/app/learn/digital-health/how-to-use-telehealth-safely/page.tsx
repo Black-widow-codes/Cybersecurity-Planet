@@ -9,19 +9,19 @@ export const metadata = {
 export default function TelehealthSafetyPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         How to Use Telehealth Safely
       </h1>
 
-      <p className="mt-4 text-lg text-gray-700">
+      <p className="mt-4 text-lg text-gray-700 transition-colors dark:text-slate-300">
         Telehealth makes it possible to speak with healthcare professionals
         through video, phone, or other digital platforms. It can improve access
         and convenience, but users still need to think about privacy, security,
         identity, and appropriate care.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Use Trusted Healthcare Services
         </h2>
 
@@ -37,7 +37,7 @@ export default function TelehealthSafetyPage() {
           links.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Verify Who You Are Speaking With
         </h2>
 
@@ -51,7 +51,7 @@ export default function TelehealthSafetyPage() {
           or healthcare organization&apos;s official contact information.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Protect Your Appointment Links
         </h2>
 
@@ -67,7 +67,7 @@ export default function TelehealthSafetyPage() {
           <li>Be cautious with unexpected requests to log in again.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Choose a Private Location
         </h2>
 
@@ -82,7 +82,7 @@ export default function TelehealthSafetyPage() {
           surrounding environment.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Use a Secure Device
         </h2>
 
@@ -97,7 +97,7 @@ export default function TelehealthSafetyPage() {
           privacy risks.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Check Your Internet Connection
         </h2>
 
@@ -111,7 +111,7 @@ export default function TelehealthSafetyPage() {
           when possible rather than an unfamiliar public Wi-Fi connection.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Understand What Information Is Being Collected
         </h2>
 
@@ -125,7 +125,7 @@ export default function TelehealthSafetyPage() {
           platform handles your data.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Be Careful With Recording
         </h2>
 
@@ -139,7 +139,7 @@ export default function TelehealthSafetyPage() {
           rules or consent requirements apply.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Prepare Before the Appointment
         </h2>
 
@@ -151,7 +151,7 @@ export default function TelehealthSafetyPage() {
           <li>Keep required health documents nearby.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Know the Limits of Telehealth
         </h2>
 
@@ -165,7 +165,7 @@ export default function TelehealthSafetyPage() {
           testing, emergency care, or another type of service when necessary.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Watch for Telehealth Scams
         </h2>
 
@@ -182,7 +182,7 @@ export default function TelehealthSafetyPage() {
           <li>Use official websites and contact information.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What You Can Do
         </h2>
 
@@ -195,8 +195,8 @@ export default function TelehealthSafetyPage() {
           <li>Verify suspicious messages before responding.</li>
         </ul>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Check Health Information Carefully
           </h3>
 
@@ -208,7 +208,7 @@ export default function TelehealthSafetyPage() {
 
           <Link
             href="/tools/health-misinformation-check"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open Health Misinformation Check
           </Link>
@@ -217,6 +217,7 @@ export default function TelehealthSafetyPage() {
     </div>
   );
 }
+
 
 
 

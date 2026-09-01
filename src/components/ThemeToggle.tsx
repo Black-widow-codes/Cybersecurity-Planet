@@ -21,7 +21,7 @@ export default function ThemeToggle() {
       <button
         type="button"
         aria-label="Theme preference"
-        className="h-10 w-10 rounded-lg border border-gray-300"
+        className="h-10 w-10 rounded-lg border border-gray-300 bg-white dark:border-slate-700 dark:bg-slate-900"
         disabled
       />
     );

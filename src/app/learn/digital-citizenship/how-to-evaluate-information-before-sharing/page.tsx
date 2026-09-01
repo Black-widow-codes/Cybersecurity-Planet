@@ -9,18 +9,18 @@ export const metadata = {
 export default function EvaluateInformationBeforeSharingPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         How to Evaluate Information Before Sharing It
       </h1>
 
-      <p className="mt-4 text-gray-600">
+      <p className="mt-4 text-gray-600 transition-colors dark:text-slate-300">
         Sharing information online is easy, but sharing something false or
         misleading can cause real harm. A responsible digital citizen takes
         time to check information before forwarding, reposting, or reacting to
         it.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
         <p>
           Misleading information can appear in social media posts, videos,
           screenshots, headlines, health claims, advertisements, and messages
@@ -28,7 +28,7 @@ export default function EvaluateInformationBeforeSharingPage() {
           reliable.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Check the Original Source
         </h2>
 
@@ -38,7 +38,7 @@ export default function EvaluateInformationBeforeSharingPage() {
           for the original article, video, report, or statement when possible.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Look for Evidence
         </h2>
 
@@ -48,7 +48,7 @@ export default function EvaluateInformationBeforeSharingPage() {
           other evidence that can be checked independently.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Check the Date and Context
         </h2>
 
@@ -59,7 +59,7 @@ export default function EvaluateInformationBeforeSharingPage() {
           surrounding circumstances match the claim being made.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Notice Emotional Pressure
         </h2>
 
@@ -69,7 +69,7 @@ export default function EvaluateInformationBeforeSharingPage() {
           emotions can make it harder to evaluate information carefully.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Compare With Other Trusted Sources
         </h2>
 
@@ -79,7 +79,7 @@ export default function EvaluateInformationBeforeSharingPage() {
           other credible and independent sources before accepting it as true.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Consider AI-Generated or Manipulated Content
         </h2>
 
@@ -89,7 +89,7 @@ export default function EvaluateInformationBeforeSharingPage() {
           alone is not proof that something is authentic.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           A Simple Pause Can Help
         </h2>
 
@@ -107,8 +107,8 @@ export default function EvaluateInformationBeforeSharingPage() {
           to wait rather than share the information immediately.
         </p>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Evaluate a Claim
           </h3>
 
@@ -120,7 +120,7 @@ export default function EvaluateInformationBeforeSharingPage() {
 
           <Link
             href="/tools/misinformation-check"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open Misinformation Evaluation Tool
           </Link>
@@ -129,5 +129,6 @@ export default function EvaluateInformationBeforeSharingPage() {
     </div>
   );
 }
+
 
 

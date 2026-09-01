@@ -9,18 +9,18 @@ export const metadata = {
 export default function AlgorithmsArticlePage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         How Algorithms Shape What You See Online
       </h1>
 
-      <p className="mt-4 text-lg text-gray-700">
+      <p className="mt-4 text-lg text-gray-700 transition-colors dark:text-slate-300">
         Algorithms help digital platforms decide what information to show you,
         what order to show it in, and what content they think you are most
         likely to engage with.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What Is an Algorithm?
         </h2>
 
@@ -31,7 +31,7 @@ export default function AlgorithmsArticlePage() {
           may be most relevant to each user.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Where You Encounter Algorithms
         </h2>
 
@@ -49,7 +49,7 @@ export default function AlgorithmsArticlePage() {
           <li>Advertising systems decide which ads you are likely to see.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Why Personalization Matters
         </h2>
 
@@ -66,7 +66,7 @@ export default function AlgorithmsArticlePage() {
           perspectives.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Algorithms Are Not Always Neutral
         </h2>
 
@@ -82,7 +82,7 @@ export default function AlgorithmsArticlePage() {
           the most accurate or trustworthy option.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Engagement Can Influence Recommendations
         </h2>
 
@@ -98,7 +98,7 @@ export default function AlgorithmsArticlePage() {
           misleading information can sometimes spread quickly online.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What You Can Do
         </h2>
 
@@ -110,8 +110,8 @@ export default function AlgorithmsArticlePage() {
           <li>Review privacy and personalization settings where available.</li>
         </ul>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Check Your AI Literacy
           </h3>
 
@@ -123,7 +123,7 @@ export default function AlgorithmsArticlePage() {
 
           <Link
             href="/tools/ai-literacy-assessment"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open AI Literacy Assessment
           </Link>
@@ -132,5 +132,6 @@ export default function AlgorithmsArticlePage() {
     </div>
   );
 }
+
 
 

@@ -9,19 +9,19 @@ export const metadata = {
 export default function DigitalSurveillancePage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         Understanding Digital Surveillance
       </h1>
 
-      <p className="mt-4 text-lg text-gray-700">
+      <p className="mt-4 text-lg text-gray-700 transition-colors dark:text-slate-300">
         Digital surveillance involves using technologies to observe, collect,
         record, or analyze information about people, devices, communications,
         locations, or activities. Understanding how surveillance works can help
         you make more informed privacy decisions.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What Is Digital Surveillance?
         </h2>
 
@@ -37,7 +37,7 @@ export default function DigitalSurveillancePage() {
           in the background as people use digital services.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Surveillance and Online Activity
         </h2>
 
@@ -53,7 +53,7 @@ export default function DigitalSurveillancePage() {
           analytics, personalization, advertising, or other purposes.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Location Monitoring
         </h2>
 
@@ -69,7 +69,7 @@ export default function DigitalSurveillancePage() {
           travels, or spends time.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Cameras and Biometric Technologies
         </h2>
 
@@ -85,7 +85,7 @@ export default function DigitalSurveillancePage() {
           person&apos;s identity.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Workplace and School Monitoring
         </h2>
 
@@ -99,7 +99,7 @@ export default function DigitalSurveillancePage() {
           different monitoring and acceptable-use rules may apply.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Connected Devices
         </h2>
 
@@ -114,7 +114,7 @@ export default function DigitalSurveillancePage() {
           and which features can be disabled or limited.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Why Surveillance Is Used
         </h2>
 
@@ -127,7 +127,7 @@ export default function DigitalSurveillancePage() {
           <li>Investigating incidents or enforcing rules.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Why Surveillance Raises Privacy Questions
         </h2>
 
@@ -143,7 +143,7 @@ export default function DigitalSurveillancePage() {
           protect it.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Surveillance and Profiling
         </h2>
 
@@ -158,7 +158,7 @@ export default function DigitalSurveillancePage() {
           when viewed together.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Questions to Ask
         </h2>
 
@@ -172,7 +172,7 @@ export default function DigitalSurveillancePage() {
           <li>What security measures protect the information?</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What You Can Do
         </h2>
 
@@ -185,7 +185,7 @@ export default function DigitalSurveillancePage() {
           <li>Learn which privacy protections apply where you live.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Awareness Helps You Make Better Choices
         </h2>
 
@@ -196,8 +196,8 @@ export default function DigitalSurveillancePage() {
           proportionate to its purpose.
         </p>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Review Your Privacy Habits
           </h3>
 
@@ -209,7 +209,7 @@ export default function DigitalSurveillancePage() {
 
           <Link
             href="/tools/privacy-checkup"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open Privacy Checkup
           </Link>
@@ -218,6 +218,7 @@ export default function DigitalSurveillancePage() {
     </div>
   );
 }
+
 
 
 

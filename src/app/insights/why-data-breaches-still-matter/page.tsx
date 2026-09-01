@@ -12,30 +12,30 @@ export default function WhyDataBreachesStillMatterPage() {
     <div className="max-w-4xl mx-auto px-6 py-20">
       <article>
         <header>
-          <p className="text-sm font-semibold text-cyan-700">
+          <p className="text-sm font-semibold text-cyan-700 dark:text-cyan-400">
             Privacy & Digital Rights · Digital Safety
           </p>
 
-          <h1 className="mt-3 text-4xl font-bold leading-tight text-blue-900">
+          <h1 className="mt-3 text-4xl font-bold leading-tight text-blue-900 dark:text-blue-200">
             Why Data Breaches Still Matter Even When Your Password Wasn&apos;t
             Stolen
           </h1>
 
-          <p className="mt-6 text-xl leading-8 text-gray-700">
+          <p className="mt-6 text-xl leading-8 text-gray-700 dark:text-slate-300">
             A breach does not have to expose your password to create risk.
             Sometimes the information that looks ordinary is exactly what makes
             a future scam believable.
           </p>
         </header>
 
-        <div className="mt-12 space-y-10 text-lg leading-8 text-gray-700">
+        <div className="mt-12 space-y-10 text-lg leading-8 text-gray-700 dark:text-slate-300">
           <section>
             <p>
               You open your email and see a message from a company you
               recognize.
             </p>
 
-            <p className="mt-4 font-semibold text-blue-900">
+            <p className="mt-4 font-semibold text-blue-900 dark:text-blue-200">
               &quot;We recently experienced a security incident involving some
               of your personal information.&quot;
             </p>
@@ -54,8 +54,8 @@ export default function WhyDataBreachesStillMatterPage() {
               Then you reach the sentence you were hoping to see:
             </p>
 
-            <div className="mt-6 rounded-xl border-l-4 border-cyan-600 bg-gray-50 p-6">
-              <p className="font-semibold text-blue-900">
+            <div className="mt-6 rounded-xl border-l-4 border-cyan-600 bg-gray-50 p-6 transition-colors dark:border-cyan-400 dark:bg-slate-800">
+              <p className="font-semibold text-blue-900 dark:text-blue-200">
                 &quot;Your password was not affected.&quot;
               </p>
             </div>
@@ -68,13 +68,13 @@ export default function WhyDataBreachesStillMatterPage() {
               You close the email and continue with your day.
             </p>
 
-            <p className="mt-4 font-semibold text-blue-900">
+            <p className="mt-4 font-semibold text-blue-900 dark:text-blue-200">
               But should that really be the end of the story?
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               A Password Is Not the Only Information Worth Protecting
             </h2>
 
@@ -132,13 +132,13 @@ export default function WhyDataBreachesStillMatterPage() {
               even more valuable:
             </p>
 
-            <p className="mt-4 text-xl font-bold text-blue-900">
+            <p className="mt-4 text-xl font-bold text-blue-900 dark:text-blue-200">
               A believable story.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               Imagine This Message Arrives Tomorrow
             </h2>
 
@@ -150,7 +150,7 @@ export default function WhyDataBreachesStillMatterPage() {
               A few weeks later, you receive this text:
             </p>
 
-            <div className="mt-6 rounded-xl border bg-gray-50 p-6">
+            <div className="mt-6 rounded-xl border border-gray-200 bg-gray-50 p-6 transition-colors dark:border-slate-700 dark:bg-slate-800">
               <p>
                 &quot;We&apos;ve noticed suspicious activity on your account.
                 Please verify your information immediately to prevent your
@@ -171,7 +171,7 @@ export default function WhyDataBreachesStillMatterPage() {
               personal.
             </p>
 
-            <p className="mt-4 font-semibold text-blue-900">
+            <p className="mt-4 font-semibold text-blue-900 dark:text-blue-200">
               Would you be more likely to trust it?
             </p>
 
@@ -188,14 +188,14 @@ export default function WhyDataBreachesStillMatterPage() {
               A scammer does not always need to know your secret.
             </p>
 
-            <p className="mt-4 font-semibold text-blue-900">
+            <p className="mt-4 font-semibold text-blue-900 dark:text-blue-200">
               Sometimes they need enough information to persuade you to give
               them the secret yourself.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               The Second Attack May Look Nothing Like the First
             </h2>
 
@@ -247,13 +247,13 @@ export default function WhyDataBreachesStillMatterPage() {
               bad news about something that has already happened.
             </p>
 
-            <p className="mt-4 font-semibold text-blue-900">
+            <p className="mt-4 font-semibold text-blue-900 dark:text-blue-200">
               It can also be an early warning about what might happen next.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               &quot;But My Information Is Already Online&quot;
             </h2>
 
@@ -312,7 +312,7 @@ export default function WhyDataBreachesStillMatterPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               The Most Dangerous Message May Be the One That Looks Normal
             </h2>
 
@@ -353,7 +353,7 @@ export default function WhyDataBreachesStillMatterPage() {
               asking:
             </p>
 
-            <p className="mt-4 font-semibold text-blue-900">
+            <p className="mt-4 font-semibold text-blue-900 dark:text-blue-200">
               &quot;Does this message look professional?&quot;
             </p>
 
@@ -361,7 +361,7 @@ export default function WhyDataBreachesStillMatterPage() {
               Instead ask:
             </p>
 
-            <p className="mt-4 text-xl font-bold text-blue-900">
+            <p className="mt-4 text-xl font-bold text-blue-900 dark:text-blue-200">
               &quot;Can I independently verify what this message is asking me
               to do?&quot;
             </p>
@@ -383,7 +383,7 @@ export default function WhyDataBreachesStillMatterPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               A Breach Notification Is a Starting Point, Not a Conclusion
             </h2>
 
@@ -423,7 +423,7 @@ export default function WhyDataBreachesStillMatterPage() {
               </li>
             </ul>
 
-            <p className="mt-6 font-semibold text-blue-900">
+            <p className="mt-6 font-semibold text-blue-900 dark:text-blue-200">
               A message containing accurate personal information is not
               automatically legitimate.
             </p>
@@ -435,7 +435,7 @@ export default function WhyDataBreachesStillMatterPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               Ask a Different Question
             </h2>
 
@@ -443,7 +443,7 @@ export default function WhyDataBreachesStillMatterPage() {
               After a breach, people naturally ask:
             </p>
 
-            <p className="mt-4 font-semibold text-blue-900">
+            <p className="mt-4 font-semibold text-blue-900 dark:text-blue-200">
               &quot;Was my password stolen?&quot;
             </p>
 
@@ -455,8 +455,8 @@ export default function WhyDataBreachesStillMatterPage() {
               But add another:
             </p>
 
-            <div className="mt-6 rounded-xl border-l-4 border-cyan-600 bg-gray-50 p-6">
-              <p className="text-xl font-bold text-blue-900">
+            <div className="mt-6 rounded-xl border-l-4 border-cyan-600 bg-gray-50 p-6 transition-colors dark:border-cyan-400 dark:bg-slate-800">
+              <p className="text-xl font-bold text-blue-900 dark:text-blue-200">
                 &quot;What could someone do with the information that was
                 exposed?&quot;
               </p>
@@ -496,7 +496,7 @@ export default function WhyDataBreachesStillMatterPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               You Don&apos;t Have to Disappear From the Internet
             </h2>
 
@@ -543,7 +543,7 @@ export default function WhyDataBreachesStillMatterPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               The Challenge After the Breach
             </h2>
 
@@ -585,7 +585,7 @@ export default function WhyDataBreachesStillMatterPage() {
               </li>
             </ul>
 
-            <p className="mt-6 font-semibold text-blue-900">
+            <p className="mt-6 font-semibold text-blue-900 dark:text-blue-200">
               Knowing something about you is not the same as being trustworthy.
             </p>
 
@@ -598,7 +598,7 @@ export default function WhyDataBreachesStillMatterPage() {
               Ask:
             </p>
 
-            <p className="mt-4 text-xl font-bold text-blue-900">
+            <p className="mt-4 text-xl font-bold text-blue-900 dark:text-blue-200">
               &quot;What does someone know about me now that they were never
               supposed to know?&quot;
             </p>
@@ -610,37 +610,37 @@ export default function WhyDataBreachesStillMatterPage() {
           </section>
         </div>
 
-        <section className="mt-16 rounded-xl border bg-gray-50 p-8">
-          <h2 className="text-2xl font-bold text-blue-900">
+        <section className="mt-16 rounded-xl border border-gray-200 bg-gray-50 p-8 transition-colors dark:border-slate-700 dark:bg-slate-800">
+          <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
             Continue Exploring
           </h2>
 
           <div className="mt-6 space-y-5">
             <div>
-              <p className="font-semibold text-gray-900">Learn</p>
+              <p className="font-semibold text-gray-900 dark:text-blue-200">Learn</p>
               <Link
                 href="/learn/digital-safety/how-online-scams-manipulate-you"
-                className="rounded-sm text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+                className="rounded-sm text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:text-cyan-400 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
               >
                 How Online Scams Manipulate You
               </Link>
             </div>
 
             <div>
-              <p className="font-semibold text-gray-900">Try the Tool</p>
+              <p className="font-semibold text-gray-900 dark:text-blue-200">Try the Tool</p>
               <Link
                 href="/tools/digital-safety-assessment"
-                className="rounded-sm text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+                className="rounded-sm text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:text-cyan-400 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
               >
                 Digital Safety Assessment
               </Link>
             </div>
 
             <div>
-              <p className="font-semibold text-gray-900">Use the Resource</p>
+              <p className="font-semibold text-gray-900 dark:text-blue-200">Use the Resource</p>
               <Link
                 href="/resources/digital-safety-guide"
-                className="rounded-sm text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+                className="rounded-sm text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:text-cyan-400 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
               >
                 Digital Safety Guide
               </Link>
@@ -649,7 +649,7 @@ export default function WhyDataBreachesStillMatterPage() {
         </section>
 
         <section className="mt-12 border-t pt-8">
-          <h2 className="text-xl font-bold text-blue-900">
+          <h2 className="text-xl font-bold text-blue-900 dark:text-blue-200">
             Sources and Further Reading
           </h2>
 
@@ -659,7 +659,7 @@ export default function WhyDataBreachesStillMatterPage() {
                 href="https://www.priv.gc.ca/en/privacy-topics/information-and-advice-for-individuals/gd_bn_201909/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+                className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:text-cyan-400 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-900"
               >
                 Office of the Privacy Commissioner of Canada — What to Do When
                 You Receive a Privacy Breach Notification ↗
@@ -671,7 +671,7 @@ export default function WhyDataBreachesStillMatterPage() {
                 href="https://www.priv.gc.ca/en/privacy-topics/identities/identity-theft/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+                className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:text-cyan-400 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-900"
               >
                 Office of the Privacy Commissioner of Canada — Identity Theft ↗
               </a>
@@ -682,7 +682,7 @@ export default function WhyDataBreachesStillMatterPage() {
                 href="https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+                className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:text-cyan-400 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-900"
               >
                 National Institute of Standards and Technology — Phishing ↗
               </a>
@@ -693,7 +693,7 @@ export default function WhyDataBreachesStillMatterPage() {
                 href="https://consumer.ftc.gov/articles/protect-your-personal-information-hackers-and-scammers"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+                className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:text-cyan-400 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-900"
               >
                 U.S. Federal Trade Commission — Protect Your Personal
                 Information From Hackers and Scammers ↗
@@ -705,7 +705,7 @@ export default function WhyDataBreachesStillMatterPage() {
         <div className="mt-12">
           <Link
             href="/insights"
-            className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:text-cyan-400 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-900"
           >
             ← Back to Insights
           </Link>
@@ -714,6 +714,7 @@ export default function WhyDataBreachesStillMatterPage() {
     </div>
   );
 }
+
 
 
 

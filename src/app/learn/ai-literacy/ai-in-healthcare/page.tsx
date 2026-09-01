@@ -9,11 +9,11 @@ export const metadata = {
 export default function AIInHealthcarePage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         AI in Healthcare
       </h1>
 
-      <p className="mt-4 text-lg text-gray-700">
+      <p className="mt-4 text-lg text-gray-700 transition-colors dark:text-slate-300">
         Artificial intelligence is increasingly used in healthcare to support
         diagnosis, organize information, improve workflows, and help
         professionals make decisions. These systems can be useful, but they
@@ -21,8 +21,8 @@ export default function AIInHealthcarePage() {
         responsibility.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           How AI Is Used in Healthcare
         </h2>
 
@@ -41,7 +41,7 @@ export default function AIInHealthcarePage() {
           <li>Supporting remote monitoring and digital health tools.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           AI Can Support, Not Replace, Healthcare Professionals
         </h2>
 
@@ -58,7 +58,7 @@ export default function AIInHealthcarePage() {
           professionals.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Accuracy and Errors
         </h2>
 
@@ -74,7 +74,7 @@ export default function AIInHealthcarePage() {
           should not rely blindly on automated output.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Bias in Healthcare AI
         </h2>
 
@@ -89,7 +89,7 @@ export default function AIInHealthcarePage() {
           works fairly and accurately across different populations.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Health Data and Privacy
         </h2>
 
@@ -104,7 +104,7 @@ export default function AIInHealthcarePage() {
           access, storage, security, consent, and appropriate use.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Be Careful With Public AI Tools
         </h2>
 
@@ -121,7 +121,7 @@ export default function AIInHealthcarePage() {
           incomplete or incorrect.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Questions to Ask About Healthcare AI
         </h2>
 
@@ -135,7 +135,7 @@ export default function AIInHealthcarePage() {
           <li>Who is responsible when the system makes an error?</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What You Can Do
         </h2>
 
@@ -147,8 +147,8 @@ export default function AIInHealthcarePage() {
           <li>Remember that automated recommendations can contain errors or bias.</li>
         </ul>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Check Your AI Literacy
           </h3>
 
@@ -160,7 +160,7 @@ export default function AIInHealthcarePage() {
 
           <Link
             href="/tools/ai-literacy-assessment"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open AI Literacy Assessment
           </Link>
@@ -169,6 +169,7 @@ export default function AIInHealthcarePage() {
     </div>
   );
 }
+
 
 
 

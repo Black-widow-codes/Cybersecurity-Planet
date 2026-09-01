@@ -9,17 +9,17 @@ export const metadata = {
 export default function StrongPasswordArticlePage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         What Makes a Strong Password?
       </h1>
 
-      <p className="mt-4 text-gray-600">
+      <p className="mt-4 text-gray-600 transition-colors dark:text-slate-300">
         Passwords are one of the first lines of defense for your online
         accounts. A weak password can make it easier for someone to access your
         email, social media, banking, school, or work accounts.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
         <p>
           A strong password is difficult for another person or computer program
           to guess. It should be long, unique, and not based on obvious personal
@@ -27,7 +27,7 @@ export default function StrongPasswordArticlePage() {
           team.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Features of a Strong Password
         </h2>
 
@@ -39,7 +39,7 @@ export default function StrongPasswordArticlePage() {
           <li>Do not reuse the same password on many accounts.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Why Password Reuse Is Risky
         </h2>
 
@@ -50,7 +50,7 @@ export default function StrongPasswordArticlePage() {
           school, and work accounts.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           A Better Approach
         </h2>
 
@@ -60,8 +60,8 @@ export default function StrongPasswordArticlePage() {
           create and store strong, unique passwords safely.
         </p>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Try the Password Strength Checker
           </h3>
 
@@ -72,7 +72,7 @@ export default function StrongPasswordArticlePage() {
 
           <Link
             href="/tools/password-strength-checker"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open Password Strength Checker
           </Link>
@@ -81,5 +81,6 @@ export default function StrongPasswordArticlePage() {
     </div>
   );
 }
+
 
 

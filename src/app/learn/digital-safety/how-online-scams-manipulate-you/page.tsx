@@ -9,17 +9,17 @@ export const metadata = {
 export default function OnlineScamsArticlePage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         How Online Scams Manipulate You
       </h1>
 
-      <p className="mt-4 text-gray-600">
+      <p className="mt-4 text-gray-600 transition-colors dark:text-slate-300">
         Online scams are not always successful because of advanced technology.
         Many scams work by manipulating emotions and convincing people to act
         before they have time to think carefully.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
         <p>
           Scammers may contact you through email, text messages, social media,
           phone calls, online marketplaces, dating platforms, or fake websites.
@@ -27,7 +27,7 @@ export default function OnlineScamsArticlePage() {
           psychological tactics.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Common Manipulation Tactics
         </h2>
 
@@ -53,7 +53,7 @@ export default function OnlineScamsArticlePage() {
           </li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Why Pressure Is a Warning Sign
         </h2>
 
@@ -64,7 +64,7 @@ export default function OnlineScamsArticlePage() {
           within minutes. Creating pressure makes it harder to think carefully.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Watch How You Are Asked to Pay
         </h2>
 
@@ -75,7 +75,7 @@ export default function OnlineScamsArticlePage() {
           because someone is pressuring or frightening you.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Slow Down and Verify
         </h2>
 
@@ -86,7 +86,7 @@ export default function OnlineScamsArticlePage() {
           contact information provided in the suspicious message.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Remember: Anyone Can Be Targeted
         </h2>
 
@@ -97,8 +97,8 @@ export default function OnlineScamsArticlePage() {
           information or money.
         </p>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Check Your Digital Safety Habits
           </h3>
 
@@ -109,7 +109,7 @@ export default function OnlineScamsArticlePage() {
 
           <Link
             href="/tools/digital-safety-assessment"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open Digital Safety Assessment
           </Link>
@@ -118,5 +118,6 @@ export default function OnlineScamsArticlePage() {
     </div>
   );
 }
+
 
 

@@ -12,12 +12,12 @@ export default function PasswordStrengthCheckerPage() {
     <div className="px-6 py-12">
       <PasswordStrengthChecker />
 
-      <section className="mx-auto mt-10 max-w-3xl rounded-xl border bg-gray-50 p-6">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mx-auto mt-10 max-w-3xl rounded-xl border border-gray-200 bg-gray-50 p-6 transition-colors dark:border-slate-700 dark:bg-slate-800">
+        <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
           Learn More About Strong Passwords
         </h2>
 
-        <p className="mt-3 text-gray-700">
+        <p className="mt-3 text-gray-700 dark:text-slate-300">
           Learn why password length, uniqueness, unpredictability, and safer
           account habits matter for protecting your online accounts.
         </p>
@@ -32,5 +32,6 @@ export default function PasswordStrengthCheckerPage() {
     </div>
   );
 }
+
 
 

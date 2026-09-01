@@ -9,17 +9,17 @@ export const metadata = {
 export default function PhishingArticlePage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         How to Recognize a Phishing Message
       </h1>
 
-      <p className="mt-4 text-gray-600">
+      <p className="mt-4 text-gray-600 transition-colors dark:text-slate-300">
         Phishing is a common online scam where someone pretends to be a trusted
         person or organization in order to steal passwords, financial
         information, or other personal data.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
         <p>
           Phishing messages often appear to come from banks, delivery
           companies, schools, workplaces, social media platforms, or government
@@ -27,7 +27,7 @@ export default function PhishingArticlePage() {
           attachment, send information, or sign in to a fake website.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Common Warning Signs
         </h2>
 
@@ -40,7 +40,7 @@ export default function PhishingArticlePage() {
           <li>The offer or warning seems too extreme to be believable.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Be Careful With Links
         </h2>
 
@@ -51,7 +51,7 @@ export default function PhishingArticlePage() {
           link to preview its destination.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Verify Before You Act
         </h2>
 
@@ -62,7 +62,7 @@ export default function PhishingArticlePage() {
           contact the organization using contact information you already trust.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What If You Already Clicked?
         </h2>
 
@@ -74,8 +74,8 @@ export default function PhishingArticlePage() {
           avoid opening it and use your device&apos;s security tools to scan it.
         </p>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Check Your Digital Safety Habits
           </h3>
 
@@ -86,7 +86,7 @@ export default function PhishingArticlePage() {
 
           <Link
             href="/tools/digital-safety-assessment"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open Digital Safety Assessment
           </Link>
@@ -95,4 +95,5 @@ export default function PhishingArticlePage() {
     </div>
   );
 }
+
 

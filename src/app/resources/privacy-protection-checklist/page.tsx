@@ -9,19 +9,19 @@ export const metadata = {
 export default function PrivacyProtectionChecklistPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 dark:text-blue-200">
         Privacy Protection Checklist
       </h1>
 
-      <p className="mt-4 text-gray-600">
+      <p className="mt-4 text-gray-600 dark:text-slate-400">
         Use this checklist to review how much personal information you share,
         how your accounts are configured, and whether apps and websites have
         more access to your data than they need.
       </p>
 
-      <section className="mt-10 space-y-8 text-gray-700">
+      <section className="mt-10 space-y-8 text-gray-700 dark:text-slate-300">
         <div>
-          <h2 className="text-2xl font-bold text-blue-900">
+          <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
             Review Your Account Privacy Settings
           </h2>
 
@@ -45,7 +45,7 @@ export default function PrivacyProtectionChecklistPage() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-bold text-blue-900">
+          <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
             Share Less Personal Information
           </h2>
 
@@ -69,7 +69,7 @@ export default function PrivacyProtectionChecklistPage() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-bold text-blue-900">
+          <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
             Review App Permissions
           </h2>
 
@@ -93,7 +93,7 @@ export default function PrivacyProtectionChecklistPage() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-bold text-blue-900">
+          <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
             Protect Important Accounts
           </h2>
 
@@ -112,7 +112,7 @@ export default function PrivacyProtectionChecklistPage() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-bold text-blue-900">
+          <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
             Check Before You Agree
           </h2>
 
@@ -135,8 +135,8 @@ export default function PrivacyProtectionChecklistPage() {
           </ul>
         </div>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h2 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 transition-colors dark:border-slate-700 dark:bg-slate-800">
+          <h2 className="text-xl font-bold text-blue-900 dark:text-blue-200">
             Check Your Privacy Habits
           </h2>
 
@@ -147,14 +147,14 @@ export default function PrivacyProtectionChecklistPage() {
 
           <Link
             href="/tools/privacy-checkup"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white transition-colors hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Take the Privacy Checkup
           </Link>
         </div>
 
-        <div className="rounded-xl border bg-white p-6">
-          <h2 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border border-gray-200 bg-white p-6 transition-colors dark:border-slate-700 dark:bg-slate-800">
+          <h2 className="text-xl font-bold text-blue-900 dark:text-blue-200">
             Learn More About Privacy and Digital Rights
           </h2>
 
@@ -175,6 +175,7 @@ export default function PrivacyProtectionChecklistPage() {
     </div>
   );
 }
+
 
 
 

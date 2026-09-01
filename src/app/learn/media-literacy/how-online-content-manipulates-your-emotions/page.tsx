@@ -9,18 +9,18 @@ export const metadata = {
 export default function EmotionalManipulationPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         How Online Content Manipulates Your Emotions
       </h1>
 
-      <p className="mt-4 text-lg text-gray-700">
+      <p className="mt-4 text-lg text-gray-700 transition-colors dark:text-slate-300">
         Online content is often designed to capture attention. One powerful way
         to do that is by triggering strong emotions such as fear, anger,
         outrage, excitement, or urgency.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Why Emotions Matter Online
         </h2>
 
@@ -31,7 +31,7 @@ export default function EmotionalManipulationPage() {
           checking whether the information is accurate.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Fear and Urgency
         </h2>
 
@@ -46,7 +46,7 @@ export default function EmotionalManipulationPage() {
           personal information.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Anger and Outrage
         </h2>
 
@@ -61,7 +61,7 @@ export default function EmotionalManipulationPage() {
           attention.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Excitement and Hope
         </h2>
 
@@ -76,7 +76,7 @@ export default function EmotionalManipulationPage() {
           the information.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Social Pressure
         </h2>
 
@@ -91,7 +91,7 @@ export default function EmotionalManipulationPage() {
           evaluation.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Engagement Can Reward Emotional Content
         </h2>
 
@@ -106,7 +106,7 @@ export default function EmotionalManipulationPage() {
           misleading or low quality.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Emotional Content Is Not Automatically False
         </h2>
 
@@ -120,7 +120,7 @@ export default function EmotionalManipulationPage() {
           as a reminder to slow down and verify the claim.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Warning Signs
         </h2>
 
@@ -133,7 +133,7 @@ export default function EmotionalManipulationPage() {
           <li>The source is unclear or difficult to verify.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What You Can Do
         </h2>
 
@@ -146,7 +146,7 @@ export default function EmotionalManipulationPage() {
           <li>Compare the claim with reliable independent sources.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           A Useful Question
         </h2>
 
@@ -155,8 +155,8 @@ export default function EmotionalManipulationPage() {
           something, or is it mainly trying to make me feel something?&quot;
         </p>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Evaluate Before You React
           </h3>
 
@@ -168,7 +168,7 @@ export default function EmotionalManipulationPage() {
 
           <Link
             href="/tools/misinformation-check"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open Misinformation Evaluation Tool
           </Link>
@@ -177,6 +177,7 @@ export default function EmotionalManipulationPage() {
     </div>
   );
 }
+
 
 
 

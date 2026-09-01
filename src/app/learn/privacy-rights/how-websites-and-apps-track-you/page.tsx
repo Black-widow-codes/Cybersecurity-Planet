@@ -9,18 +9,18 @@ export const metadata = {
 export default function TrackingTechnologiesPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         How Websites and Apps Track You Online
       </h1>
 
-      <p className="mt-4 text-lg text-gray-700">
+      <p className="mt-4 text-lg text-gray-700 transition-colors dark:text-slate-300">
         Websites, apps, and digital services can collect information about how
         you use them. This information may be used for security, analytics,
         personalization, advertising, or profiling.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What Does Online Tracking Mean?
         </h2>
 
@@ -35,7 +35,7 @@ export default function TrackingTechnologiesPage() {
           used to build detailed profiles about your interests and habits.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Cookies
         </h2>
 
@@ -50,7 +50,7 @@ export default function TrackingTechnologiesPage() {
           across different websites.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           App Permissions
         </h2>
 
@@ -64,7 +64,7 @@ export default function TrackingTechnologiesPage() {
           receive more access than they reasonably need.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Location Tracking
         </h2>
 
@@ -79,7 +79,7 @@ export default function TrackingTechnologiesPage() {
           sensitive patterns about where you live, work, study, or spend time.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Device Identifiers
         </h2>
 
@@ -94,7 +94,7 @@ export default function TrackingTechnologiesPage() {
           contribute to identifying or distinguishing a device.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Online Profiling
         </h2>
 
@@ -108,7 +108,7 @@ export default function TrackingTechnologiesPage() {
           posts, products, or services a person sees.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Why Tracking Is Used
         </h2>
 
@@ -122,7 +122,7 @@ export default function TrackingTechnologiesPage() {
           <li>Building audience or behavioral profiles.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Tracking Is Not Always Obvious
         </h2>
 
@@ -136,7 +136,7 @@ export default function TrackingTechnologiesPage() {
           information matter.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Questions to Ask
         </h2>
 
@@ -148,7 +148,7 @@ export default function TrackingTechnologiesPage() {
           <li>Can I delete or limit stored information?</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What You Can Do
         </h2>
 
@@ -161,7 +161,7 @@ export default function TrackingTechnologiesPage() {
           <li>Review account privacy settings on major platforms.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Privacy Is About Awareness and Choice
         </h2>
 
@@ -172,8 +172,8 @@ export default function TrackingTechnologiesPage() {
           how your information is used.
         </p>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Review Your Privacy Habits
           </h3>
 
@@ -184,7 +184,7 @@ export default function TrackingTechnologiesPage() {
 
           <Link
             href="/tools/privacy-checkup"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open Privacy Checkup
           </Link>
@@ -193,6 +193,7 @@ export default function TrackingTechnologiesPage() {
     </div>
   );
 }
+
 
 
 

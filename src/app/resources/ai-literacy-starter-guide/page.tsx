@@ -9,19 +9,19 @@ export const metadata = {
 export default function AILiteracyStarterGuidePage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 dark:text-blue-200">
         AI Literacy Starter Guide
       </h1>
 
-      <p className="mt-4 text-gray-600">
+      <p className="mt-4 text-gray-600 dark:text-slate-400">
         Use this guide as a quick introduction to understanding AI tools,
         recognizing their limitations, and making more informed decisions when
         using AI-generated information.
       </p>
 
-      <section className="mt-10 space-y-8 text-gray-700">
+      <section className="mt-10 space-y-8 text-gray-700 dark:text-slate-300">
         <div>
-          <h2 className="text-2xl font-bold text-blue-900">
+          <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
             Understand What AI Can and Cannot Do
           </h2>
 
@@ -46,7 +46,7 @@ export default function AILiteracyStarterGuidePage() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-bold text-blue-900">
+          <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
             Verify Important Information
           </h2>
 
@@ -70,7 +70,7 @@ export default function AILiteracyStarterGuidePage() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-bold text-blue-900">
+          <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
             Watch for AI Bias
           </h2>
 
@@ -94,7 +94,7 @@ export default function AILiteracyStarterGuidePage() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-bold text-blue-900">
+          <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
             Be Careful With AI-Generated Media
           </h2>
 
@@ -119,7 +119,7 @@ export default function AILiteracyStarterGuidePage() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-bold text-blue-900">
+          <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
             Use AI Responsibly
           </h2>
 
@@ -141,8 +141,8 @@ export default function AILiteracyStarterGuidePage() {
           </ul>
         </div>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h2 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 transition-colors dark:border-slate-700 dark:bg-slate-800">
+          <h2 className="text-xl font-bold text-blue-900 dark:text-blue-200">
             Check Your AI Literacy
           </h2>
 
@@ -153,14 +153,14 @@ export default function AILiteracyStarterGuidePage() {
 
           <Link
             href="/tools/ai-literacy-assessment"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white transition-colors hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Take the AI Literacy Assessment
           </Link>
         </div>
 
-        <div className="rounded-xl border bg-white p-6">
-          <h2 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border border-gray-200 bg-white p-6 transition-colors dark:border-slate-700 dark:bg-slate-800">
+          <h2 className="text-xl font-bold text-blue-900 dark:text-blue-200">
             Learn More About Artificial Intelligence
           </h2>
 
@@ -181,5 +181,6 @@ export default function AILiteracyStarterGuidePage() {
     </div>
   );
 }
+
 
 

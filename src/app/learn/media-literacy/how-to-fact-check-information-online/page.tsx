@@ -9,19 +9,19 @@ export const metadata = {
 export default function FactCheckInformationOnlinePage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         How to Fact-Check Information Online
       </h1>
 
-      <p className="mt-4 text-lg text-gray-700">
+      <p className="mt-4 text-lg text-gray-700 transition-colors dark:text-slate-300">
         Fact-checking means slowing down and verifying a claim before you trust,
         act on, or share it. Good fact-checking is not about doubting
         everything. It is about asking the right questions and looking for
         reliable evidence.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Start With the Exact Claim
         </h2>
 
@@ -36,7 +36,7 @@ export default function FactCheckInformationOnlinePage() {
           from the surrounding emotion or opinion makes verification easier.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Find the Original Source
         </h2>
 
@@ -52,7 +52,7 @@ export default function FactCheckInformationOnlinePage() {
           <li>Trace a statistic back to the organization that published it.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Check the Author or Organization
         </h2>
 
@@ -66,7 +66,7 @@ export default function FactCheckInformationOnlinePage() {
           to understand who created the content and why.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Examine the Evidence
         </h2>
 
@@ -82,7 +82,7 @@ export default function FactCheckInformationOnlinePage() {
           as &quot;everyone knows&quot; or &quot;experts say.&quot;
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Check the Date
         </h2>
 
@@ -96,7 +96,7 @@ export default function FactCheckInformationOnlinePage() {
           changes the meaning of the claim.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Check the Context
         </h2>
 
@@ -111,7 +111,7 @@ export default function FactCheckInformationOnlinePage() {
           already happened.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Compare Independent Sources
         </h2>
 
@@ -126,7 +126,7 @@ export default function FactCheckInformationOnlinePage() {
           even if their interpretation or commentary differs.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Verify Images and Videos
         </h2>
 
@@ -143,7 +143,7 @@ export default function FactCheckInformationOnlinePage() {
           <li>Do not rely only on whether the media looks realistic.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Use Fact-Checking Organizations Carefully
         </h2>
 
@@ -154,7 +154,7 @@ export default function FactCheckInformationOnlinePage() {
           the claim you are evaluating.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Watch Your Own Bias
         </h2>
 
@@ -168,7 +168,7 @@ export default function FactCheckInformationOnlinePage() {
           claims you agree with and claims you disagree with.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           A Simple Fact-Checking Process
         </h2>
 
@@ -183,7 +183,7 @@ export default function FactCheckInformationOnlinePage() {
           <li>Decide whether there is enough evidence before sharing.</li>
         </ol>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           When You Cannot Verify Something
         </h2>
 
@@ -198,8 +198,8 @@ export default function FactCheckInformationOnlinePage() {
           fact.
         </p>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Practice Evaluating a Claim
           </h3>
 
@@ -211,7 +211,7 @@ export default function FactCheckInformationOnlinePage() {
 
           <Link
             href="/tools/misinformation-check"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open Misinformation Evaluation Tool
           </Link>
@@ -220,6 +220,7 @@ export default function FactCheckInformationOnlinePage() {
     </div>
   );
 }
+
 
 
 

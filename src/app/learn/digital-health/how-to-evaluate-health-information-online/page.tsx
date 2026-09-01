@@ -9,19 +9,19 @@ export const metadata = {
 export default function EvaluateHealthInformationPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         How to Evaluate Health Information Online
       </h1>
 
-      <p className="mt-4 text-lg text-gray-700">
+      <p className="mt-4 text-lg text-gray-700 transition-colors dark:text-slate-300">
         The internet makes health information easier to access, but not
         everything online is accurate, current, or supported by reliable
         evidence. Learning how to evaluate health information can help you make
         safer and better-informed decisions.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Start With the Source
         </h2>
 
@@ -37,7 +37,7 @@ export default function EvaluateHealthInformationPage() {
           subject.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Check the Evidence
         </h2>
 
@@ -52,7 +52,7 @@ export default function EvaluateHealthInformationPage() {
           explaining where the information came from.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Look at the Date
         </h2>
 
@@ -67,7 +67,7 @@ export default function EvaluateHealthInformationPage() {
           health guidance.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Separate Information From Advertising
         </h2>
 
@@ -82,7 +82,7 @@ export default function EvaluateHealthInformationPage() {
           convincing you to believe a particular claim.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Be Careful With Miracle Claims
         </h2>
 
@@ -100,7 +100,7 @@ export default function EvaluateHealthInformationPage() {
           <li>&quot;One simple trick cures multiple diseases.&quot;</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Personal Stories Are Not the Same as Evidence
         </h2>
 
@@ -115,7 +115,7 @@ export default function EvaluateHealthInformationPage() {
           for reliable medical evidence.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Compare More Than One Reliable Source
         </h2>
 
@@ -130,7 +130,7 @@ export default function EvaluateHealthInformationPage() {
           account deserves more investigation.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Social Media Requires Extra Care
         </h2>
 
@@ -144,7 +144,7 @@ export default function EvaluateHealthInformationPage() {
           shares and still contain inaccurate or misleading health information.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           AI-Generated Health Information
         </h2>
 
@@ -159,7 +159,7 @@ export default function EvaluateHealthInformationPage() {
           healthcare professional.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Ask These Questions
         </h2>
 
@@ -173,7 +173,7 @@ export default function EvaluateHealthInformationPage() {
           <li>Is the language informative or designed to frighten me?</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Know When Online Information Is Not Enough
         </h2>
 
@@ -189,7 +189,7 @@ export default function EvaluateHealthInformationPage() {
           healthcare professional.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           A Simple Evaluation Checklist
         </h2>
 
@@ -203,8 +203,8 @@ export default function EvaluateHealthInformationPage() {
           <li>Be skeptical of guarantees and miracle cures.</li>
         </ul>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Check a Health Claim
           </h3>
 
@@ -215,7 +215,7 @@ export default function EvaluateHealthInformationPage() {
 
           <Link
             href="/tools/health-misinformation-check"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open Health Misinformation Check
           </Link>
@@ -224,6 +224,7 @@ export default function EvaluateHealthInformationPage() {
     </div>
   );
 }
+
 
 
 

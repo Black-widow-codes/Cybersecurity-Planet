@@ -9,18 +9,18 @@ export const metadata = {
 export default function UnderstandingMisinformationPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         Understanding Misinformation
       </h1>
 
-      <p className="mt-4 text-lg text-gray-700">
+      <p className="mt-4 text-lg text-gray-700 transition-colors dark:text-slate-300">
         Misinformation is false or misleading information that can spread
         online even when the person sharing it does not intend to deceive
         anyone.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What Is Misinformation?
         </h2>
 
@@ -36,7 +36,7 @@ export default function UnderstandingMisinformationPage() {
           sharing is true.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Why Misinformation Spreads
         </h2>
 
@@ -51,7 +51,7 @@ export default function UnderstandingMisinformationPage() {
           already believe.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Emotional Content Travels Quickly
         </h2>
 
@@ -66,7 +66,7 @@ export default function UnderstandingMisinformationPage() {
           before sharing.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Familiar Information Can Feel True
         </h2>
 
@@ -81,7 +81,7 @@ export default function UnderstandingMisinformationPage() {
           confirmed it when they did not.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Missing Context Can Mislead
         </h2>
 
@@ -96,7 +96,7 @@ export default function UnderstandingMisinformationPage() {
           after it.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Headlines Can Be Misleading
         </h2>
 
@@ -111,7 +111,7 @@ export default function UnderstandingMisinformationPage() {
           understanding than reading the complete article or original source.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Misinformation Can Cause Real Harm
         </h2>
 
@@ -124,7 +124,7 @@ export default function UnderstandingMisinformationPage() {
           <li>Confusion can spread during emergencies or crises.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           How to Reduce the Spread
         </h2>
 
@@ -137,7 +137,7 @@ export default function UnderstandingMisinformationPage() {
           <li>Read beyond the headline.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Questions to Ask Before Sharing
         </h2>
 
@@ -150,8 +150,8 @@ export default function UnderstandingMisinformationPage() {
           <li>Have I read more than just the headline?</li>
         </ul>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Evaluate Before You Share
           </h3>
 
@@ -163,7 +163,7 @@ export default function UnderstandingMisinformationPage() {
 
           <Link
             href="/tools/misinformation-check"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open Misinformation Evaluation Tool
           </Link>
@@ -172,5 +172,6 @@ export default function UnderstandingMisinformationPage() {
     </div>
   );
 }
+
 
 

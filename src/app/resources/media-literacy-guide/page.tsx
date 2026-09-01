@@ -9,18 +9,18 @@ export const metadata = {
 export default function MediaLiteracyGuidePage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 dark:text-blue-200">
         Media Literacy Guide
       </h1>
 
-      <p className="mt-4 text-gray-600">
+      <p className="mt-4 text-gray-600 dark:text-slate-400">
         Use this guide to evaluate online information more carefully before you
         trust, react to, or share it.
       </p>
 
-      <section className="mt-10 space-y-8 text-gray-700">
+      <section className="mt-10 space-y-8 text-gray-700 dark:text-slate-300">
         <div>
-          <h2 className="text-2xl font-bold text-blue-900">
+          <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
             Check the Source
           </h2>
 
@@ -40,7 +40,7 @@ export default function MediaLiteracyGuidePage() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-bold text-blue-900">
+          <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
             Examine the Evidence
           </h2>
 
@@ -63,7 +63,7 @@ export default function MediaLiteracyGuidePage() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-bold text-blue-900">
+          <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
             Watch for Emotional Manipulation
           </h2>
 
@@ -88,7 +88,7 @@ export default function MediaLiteracyGuidePage() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-bold text-blue-900">
+          <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
             Check the Context
           </h2>
 
@@ -110,7 +110,7 @@ export default function MediaLiteracyGuidePage() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-bold text-blue-900">
+          <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
             Be Alert to AI-Generated Content
           </h2>
 
@@ -133,8 +133,8 @@ export default function MediaLiteracyGuidePage() {
           </ul>
         </div>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h2 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 transition-colors dark:border-slate-700 dark:bg-slate-800">
+          <h2 className="text-xl font-bold text-blue-900 dark:text-blue-200">
             Evaluate a Claim Before Sharing
           </h2>
 
@@ -145,14 +145,14 @@ export default function MediaLiteracyGuidePage() {
 
           <Link
             href="/tools/misinformation-check"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white transition-colors hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open the Misinformation Evaluation Tool
           </Link>
         </div>
 
-        <div className="rounded-xl border bg-white p-6">
-          <h2 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border border-gray-200 bg-white p-6 transition-colors dark:border-slate-700 dark:bg-slate-800">
+          <h2 className="text-xl font-bold text-blue-900 dark:text-blue-200">
             Learn More About Media Literacy
           </h2>
 
@@ -174,5 +174,6 @@ export default function MediaLiteracyGuidePage() {
     </div>
   );
 }
+
 
 

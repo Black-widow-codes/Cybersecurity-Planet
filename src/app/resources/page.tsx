@@ -192,18 +192,18 @@ const trustedResources = [
 
 export default function ResourcesPage() {
   return (
-    <div className="max-w-6xl mx-auto px-6 py-20">
+    <div className="mx-auto max-w-6xl px-6 py-20">
       <div className="max-w-3xl">
-        <h1 className="text-4xl font-bold text-blue-900">
+        <h1 className="text-4xl font-bold text-blue-900 dark:text-blue-200">
           Resource Library
         </h1>
 
-        <p className="mt-6 text-lg text-gray-700">
+        <p className="mt-6 text-lg text-gray-700 dark:text-slate-300">
           Explore practical guides and checklists designed to help you apply
           what you learn across Cybersecurity Planet.
         </p>
 
-        <p className="mt-3 text-gray-600">
+        <p className="mt-3 text-gray-600 dark:text-slate-400">
           These resources provide practical steps you can return to when
           checking your online safety, privacy, information, technology habits,
           or digital health decisions.
@@ -213,12 +213,12 @@ export default function ResourcesPage() {
       <section className="mt-12" aria-labelledby="planet-resources-heading">
         <h2
           id="planet-resources-heading"
-          className="text-3xl font-bold text-blue-900"
+          className="text-3xl font-bold text-blue-900 dark:text-blue-200"
         >
           Cybersecurity Planet Resources
         </h2>
 
-        <p className="mt-3 max-w-3xl text-gray-600">
+        <p className="mt-3 max-w-3xl text-gray-600 dark:text-slate-400">
           Start with our practical guides and checklists covering the six main
           learning areas of Cybersecurity Planet.
         </p>
@@ -227,23 +227,23 @@ export default function ResourcesPage() {
           {resources.map((resource) => (
             <article
               key={resource.href}
-              className="flex flex-col rounded-xl border bg-white p-6 shadow-sm"
+              className="flex flex-col rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-colors dark:border-slate-700 dark:bg-slate-800"
             >
-              <p className="text-sm font-semibold text-cyan-700">
+              <p className="text-sm font-semibold text-cyan-700 dark:text-cyan-400">
                 {resource.category}
               </p>
 
-              <h3 className="mt-2 text-2xl font-bold text-blue-900">
+              <h3 className="mt-2 text-2xl font-bold text-blue-900 dark:text-blue-200">
                 {resource.title}
               </h3>
 
-              <p className="mt-3 flex-1 text-gray-600">
+              <p className="mt-3 flex-1 text-gray-600 dark:text-slate-300">
                 {resource.description}
               </p>
 
               <Link
                 href={resource.href}
-                className="mt-6 inline-block self-start rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:ring-offset-2"
+                className="mt-6 inline-block self-start rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white transition-colors hover:bg-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus:ring-cyan-400 dark:focus:ring-offset-slate-800"
               >
                 View Resource
               </Link>
@@ -256,19 +256,19 @@ export default function ResourcesPage() {
         <div className="max-w-3xl">
           <h2
             id="trusted-resources-heading"
-            className="text-3xl font-bold text-blue-900"
+            className="text-3xl font-bold text-blue-900 dark:text-blue-200"
           >
             Trusted External Resources
           </h2>
 
-          <p className="mt-4 text-gray-700">
+          <p className="mt-4 text-gray-700 dark:text-slate-300">
             Explore selected resources from government agencies, international
             organizations, research institutions, and established nonprofit
             organizations working in cybersecurity, privacy, digital literacy,
             artificial intelligence, and health.
           </p>
 
-          <p className="mt-3 text-sm text-gray-600">
+          <p className="mt-3 text-sm text-gray-600 dark:text-slate-400">
             These external websites are provided for additional education and
             reference. Cybersecurity Planet does not control or endorse every
             piece of content published on external websites.
@@ -279,23 +279,23 @@ export default function ResourcesPage() {
           {trustedResources.map((resource) => (
             <article
               key={resource.name}
-              className="flex flex-col rounded-xl border bg-gray-50 p-6"
+              className="flex flex-col rounded-xl border border-gray-200 bg-gray-50 p-6 transition-colors dark:border-slate-700 dark:bg-slate-800"
             >
               <div className="flex flex-wrap items-center gap-2">
-                <span className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-blue-900">
+                <span className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-blue-900 dark:bg-slate-900 dark:text-blue-200">
                   {resource.scope}
                 </span>
 
-                <span className="text-sm font-semibold text-cyan-700">
+                <span className="text-sm font-semibold text-cyan-700 dark:text-cyan-400">
                   {resource.topics}
                 </span>
               </div>
 
-              <h3 className="mt-4 text-xl font-bold text-blue-900">
+              <h3 className="mt-4 text-xl font-bold text-blue-900 dark:text-blue-200">
                 {resource.name}
               </h3>
 
-              <p className="mt-3 flex-1 text-gray-600">
+              <p className="mt-3 flex-1 text-gray-600 dark:text-slate-300">
                 {resource.description}
               </p>
 
@@ -303,7 +303,7 @@ export default function ResourcesPage() {
                 href={resource.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-5 inline-block self-start font-semibold text-cyan-700 hover:underline focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:ring-offset-2"
+                className="mt-5 inline-block self-start font-semibold text-cyan-700 hover:underline focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:ring-offset-2 dark:text-cyan-400 dark:focus:ring-cyan-400 dark:focus:ring-offset-slate-800"
               >
                 Visit Official Resource ↗
               </a>
@@ -312,12 +312,12 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      <section className="mt-16 rounded-xl border bg-gray-50 p-8">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-16 rounded-xl border border-gray-200 bg-gray-50 p-8 transition-colors dark:border-slate-700 dark:bg-slate-800">
+        <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
           Looking for Deeper Learning?
         </h2>
 
-        <p className="mt-3 text-gray-700">
+        <p className="mt-3 text-gray-700 dark:text-slate-300">
           The Resource Library is designed for practical reference. For
           step-by-step explanations and educational articles, explore the
           Cybersecurity Planet learning library.
@@ -325,7 +325,7 @@ export default function ResourcesPage() {
 
         <Link
           href="/learn"
-          className="mt-5 inline-block font-semibold text-cyan-700 hover:underline focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:ring-offset-2"
+          className="mt-5 inline-block font-semibold text-cyan-700 hover:underline focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:ring-offset-2 dark:text-cyan-400 dark:focus:ring-cyan-400 dark:focus:ring-offset-slate-800"
         >
           Explore the Learning Library
         </Link>
@@ -333,7 +333,3 @@ export default function ResourcesPage() {
     </div>
   );
 }
-
-
-
-

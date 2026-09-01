@@ -46,7 +46,7 @@ export default function RootLayout({
         <ThemeProvider>
           <a
             href="#main-content"
-            className="sr-only z-50 rounded-md bg-white px-4 py-3 font-semibold text-blue-900 shadow-lg focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:ring-offset-2"
+            className="sr-only z-50 rounded-md bg-white px-4 py-3 font-semibold text-blue-900 shadow-lg focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:ring-offset-2 dark:bg-slate-900 dark:text-blue-200 dark:focus:ring-cyan-400 dark:focus:ring-offset-slate-950"
           >
             Skip to main content
           </a>

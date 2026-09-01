@@ -9,17 +9,17 @@ export const metadata = {
 export default function UnderstandingDisinformationPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         Understanding Disinformation
       </h1>
 
-      <p className="mt-4 text-lg text-gray-700">
+      <p className="mt-4 text-lg text-gray-700 transition-colors dark:text-slate-300">
         Disinformation is false or misleading information that is deliberately
         created or shared to deceive, manipulate, influence, or cause harm.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           How Is Disinformation Different From Misinformation?
         </h2>
 
@@ -35,7 +35,7 @@ export default function UnderstandingDisinformationPage() {
           influence what people believe or how they behave.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Why Disinformation Is Created
         </h2>
 
@@ -54,7 +54,7 @@ export default function UnderstandingDisinformationPage() {
           <li>Manipulating people into unsafe decisions.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Disinformation Often Uses Real Information
         </h2>
 
@@ -69,7 +69,7 @@ export default function UnderstandingDisinformationPage() {
           content may be genuine while the overall message is misleading.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Emotional Manipulation
         </h2>
 
@@ -84,7 +84,7 @@ export default function UnderstandingDisinformationPage() {
           question the claim deserve extra scrutiny.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Fake Accounts and Coordinated Sharing
         </h2>
 
@@ -99,7 +99,7 @@ export default function UnderstandingDisinformationPage() {
           connected to the same campaign.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           AI Can Make Disinformation More Convincing
         </h2>
 
@@ -114,7 +114,7 @@ export default function UnderstandingDisinformationPage() {
           relying only on how realistic something appears.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Warning Signs to Consider
         </h2>
 
@@ -128,7 +128,7 @@ export default function UnderstandingDisinformationPage() {
           <li>Many suspicious accounts repeat identical messages.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           How to Respond
         </h2>
 
@@ -141,7 +141,7 @@ export default function UnderstandingDisinformationPage() {
           <li>Correct false information carefully using credible evidence.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Questions to Ask
         </h2>
 
@@ -154,8 +154,8 @@ export default function UnderstandingDisinformationPage() {
           <li>Can independent trustworthy sources confirm it?</li>
         </ul>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Evaluate Suspicious Information
           </h3>
 
@@ -167,7 +167,7 @@ export default function UnderstandingDisinformationPage() {
 
           <Link
             href="/tools/misinformation-check"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open Misinformation Evaluation Tool
           </Link>
@@ -176,6 +176,7 @@ export default function UnderstandingDisinformationPage() {
     </div>
   );
 }
+
 
 
 

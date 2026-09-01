@@ -78,24 +78,24 @@ export default function DigitalSafetyAssessmentClient() {
 
   return (
     <section
-      className="mx-auto max-w-3xl rounded-2xl border bg-white p-6 shadow-sm"
+      className="mx-auto max-w-3xl rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-colors dark:border-slate-700 dark:bg-slate-800"
       aria-labelledby="digital-safety-assessment-title"
     >
       <h1
         id="digital-safety-assessment-title"
-        className="text-3xl font-bold text-blue-900"
+        className="text-3xl font-bold text-blue-900 dark:text-blue-200"
       >
         Digital Safety Assessment
       </h1>
 
-      <p className="mt-3 text-gray-600">
+      <p className="mt-3 text-gray-600 dark:text-slate-400">
         Answer these simple questions to check your online safety habits.
       </p>
 
       <div className="mt-8 space-y-6">
         {questions.map((item) => (
           <fieldset key={item.id} className="rounded-xl border p-4">
-            <legend className="font-semibold text-gray-800">
+            <legend className="font-semibold text-gray-800 dark:text-slate-200">
               {item.question}
             </legend>
 
@@ -131,26 +131,26 @@ export default function DigitalSafetyAssessmentClient() {
       </div>
 
       <div
-        className="mt-8 rounded-xl bg-gray-50 p-5"
+        className="mt-8 rounded-xl bg-gray-50 p-5 transition-colors dark:bg-slate-800"
         aria-live="polite"
         aria-atomic="true"
       >
-        <h2 className="text-xl font-bold text-blue-900">Your Result</h2>
+        <h2 className="text-xl font-bold text-blue-900 dark:text-blue-200">Your Result</h2>
 
         <p className="mt-3 text-lg font-semibold">Score: {score}/100</p>
 
         <p className="mt-2 font-semibold">Risk Level: {riskLevel}</p>
 
-        <p className="mt-2 text-gray-700">{message}</p>
+        <p className="mt-2 text-gray-700 dark:text-slate-300">{message}</p>
       </div>
 
       {completed && recommendations.length > 0 && (
         <div className="mt-6 rounded-xl border p-5">
-          <h2 className="text-xl font-bold text-blue-900">
+          <h2 className="text-xl font-bold text-blue-900 dark:text-blue-200">
             Recommended Actions
           </h2>
 
-          <ul className="mt-4 list-disc space-y-2 pl-5 text-gray-700">
+          <ul className="mt-4 list-disc space-y-2 pl-5 text-gray-700 dark:text-slate-300">
             {recommendations.map((item) => (
               <li key={item.id}>{item.recommendation}</li>
             ))}
@@ -160,11 +160,11 @@ export default function DigitalSafetyAssessmentClient() {
 
       {completed && recommendations.length === 0 && (
         <div className="mt-6 rounded-xl border p-5">
-          <h2 className="text-xl font-bold text-blue-900">
+          <h2 className="text-xl font-bold text-blue-900 dark:text-blue-200">
             Excellent Safety Habits
           </h2>
 
-          <p className="mt-3 text-gray-700">
+          <p className="mt-3 text-gray-700 dark:text-slate-300">
             You answered yes to all safety questions. Continue reviewing your
             accounts regularly and keep your security practices up to date.
           </p>

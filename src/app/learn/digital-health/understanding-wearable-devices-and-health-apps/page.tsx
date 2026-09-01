@@ -10,19 +10,19 @@ export const metadata = {
 export default function WearablesHealthAppsPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         Understanding Wearable Devices and Health Apps
       </h1>
 
-      <p className="mt-4 text-lg text-gray-700">
+      <p className="mt-4 text-lg text-gray-700 transition-colors dark:text-slate-300">
         Smartwatches, fitness trackers, health apps, and other connected devices
         can help people monitor activity, sleep, heart rate, medications, and
         other aspects of their health. These technologies can be useful, but
         they can also collect sensitive personal information.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What Are Wearable Health Devices?
         </h2>
 
@@ -40,7 +40,7 @@ export default function WearablesHealthAppsPage() {
           <li>Other health-monitoring sensors and devices.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What Are Health Apps?
         </h2>
 
@@ -56,7 +56,7 @@ export default function WearablesHealthAppsPage() {
           applications provided by healthcare organizations.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What Information Can They Collect?
         </h2>
 
@@ -76,7 +76,7 @@ export default function WearablesHealthAppsPage() {
           <li>Device and account information.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Potential Benefits
         </h2>
 
@@ -92,7 +92,7 @@ export default function WearablesHealthAppsPage() {
           a medical diagnosis.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Accuracy Has Limits
         </h2>
 
@@ -108,7 +108,7 @@ export default function WearablesHealthAppsPage() {
           appropriate professional advice when necessary.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Understand Where Your Data Goes
         </h2>
 
@@ -123,7 +123,7 @@ export default function WearablesHealthAppsPage() {
           other organizations.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Review App Permissions
         </h2>
 
@@ -137,7 +137,7 @@ export default function WearablesHealthAppsPage() {
           want to use. Remove permissions that are unnecessary.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Protect Your Health Accounts
         </h2>
 
@@ -154,7 +154,7 @@ export default function WearablesHealthAppsPage() {
           <li>Do not share verification codes.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Think Before Sharing Health Data
         </h2>
 
@@ -170,7 +170,7 @@ export default function WearablesHealthAppsPage() {
           initially expect.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What Happens When You Stop Using the App?
         </h2>
 
@@ -185,7 +185,7 @@ export default function WearablesHealthAppsPage() {
           retained.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Questions to Ask Before Using a Health App
         </h2>
 
@@ -199,7 +199,7 @@ export default function WearablesHealthAppsPage() {
           <li>What security features are available?</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What You Can Do
         </h2>
 
@@ -213,8 +213,8 @@ export default function WearablesHealthAppsPage() {
           <li>Use health measurements as information, not automatic diagnoses.</li>
         </ul>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Review Your Privacy Settings
           </h3>
 
@@ -226,7 +226,7 @@ export default function WearablesHealthAppsPage() {
 
           <Link
             href="/tools/privacy-checkup"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open Privacy Checkup
           </Link>
@@ -235,6 +235,7 @@ export default function WearablesHealthAppsPage() {
     </div>
   );
 }
+
 
 
 

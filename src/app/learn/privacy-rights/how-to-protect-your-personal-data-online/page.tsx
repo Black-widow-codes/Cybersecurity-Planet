@@ -9,18 +9,18 @@ export const metadata = {
 export default function ProtectPersonalDataPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         How to Protect Your Personal Data Online
       </h1>
 
-      <p className="mt-4 text-lg text-gray-700">
+      <p className="mt-4 text-lg text-gray-700 transition-colors dark:text-slate-300">
         Protecting personal data means reducing the chances that your
         information, accounts, or devices can be accessed, exposed, or misused
         without your permission.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Start With Strong Account Security
         </h2>
 
@@ -38,7 +38,7 @@ export default function ProtectPersonalDataPage() {
           <li>Use a trusted password manager if appropriate for you.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Keep Devices Updated
         </h2>
 
@@ -53,7 +53,7 @@ export default function ProtectPersonalDataPage() {
           software updated.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Protect Your Devices
         </h2>
 
@@ -69,7 +69,7 @@ export default function ProtectPersonalDataPage() {
           <li>Use remote-find or remote-wipe features where appropriate.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Be Careful What You Share
         </h2>
 
@@ -84,7 +84,7 @@ export default function ProtectPersonalDataPage() {
           sensitive information.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Watch for Phishing and Impersonation
         </h2>
 
@@ -99,7 +99,7 @@ export default function ProtectPersonalDataPage() {
           urgent messages asking for personal information.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Review App Permissions
         </h2>
 
@@ -113,7 +113,7 @@ export default function ProtectPersonalDataPage() {
           periodically.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Use Secure Connections
         </h2>
 
@@ -127,7 +127,7 @@ export default function ProtectPersonalDataPage() {
           information into sites you do not trust.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Back Up Important Information
         </h2>
 
@@ -141,7 +141,7 @@ export default function ProtectPersonalDataPage() {
           recover them when needed.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Be Careful With AI Tools
         </h2>
 
@@ -151,7 +151,7 @@ export default function ProtectPersonalDataPage() {
           tools unless you understand how the information will be handled.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What to Do After a Data Exposure
         </h2>
 
@@ -168,7 +168,7 @@ export default function ProtectPersonalDataPage() {
           <li>Follow official breach-response guidance.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           A Simple Data Protection Checklist
         </h2>
 
@@ -183,8 +183,8 @@ export default function ProtectPersonalDataPage() {
           <li>Back up important information.</li>
         </ul>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Review Your Privacy Habits
           </h3>
 
@@ -196,7 +196,7 @@ export default function ProtectPersonalDataPage() {
 
           <Link
             href="/tools/privacy-checkup"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open Privacy Checkup
           </Link>
@@ -205,5 +205,6 @@ export default function ProtectPersonalDataPage() {
     </div>
   );
 }
+
 
 

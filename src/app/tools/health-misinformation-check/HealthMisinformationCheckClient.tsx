@@ -146,21 +146,21 @@ export default function HealthMisinformationCheckClient() {
 
   return (
     <div className="mx-auto max-w-3xl px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         Health Misinformation Check
       </h1>
 
-      <p className="mt-4 text-gray-700">
+      <p className="mt-4 text-gray-700 transition-colors dark:text-slate-300">
         Use this tool to examine the source, evidence, promises, and medical
         advice behind an online health claim before trusting or sharing it.
       </p>
 
       {!completed ? (
         <section
-          className="mt-10 rounded-xl border bg-white p-6 shadow-sm"
+          className="mt-10 rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-colors dark:border-slate-700 dark:bg-slate-800"
           aria-labelledby="health-misinformation-question"
         >
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-500 transition-colors dark:text-slate-400">
             Question {currentQuestion + 1} of {questions.length}
           </p>
 
@@ -168,7 +168,7 @@ export default function HealthMisinformationCheckClient() {
             ref={questionHeadingRef}
             id="health-misinformation-question"
             tabIndex={-1}
-            className="mt-3 text-2xl font-bold text-blue-900 focus:outline-none"
+            className="mt-3 text-2xl font-bold text-blue-900 transition-colors focus:outline-none dark:text-blue-200"
           >
             {questions[currentQuestion].question}
           </h2>
@@ -179,7 +179,7 @@ export default function HealthMisinformationCheckClient() {
                 key={option.label}
                 type="button"
                 onClick={() => handleAnswer(option.score)}
-                className="w-full rounded-lg border px-4 py-3 text-left hover:bg-gray-50 focus-visible:outline-2 focus-visible:outline-offset-2"
+                className="w-full rounded-lg border border-gray-200 bg-white px-4 py-3 text-left text-gray-800 transition-colors hover:bg-gray-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-700 dark:focus-visible:outline-cyan-400"
               >
                 {option.label}
               </button>
@@ -189,38 +189,38 @@ export default function HealthMisinformationCheckClient() {
       ) : (
         <>
           <section
-            className="mt-10 rounded-xl bg-gray-50 p-6"
+            className="mt-10 rounded-xl border border-gray-200 bg-gray-50 p-6 transition-colors dark:border-slate-700 dark:bg-slate-800"
             aria-live="polite"
             aria-atomic="true"
           >
             <h2
               ref={resultHeadingRef}
               tabIndex={-1}
-              className="text-2xl font-bold text-blue-900 focus:outline-none"
+              className="text-2xl font-bold text-blue-900 transition-colors focus:outline-none dark:text-blue-200"
             >
               Your Health Information Result
             </h2>
 
-            <p className="mt-4 text-lg font-semibold">
+            <p className="mt-4 text-lg font-semibold text-gray-900 dark:text-slate-100">
               Health Claim Score: {score} / {maxScore}
             </p>
 
-            <p className="mt-2 font-semibold">
+            <p className="mt-2 font-semibold text-gray-900 dark:text-slate-100">
               Evaluation: {credibilityLevel}
             </p>
 
-            <p className="mt-4 leading-7 text-gray-700">
+            <p className="mt-4 leading-7 text-gray-700 transition-colors dark:text-slate-300">
               {resultExplanation}
             </p>
           </section>
 
           {strongAnswers.length > 0 && (
-            <section className="mt-6 rounded-xl border bg-white p-6">
-              <h2 className="text-2xl font-bold text-blue-900">
+            <section className="mt-6 rounded-xl border border-gray-200 bg-white p-6 transition-colors dark:border-slate-700 dark:bg-slate-800">
+              <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
                 Positive Credibility Signals
               </h2>
 
-              <p className="mt-3 text-gray-700">
+              <p className="mt-3 text-gray-700 transition-colors dark:text-slate-300">
                 You identified {strongAnswers.length} of the {questions.length}{" "}
                 stronger credibility signals covered by this check. These are
                 useful indicators, but they do not confirm that the health claim
@@ -230,17 +230,17 @@ export default function HealthMisinformationCheckClient() {
           )}
 
           {recommendations.length > 0 && (
-            <section className="mt-6 rounded-xl border bg-white p-6">
-              <h2 className="text-2xl font-bold text-blue-900">
+            <section className="mt-6 rounded-xl border border-gray-200 bg-white p-6 transition-colors dark:border-slate-700 dark:bg-slate-800">
+              <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
                 What to Check Next
               </h2>
 
-              <p className="mt-3 text-gray-700">
+              <p className="mt-3 text-gray-700 transition-colors dark:text-slate-300">
                 Review the areas where the claim received a partial or weak
                 score before relying on it or sharing it with someone else.
               </p>
 
-              <ul className="mt-4 list-disc space-y-3 pl-5 text-gray-700">
+              <ul className="mt-4 list-disc space-y-3 pl-5 text-gray-700 transition-colors dark:text-slate-300">
                 {recommendations.map((question) => (
                   <li key={question.id}>{question.recommendation}</li>
                 ))}
@@ -249,12 +249,12 @@ export default function HealthMisinformationCheckClient() {
           )}
 
           {recommendations.length === 0 && (
-            <section className="mt-6 rounded-xl border bg-white p-6">
-              <h2 className="text-2xl font-bold text-blue-900">
+            <section className="mt-6 rounded-xl border border-gray-200 bg-white p-6 transition-colors dark:border-slate-700 dark:bg-slate-800">
+              <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
                 Stronger Health Information Signals
               </h2>
 
-              <p className="mt-3 leading-7 text-gray-700">
+              <p className="mt-3 leading-7 text-gray-700 transition-colors dark:text-slate-300">
                 The claim received the strongest response across all four
                 checks. Even so, this result should not be treated as medical
                 approval. Confirm important health information with trusted
@@ -266,19 +266,19 @@ export default function HealthMisinformationCheckClient() {
           <button
             type="button"
             onClick={resetCheckup}
-            className="mt-6 rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-2 focus-visible:outline-offset-2"
+            className="mt-6 rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white transition-colors hover:bg-cyan-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:outline-cyan-400"
           >
             Evaluate Another Health Claim
           </button>
         </>
       )}
 
-      <section className="mt-10 rounded-xl border bg-gray-50 p-6">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-10 rounded-xl border border-gray-200 bg-gray-50 p-6 transition-colors dark:border-slate-700 dark:bg-slate-800">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Learn More About Digital Health
         </h2>
 
-        <p className="mt-3 text-gray-700">
+        <p className="mt-3 text-gray-700 transition-colors dark:text-slate-300">
           Explore lessons about evaluating health information, telehealth,
           health data privacy, wearable devices, AI in healthcare, and health
           misinformation.
@@ -286,13 +286,13 @@ export default function HealthMisinformationCheckClient() {
 
         <Link
           href="/learn/digital-health"
-          className="mt-5 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-2 focus-visible:outline-offset-2"
+          className="mt-5 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white transition-colors hover:bg-cyan-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:outline-cyan-400"
         >
           Explore Digital Health Lessons
         </Link>
       </section>
 
-      <p className="mt-6 text-sm leading-6 text-gray-500">
+      <p className="mt-6 text-sm leading-6 text-gray-500 transition-colors dark:text-slate-400">
         This tool is an educational checklist, not a medical assessment,
         diagnosis, or fact-checking service. Do not use its score to make
         decisions about medication, treatment, diagnosis, or urgent healthcare.

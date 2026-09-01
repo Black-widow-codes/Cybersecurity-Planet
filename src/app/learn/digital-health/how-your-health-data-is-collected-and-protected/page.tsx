@@ -9,18 +9,18 @@ export const metadata = {
 export default function HealthDataPrivacyPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         How Your Health Data Is Collected and Protected
       </h1>
 
-      <p className="mt-4 text-lg text-gray-700">
+      <p className="mt-4 text-lg text-gray-700 transition-colors dark:text-slate-300">
         Health data can include some of the most sensitive information about a
         person. Understanding how it is collected, stored, shared, and protected
         is an important part of using digital healthcare safely.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What Counts as Health Data?
         </h2>
 
@@ -39,7 +39,7 @@ export default function HealthDataPrivacyPage() {
           <li>Information collected by health apps or wearable devices.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           How Health Data Is Collected
         </h2>
 
@@ -55,7 +55,7 @@ export default function HealthDataPrivacyPage() {
           systems.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Electronic Health Records
         </h2>
 
@@ -71,7 +71,7 @@ export default function HealthDataPrivacyPage() {
           controls, security measures, and appropriate use are important.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Patient Portals
         </h2>
 
@@ -85,7 +85,7 @@ export default function HealthDataPrivacyPage() {
           authentication where available.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Health Apps and Wearable Devices
         </h2>
 
@@ -101,7 +101,7 @@ export default function HealthDataPrivacyPage() {
           handles your information.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Why Health Data May Be Shared
         </h2>
 
@@ -116,7 +116,7 @@ export default function HealthDataPrivacyPage() {
           appropriate reason to use the information.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           How Health Data Is Protected
         </h2>
 
@@ -135,7 +135,7 @@ export default function HealthDataPrivacyPage() {
           <li>Policies limiting unnecessary access.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Health Data Can Still Be Exposed
         </h2>
 
@@ -150,7 +150,7 @@ export default function HealthDataPrivacyPage() {
           protecting access to health information.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Be Careful With Public AI Tools
         </h2>
 
@@ -165,7 +165,7 @@ export default function HealthDataPrivacyPage() {
           information. Avoid sharing more health information than necessary.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Questions to Ask About a Health App or Service
         </h2>
 
@@ -179,7 +179,7 @@ export default function HealthDataPrivacyPage() {
           <li>Does the service use my data for advertising or profiling?</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What You Can Do
         </h2>
 
@@ -192,8 +192,8 @@ export default function HealthDataPrivacyPage() {
           <li>Avoid uploading sensitive health information unnecessarily.</li>
         </ul>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Review Your Privacy Habits
           </h3>
 
@@ -204,7 +204,7 @@ export default function HealthDataPrivacyPage() {
 
           <Link
             href="/tools/privacy-checkup"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open Privacy Checkup
           </Link>
@@ -213,5 +213,6 @@ export default function HealthDataPrivacyPage() {
     </div>
   );
 }
+
 
 

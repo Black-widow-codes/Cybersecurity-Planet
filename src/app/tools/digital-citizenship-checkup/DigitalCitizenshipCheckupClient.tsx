@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
@@ -172,21 +172,21 @@ export default function DigitalCitizenshipCheckupClient() {
 
   return (
     <div className="mx-auto max-w-3xl px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 dark:text-blue-200">
         Digital Citizenship Checkup
       </h1>
 
-      <p className="mt-4 text-gray-700">
+      <p className="mt-4 text-gray-700 dark:text-slate-300">
         Review how you share information, communicate, protect your privacy,
         manage your digital footprint, and use technology responsibly.
       </p>
 
       {!completed ? (
         <section
-          className="mt-10 rounded-xl border bg-white p-6 shadow-sm"
+          className="mt-10 rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-colors dark:border-slate-700 dark:bg-slate-800"
           aria-labelledby="citizenship-question"
         >
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-500 dark:text-slate-400">
             Question {currentQuestion + 1} of {questions.length}
           </p>
 
@@ -194,7 +194,7 @@ export default function DigitalCitizenshipCheckupClient() {
             ref={questionHeadingRef}
             id="citizenship-question"
             tabIndex={-1}
-            className="mt-3 text-2xl font-bold text-blue-900 focus:outline-none"
+            className="mt-3 text-2xl font-bold text-blue-900 focus:outline-none dark:text-blue-200"
           >
             {questions[currentQuestion].question}
           </h2>
@@ -205,7 +205,7 @@ export default function DigitalCitizenshipCheckupClient() {
                 key={option.label}
                 type="button"
                 onClick={() => handleAnswer(option.score)}
-                className="w-full rounded-lg border px-4 py-3 text-left hover:bg-gray-50 focus-visible:outline-2 focus-visible:outline-offset-2"
+                className="w-full rounded-lg border border-gray-200 px-4 py-3 text-left transition-colors hover:bg-gray-50 focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700"
               >
                 {option.label}
               </button>
@@ -215,14 +215,14 @@ export default function DigitalCitizenshipCheckupClient() {
       ) : (
         <>
           <section
-            className="mt-10 rounded-xl bg-gray-50 p-6"
+            className="mt-10 rounded-xl bg-gray-50 p-6 transition-colors dark:bg-slate-800"
             aria-live="polite"
             aria-atomic="true"
           >
             <h2
               ref={resultHeadingRef}
               tabIndex={-1}
-              className="text-2xl font-bold text-blue-900 focus:outline-none"
+              className="text-2xl font-bold text-blue-900 focus:outline-none dark:text-blue-200"
             >
               Your Digital Citizenship Result
             </h2>
@@ -235,18 +235,18 @@ export default function DigitalCitizenshipCheckupClient() {
               Level: {citizenshipLevel}
             </p>
 
-            <p className="mt-4 leading-7 text-gray-700">
+            <p className="mt-4 leading-7 text-gray-700 dark:text-slate-300">
               {resultExplanation}
             </p>
           </section>
 
           {strongAnswers.length > 0 && (
-            <section className="mt-6 rounded-xl border bg-white p-6">
-              <h2 className="text-2xl font-bold text-blue-900">
+            <section className="mt-6 rounded-xl border border-gray-200 bg-white p-6 transition-colors dark:border-slate-700 dark:bg-slate-800">
+              <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
                 What You Are Doing Well
               </h2>
 
-              <p className="mt-3 text-gray-700">
+              <p className="mt-3 text-gray-700 dark:text-slate-300">
                 You reported consistently following {strongAnswers.length} of
                 the {questions.length} digital citizenship practices in this
                 checkup. Continue maintaining these habits in your everyday
@@ -256,18 +256,18 @@ export default function DigitalCitizenshipCheckupClient() {
           )}
 
           {recommendations.length > 0 && (
-            <section className="mt-6 rounded-xl border bg-white p-6">
-              <h2 className="text-2xl font-bold text-blue-900">
+            <section className="mt-6 rounded-xl border border-gray-200 bg-white p-6 transition-colors dark:border-slate-700 dark:bg-slate-800">
+              <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
                 Recommended Actions
               </h2>
 
-              <p className="mt-3 text-gray-700">
+              <p className="mt-3 text-gray-700 dark:text-slate-300">
                 Focus on the areas where you answered Sometimes or Rarely.
                 Improving these habits can help you participate online more
                 responsibly and intentionally.
               </p>
 
-              <ul className="mt-4 list-disc space-y-3 pl-5 text-gray-700">
+              <ul className="mt-4 list-disc space-y-3 pl-5 text-gray-700 dark:text-slate-300">
                 {recommendations.map((question) => (
                   <li key={question.id}>{question.recommendation}</li>
                 ))}
@@ -276,12 +276,12 @@ export default function DigitalCitizenshipCheckupClient() {
           )}
 
           {recommendations.length === 0 && (
-            <section className="mt-6 rounded-xl border bg-white p-6">
-              <h2 className="text-2xl font-bold text-blue-900">
+            <section className="mt-6 rounded-xl border border-gray-200 bg-white p-6 transition-colors dark:border-slate-700 dark:bg-slate-800">
+              <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
                 Strong Digital Citizenship Foundation
               </h2>
 
-              <p className="mt-3 leading-7 text-gray-700">
+              <p className="mt-3 leading-7 text-gray-700 dark:text-slate-300">
                 You reported consistently following all six practices in this
                 checkup. Keep evaluating information carefully, communicating
                 respectfully, protecting your privacy, and maintaining healthy
@@ -300,12 +300,12 @@ export default function DigitalCitizenshipCheckupClient() {
         </>
       )}
 
-      <section className="mt-10 rounded-xl border bg-gray-50 p-6">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-10 rounded-xl border border-gray-200 bg-gray-50 p-6 transition-colors dark:border-slate-700 dark:bg-slate-800">
+        <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
           Build Your Digital Citizenship Skills
         </h2>
 
-        <p className="mt-3 text-gray-700">
+        <p className="mt-3 text-gray-700 dark:text-slate-300">
           Explore lessons about responsible sharing, digital footprints,
           respectful communication, information evaluation, and digital
           wellbeing.
@@ -319,7 +319,7 @@ export default function DigitalCitizenshipCheckupClient() {
         </Link>
       </section>
 
-      <p className="mt-6 text-sm leading-6 text-gray-500">
+      <p className="mt-6 text-sm leading-6 text-gray-500 dark:text-slate-400">
         This checkup is an educational self-assessment rather than a formal
         measure of digital citizenship. Responsible participation online also
         depends on context, judgment, changing technology, and the communities
@@ -328,3 +328,4 @@ export default function DigitalCitizenshipCheckupClient() {
     </div>
   );
 }
+

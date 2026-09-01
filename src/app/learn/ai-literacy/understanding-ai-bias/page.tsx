@@ -9,19 +9,19 @@ export const metadata = {
 export default function UnderstandingAIBiasPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         Understanding AI Bias
       </h1>
 
-      <p className="mt-4 text-lg text-gray-700">
+      <p className="mt-4 text-lg text-gray-700 transition-colors dark:text-slate-300">
         Artificial intelligence can help people make decisions, organize
         information, and automate tasks. But AI systems can also produce unfair
         or misleading results when the data or design behind them contains
         bias.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What Is AI Bias?
         </h2>
 
@@ -38,7 +38,7 @@ export default function UnderstandingAIBiasPage() {
           results, or the decisions made during development.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           How Data Can Create Bias
         </h2>
 
@@ -54,7 +54,7 @@ export default function UnderstandingAIBiasPage() {
           poorly represented in the training data.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Where AI Bias Can Matter
         </h2>
 
@@ -67,7 +67,7 @@ export default function UnderstandingAIBiasPage() {
           <li>Automated fraud or security detection.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           AI Results Are Not Automatically Objective
         </h2>
 
@@ -83,7 +83,7 @@ export default function UnderstandingAIBiasPage() {
           algorithm.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Why Human Oversight Matters
         </h2>
 
@@ -99,7 +99,7 @@ export default function UnderstandingAIBiasPage() {
           services.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Questions to Ask About an AI System
         </h2>
 
@@ -112,7 +112,7 @@ export default function UnderstandingAIBiasPage() {
           <li>Is the system being used for a decision it was designed to make?</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What You Can Do
         </h2>
 
@@ -124,8 +124,8 @@ export default function UnderstandingAIBiasPage() {
           <li>Use AI as a decision-support tool rather than unquestioned authority.</li>
         </ul>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Check Your AI Literacy
           </h3>
 
@@ -137,7 +137,7 @@ export default function UnderstandingAIBiasPage() {
 
           <Link
             href="/tools/ai-literacy-assessment"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open AI Literacy Assessment
           </Link>
@@ -146,6 +146,7 @@ export default function UnderstandingAIBiasPage() {
     </div>
   );
 }
+
 
 
 

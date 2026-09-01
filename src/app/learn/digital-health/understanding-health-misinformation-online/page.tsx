@@ -9,19 +9,19 @@ export const metadata = {
 export default function HealthMisinformationPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         Understanding Health Misinformation Online
       </h1>
 
-      <p className="mt-4 text-lg text-gray-700">
+      <p className="mt-4 text-lg text-gray-700 transition-colors dark:text-slate-300">
         Health misinformation can influence decisions about treatments,
         medications, vaccines, diets, supplements, and other health issues.
         Understanding why misleading claims spread can help you recognize them
         before they affect your health decisions.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What Is Health Misinformation?
         </h2>
 
@@ -37,7 +37,7 @@ export default function HealthMisinformationPage() {
           products, or generate money.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Where It Can Appear
         </h2>
 
@@ -56,7 +56,7 @@ export default function HealthMisinformationPage() {
           <li>AI-generated content.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Why Health Misinformation Can Be Convincing
         </h2>
 
@@ -72,7 +72,7 @@ export default function HealthMisinformationPage() {
           trustworthy than it really is.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Emotional Content Spreads Quickly
         </h2>
 
@@ -87,7 +87,7 @@ export default function HealthMisinformationPage() {
           investigate the claim before acting on it.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Personal Stories Can Feel Like Proof
         </h2>
 
@@ -102,7 +102,7 @@ export default function HealthMisinformationPage() {
           medical advice.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Watch for Miracle Cures
         </h2>
 
@@ -119,7 +119,7 @@ export default function HealthMisinformationPage() {
           <li>&quot;You must act immediately before this information disappears.&quot;</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Financial Motives Matter
         </h2>
 
@@ -133,7 +133,7 @@ export default function HealthMisinformationPage() {
           believe it or buy something.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Popularity Does Not Prove Accuracy
         </h2>
 
@@ -148,7 +148,7 @@ export default function HealthMisinformationPage() {
           when the underlying information is weak.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Influencers Are Not Automatically Health Experts
         </h2>
 
@@ -162,7 +162,7 @@ export default function HealthMisinformationPage() {
           evidence, and sources.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           AI Can Also Produce Health Misinformation
         </h2>
 
@@ -177,7 +177,7 @@ export default function HealthMisinformationPage() {
           confident.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Check Before You Share
         </h2>
 
@@ -192,7 +192,7 @@ export default function HealthMisinformationPage() {
           them to someone else.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Questions to Ask
         </h2>
 
@@ -206,7 +206,7 @@ export default function HealthMisinformationPage() {
           <li>Is the message trying to frighten or pressure me?</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What You Can Do
         </h2>
 
@@ -220,8 +220,8 @@ export default function HealthMisinformationPage() {
           <li>Seek qualified professional guidance for important decisions.</li>
         </ul>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Examine a Health Claim
           </h3>
 
@@ -232,7 +232,7 @@ export default function HealthMisinformationPage() {
 
           <Link
             href="/tools/health-misinformation-check"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open Health Misinformation Check
           </Link>
@@ -241,6 +241,7 @@ export default function HealthMisinformationPage() {
     </div>
   );
 }
+
 
 
 

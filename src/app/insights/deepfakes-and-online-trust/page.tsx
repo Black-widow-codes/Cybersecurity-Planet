@@ -12,16 +12,16 @@ export default function DeepfakesAndOnlineTrustPage() {
     <div className="mx-auto max-w-4xl px-6 py-20">
       <article>
         <header className="max-w-3xl">
-          <p className="text-sm font-semibold text-cyan-700">
+          <p className="text-sm font-semibold text-cyan-700 dark:text-cyan-400">
             AI Literacy · Media Literacy
           </p>
 
-          <h1 className="mt-3 text-4xl font-bold leading-tight text-blue-900">
+          <h1 className="mt-3 text-4xl font-bold leading-tight text-blue-900 dark:text-blue-200">
             Deepfakes Are Getting Harder to Spot: What That Means for Online
             Trust
           </h1>
 
-          <p className="mt-6 text-lg text-gray-700">
+          <p className="mt-6 text-lg text-gray-700 dark:text-slate-300">
             AI-generated images, voices, and videos are becoming increasingly
             convincing. The challenge is no longer simply learning how to spot
             something fake. It is learning how to decide what deserves our
@@ -29,9 +29,9 @@ export default function DeepfakesAndOnlineTrustPage() {
           </p>
         </header>
 
-        <div className="mt-12 space-y-10 text-gray-700">
+        <div className="mt-12 space-y-10 text-gray-700 dark:text-slate-300">
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               Seeing Is No Longer Enough
             </h2>
 
@@ -55,7 +55,7 @@ export default function DeepfakesAndOnlineTrustPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               The Bigger Risk Is Manipulation
             </h2>
 
@@ -80,7 +80,7 @@ export default function DeepfakesAndOnlineTrustPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               Stop Asking Only, “Does This Look Fake?”
             </h2>
 
@@ -95,7 +95,7 @@ export default function DeepfakesAndOnlineTrustPage() {
               A stronger question is:
             </p>
 
-            <p className="mt-4 rounded-xl border-l-4 border-cyan-700 bg-gray-50 p-5 font-semibold text-blue-900">
+            <p className="mt-4 rounded-xl border-l-4 border-cyan-700 bg-gray-50 p-5 font-semibold text-blue-900 transition-colors dark:border-cyan-400 dark:bg-slate-800 dark:text-blue-200">
               What would I need to know before I trust this?
             </p>
 
@@ -107,7 +107,7 @@ export default function DeepfakesAndOnlineTrustPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               Check the Context Around the Content
             </h2>
 
@@ -142,7 +142,7 @@ export default function DeepfakesAndOnlineTrustPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               AI Detection Tools Are Not Perfect Either
             </h2>
 
@@ -161,7 +161,7 @@ export default function DeepfakesAndOnlineTrustPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
               Online Trust Has to Become a Process
             </h2>
 
@@ -185,12 +185,12 @@ export default function DeepfakesAndOnlineTrustPage() {
         </div>
       </article>
 
-      <section className="mt-16 rounded-xl border bg-gray-50 p-8">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-16 rounded-xl border border-gray-200 bg-gray-50 p-8 transition-colors dark:border-slate-700 dark:bg-slate-800">
+        <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-200">
         Continue Exploring
         </h2>
 
-        <p className="mt-3 text-gray-700">
+        <p className="mt-3 text-gray-700 dark:text-slate-300">
           Learn more about AI-generated content, practise evaluating suspicious
           claims, or use the Media Literacy Guide for practical verification
           habits.
@@ -206,14 +206,14 @@ export default function DeepfakesAndOnlineTrustPage() {
 
           <Link
             href="/tools/misinformation-check"
-            className="rounded-lg border border-cyan-700 px-5 py-3 font-semibold text-cyan-700 hover:bg-cyan-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="rounded-lg border border-cyan-700 px-5 py-3 font-semibold text-cyan-700 transition-colors hover:bg-cyan-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:border-cyan-400 dark:text-cyan-400 dark:hover:bg-slate-700 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Check a Claim
           </Link>
 
           <Link
             href="/resources/media-literacy-guide"
-            className="rounded-lg border border-cyan-700 px-5 py-3 font-semibold text-cyan-700 hover:bg-cyan-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="rounded-lg border border-cyan-700 px-5 py-3 font-semibold text-cyan-700 transition-colors hover:bg-cyan-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:border-cyan-400 dark:text-cyan-400 dark:hover:bg-slate-700 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             View Media Literacy Guide
           </Link>
@@ -221,11 +221,11 @@ export default function DeepfakesAndOnlineTrustPage() {
       </section>
 
       <section className="mt-12 border-t pt-8">
-        <h2 className="text-xl font-bold text-blue-900">
+        <h2 className="text-xl font-bold text-blue-900 dark:text-blue-200">
         Sources and Further Reading
         </h2>
 
-        <p className="mt-3 text-gray-700">
+        <p className="mt-3 text-gray-700 dark:text-slate-300">
           For additional research and guidance on synthetic media and media
           literacy, explore resources from NIST and UNESCO.
         </p>
@@ -235,7 +235,7 @@ export default function DeepfakesAndOnlineTrustPage() {
             href="https://www.nist.gov/"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:text-cyan-400 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             National Institute of Standards and Technology
           </a>
@@ -244,7 +244,7 @@ export default function DeepfakesAndOnlineTrustPage() {
             href="https://www.unesco.org/en/media-information-literacy"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:text-cyan-400 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             UNESCO Media and Information Literacy
           </a>
@@ -254,7 +254,7 @@ export default function DeepfakesAndOnlineTrustPage() {
       <div className="mt-12">
         <Link
           href="/insights"
-          className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+          className="rounded-sm font-semibold text-cyan-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:text-cyan-400 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
         >
           ← Back to Insights
         </Link>

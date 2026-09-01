@@ -1,30 +1,42 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import CompassGlobe from "./CompassGlobe";
 
 const pillars = [
   {
     title: "Digital Citizenship",
     href: "/learn/digital-citizenship",
+    description:
+      "Learn to participate responsibly online, manage your digital footprint, communicate respectfully, and make informed choices.",
   },
   {
     title: "Digital Safety",
     href: "/learn/digital-safety",
+    description:
+      "Build practical skills for safer passwords, phishing, scams, malware, suspicious links, and everyday online threats.",
   },
   {
     title: "Privacy & Digital Rights",
     href: "/learn/privacy-rights",
+    description:
+      "Understand personal data, online tracking, digital consent, surveillance, privacy rights, and ways to protect your information.",
   },
   {
-    title: "Digital Health & Wellbeing",
+    title: "Digital Health",
     href: "/learn/digital-health",
+    description:
+      "Learn to evaluate health information, use telehealth safely, understand health apps, wearables, and AI in healthcare.",
   },
   {
-    title: "AI & Emerging Technology",
+    title: "AI Literacy",
     href: "/learn/ai-literacy",
+    description:
+      "Understand AI, algorithms, bias, hallucinations, deepfakes, and how to use artificial intelligence responsibly.",
   },
   {
     title: "Media Literacy",
     href: "/learn/media-literacy",
+    description:
+      "Learn to evaluate sources, recognise misinformation and manipulation, fact-check claims, and identify AI-generated content.",
   },
 ];
 
@@ -53,8 +65,7 @@ export default function PillarsSection() {
               </h3>
 
               <p className="mt-3 text-gray-600 transition-colors dark:text-slate-300">
-                Clear, practical education to help you understand and navigate
-                this topic.
+                {pillar.description}
               </p>
             </Link>
           ))}

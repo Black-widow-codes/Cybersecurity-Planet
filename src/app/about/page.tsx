@@ -9,9 +9,9 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="mx-auto max-w-6xl px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">About</h1>
+      <h1 className="text-4xl font-bold text-blue-900 dark:text-blue-200">About</h1>
 
-      <p className="mt-6 text-lg text-gray-700">
+      <p className="mt-6 text-lg text-gray-700 dark:text-slate-300">
         Cybersecurity Planet helps digital citizens navigate technology with
         confidence.
       </p>

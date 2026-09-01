@@ -9,24 +9,24 @@ export const metadata = {
 export default function DigitalWellbeingArticlePage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         Digital Wellbeing and Responsible Technology Use
       </h1>
 
-      <p className="mt-4 text-gray-600">
+      <p className="mt-4 text-gray-600 transition-colors dark:text-slate-300">
         Technology can support learning, work, relationships, creativity, and
         entertainment, but healthy digital citizenship also means using
         technology in ways that support your wellbeing and responsibilities.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
         <p>
           Digital wellbeing is about developing habits that help technology
           serve your goals rather than constantly competing for your time,
           attention, or sleep.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Pay Attention to Your Digital Habits
         </h2>
 
@@ -36,7 +36,7 @@ export default function DigitalWellbeingArticlePage() {
           intended. Awareness is the first step toward making healthier choices.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Protect Your Attention
         </h2>
 
@@ -47,7 +47,7 @@ export default function DigitalWellbeingArticlePage() {
           reach when you need uninterrupted attention.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Create Healthy Boundaries
         </h2>
 
@@ -59,7 +59,7 @@ export default function DigitalWellbeingArticlePage() {
           <li>Use device settings that support your goals.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Protect Your Sleep
         </h2>
 
@@ -69,7 +69,7 @@ export default function DigitalWellbeingArticlePage() {
           use can help separate online activity from sleep time.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Be Intentional About Social Media
         </h2>
 
@@ -80,7 +80,7 @@ export default function DigitalWellbeingArticlePage() {
           platforms genuinely add value to your digital life.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Responsible Use Includes Other People
         </h2>
 
@@ -91,7 +91,7 @@ export default function DigitalWellbeingArticlePage() {
           more than they are comfortable sharing.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Technology Should Support Your Goals
         </h2>
 
@@ -102,8 +102,8 @@ export default function DigitalWellbeingArticlePage() {
           and overall responsibilities.
         </p>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Reflect on Your Digital Habits
           </h3>
 
@@ -115,7 +115,7 @@ export default function DigitalWellbeingArticlePage() {
 
           <Link
             href="/tools/digital-citizenship-checkup"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open Digital Citizenship Checkup
           </Link>
@@ -124,5 +124,6 @@ export default function DigitalWellbeingArticlePage() {
     </div>
   );
 }
+
 
 

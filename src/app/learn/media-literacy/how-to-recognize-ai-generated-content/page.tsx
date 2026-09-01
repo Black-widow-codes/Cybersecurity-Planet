@@ -9,18 +9,18 @@ export const metadata = {
 export default function RecognizeAIGeneratedContentPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         How to Recognize AI-Generated Content
       </h1>
 
-      <p className="mt-4 text-lg text-gray-700">
+      <p className="mt-4 text-lg text-gray-700 transition-colors dark:text-slate-300">
         Artificial intelligence can create realistic text, images, audio, and
         video. This content can be useful for creativity and communication, but
         it can also be used to mislead people.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           AI-Generated Content Is Becoming More Realistic
         </h2>
 
@@ -35,7 +35,7 @@ export default function RecognizeAIGeneratedContentPage() {
           whether other trustworthy sources can confirm what you are seeing.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           AI-Generated Text
         </h2>
 
@@ -50,7 +50,7 @@ export default function RecognizeAIGeneratedContentPage() {
           sources, dates, or verifiable details.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           AI-Generated Images
         </h2>
 
@@ -65,7 +65,7 @@ export default function RecognizeAIGeneratedContentPage() {
           are becoming less reliable as AI improves.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           AI-Generated Audio
         </h2>
 
@@ -80,7 +80,7 @@ export default function RecognizeAIGeneratedContentPage() {
           person&apos;s identity through another trusted communication method.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           AI-Generated Video
         </h2>
 
@@ -94,7 +94,7 @@ export default function RecognizeAIGeneratedContentPage() {
           from their original context, even when AI was not involved.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Do Not Rely on Appearance Alone
         </h2>
 
@@ -110,7 +110,7 @@ export default function RecognizeAIGeneratedContentPage() {
           trustworthy evidence supports it.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Questions to Ask
         </h2>
 
@@ -123,7 +123,7 @@ export default function RecognizeAIGeneratedContentPage() {
           <li>Is the content trying to create fear, anger, or urgency?</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Useful Verification Habits
         </h2>
 
@@ -136,7 +136,7 @@ export default function RecognizeAIGeneratedContentPage() {
           <li>Pause before sharing content you cannot verify.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           AI Detection Tools Have Limits
         </h2>
 
@@ -151,7 +151,7 @@ export default function RecognizeAIGeneratedContentPage() {
           not as automatic proof.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What You Can Do
         </h2>
 
@@ -163,8 +163,8 @@ export default function RecognizeAIGeneratedContentPage() {
           <li>Be cautious with urgent requests involving money or personal information.</li>
         </ul>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Evaluate Suspicious Content
           </h3>
 
@@ -176,7 +176,7 @@ export default function RecognizeAIGeneratedContentPage() {
 
           <Link
             href="/tools/misinformation-check"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open Misinformation Evaluation Tool
           </Link>
@@ -185,6 +185,7 @@ export default function RecognizeAIGeneratedContentPage() {
     </div>
   );
 }
+
 
 
 

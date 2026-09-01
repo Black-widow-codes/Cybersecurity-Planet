@@ -9,18 +9,18 @@ export const metadata = {
 export default function ResponsibleAIUsePage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         Responsible AI Use
       </h1>
 
-      <p className="mt-4 text-lg text-gray-700">
+      <p className="mt-4 text-lg text-gray-700 transition-colors dark:text-slate-300">
         Artificial intelligence can be useful for learning, creativity,
         research, productivity, and problem-solving. Responsible AI use means
         understanding both its benefits and its limits before relying on it.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           AI Can Be Helpful, but It Is Not Always Correct
         </h2>
 
@@ -34,7 +34,7 @@ export default function ResponsibleAIUsePage() {
           sources rather than accepted simply because an AI system produced it.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Protect Your Privacy
         </h2>
 
@@ -53,7 +53,7 @@ export default function ResponsibleAIUsePage() {
           <li>Information about other people without their permission.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Verify Important AI-Generated Information
         </h2>
 
@@ -68,7 +68,7 @@ export default function ResponsibleAIUsePage() {
           situations.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Watch for Bias
         </h2>
 
@@ -84,7 +84,7 @@ export default function ResponsibleAIUsePage() {
           considered.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Be Transparent About AI Use
         </h2>
 
@@ -99,7 +99,7 @@ export default function ResponsibleAIUsePage() {
           AI-generated work as entirely their own when disclosure is required.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Do Not Use AI to Harm or Deceive Others
         </h2>
 
@@ -114,7 +114,7 @@ export default function ResponsibleAIUsePage() {
           make that action responsible or ethical.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Keep Human Judgment Involved
         </h2>
 
@@ -128,7 +128,7 @@ export default function ResponsibleAIUsePage() {
           person&apos;s rights, opportunities, safety, privacy, or wellbeing.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Questions to Ask Before Using AI Output
         </h2>
 
@@ -142,7 +142,7 @@ export default function ResponsibleAIUsePage() {
           <li>Should a qualified person review this decision?</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What You Can Do
         </h2>
 
@@ -155,8 +155,8 @@ export default function ResponsibleAIUsePage() {
           <li>Keep human judgment involved in important decisions.</li>
         </ul>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Check Your AI Literacy
           </h3>
 
@@ -168,7 +168,7 @@ export default function ResponsibleAIUsePage() {
 
           <Link
             href="/tools/ai-literacy-assessment"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open AI Literacy Assessment
           </Link>
@@ -177,6 +177,7 @@ export default function ResponsibleAIUsePage() {
     </div>
   );
 }
+
 
 
 

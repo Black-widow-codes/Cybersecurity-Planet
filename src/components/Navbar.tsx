@@ -11,6 +11,7 @@ const navigationLinks = [
   { href: "/tools", label: "Tools" },
   { href: "/insights", label: "Insights" },
   { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -38,9 +39,9 @@ export default function Navbar() {
 
   return (
     <nav
-      className="border-b border-gray-200 bg-white transition-colors dark:border-slate-800 dark:bg-slate-950"
-      aria-label="Main navigation"
-    >
+  className="border-b border-slate-200 bg-slate-50 transition-colors dark:border-slate-800 dark:bg-slate-950"
+  aria-label="Main navigation"
+>
       <div className="mx-auto max-w-6xl px-6 py-4">
         <div className="flex items-center justify-between gap-4">
           <Link

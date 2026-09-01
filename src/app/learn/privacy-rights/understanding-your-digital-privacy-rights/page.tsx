@@ -9,19 +9,19 @@ export const metadata = {
 export default function DigitalPrivacyRightsPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold text-blue-900">
+      <h1 className="text-4xl font-bold text-blue-900 transition-colors dark:text-blue-200">
         Understanding Your Digital Privacy Rights
       </h1>
 
-      <p className="mt-4 text-lg text-gray-700">
+      <p className="mt-4 text-lg text-gray-700 transition-colors dark:text-slate-300">
         Digital privacy rights help protect people when organizations collect,
         use, store, or share personal information. Understanding these rights
         can help you make informed decisions and ask better questions about
         what happens to your data.
       </p>
 
-      <section className="mt-10 space-y-6 text-gray-700">
-        <h2 className="text-2xl font-bold text-blue-900">
+      <section className="mt-10 space-y-6 text-gray-700 transition-colors dark:text-slate-300">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Privacy Is More Than Keeping Information Secret
         </h2>
 
@@ -36,7 +36,7 @@ export default function DigitalPrivacyRightsPage() {
           where you live and which organization is handling your information.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           The Right to Understand What Is Happening
         </h2>
 
@@ -50,7 +50,7 @@ export default function DigitalPrivacyRightsPage() {
           collected, and whether it may be shared with others.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Access to Your Personal Information
         </h2>
 
@@ -65,7 +65,7 @@ export default function DigitalPrivacyRightsPage() {
           are some ways organizations may provide access.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Correcting Inaccurate Information
         </h2>
 
@@ -80,7 +80,7 @@ export default function DigitalPrivacyRightsPage() {
           inaccurate information.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Meaningful Consent
         </h2>
 
@@ -94,7 +94,7 @@ export default function DigitalPrivacyRightsPage() {
           privacy choices difficult to understand.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Limiting Unnecessary Collection
         </h2>
 
@@ -109,7 +109,7 @@ export default function DigitalPrivacyRightsPage() {
           needs the information or permissions it requests.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Protecting Personal Information
         </h2>
 
@@ -124,7 +124,7 @@ export default function DigitalPrivacyRightsPage() {
           authentication information.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Deleting or Closing Accounts
         </h2>
 
@@ -140,7 +140,7 @@ export default function DigitalPrivacyRightsPage() {
           privacy information to understand what happens after deletion.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Automated Decisions and Profiling
         </h2>
 
@@ -155,7 +155,7 @@ export default function DigitalPrivacyRightsPage() {
           increasingly important part of digital privacy awareness.
         </p>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What Can You Ask an Organization?
         </h2>
 
@@ -170,7 +170,7 @@ export default function DigitalPrivacyRightsPage() {
           <li>What happens to my information if I close my account?</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           What You Can Do
         </h2>
 
@@ -183,7 +183,7 @@ export default function DigitalPrivacyRightsPage() {
           <li>Learn which privacy protections apply where you live.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-blue-900">
+        <h2 className="text-2xl font-bold text-blue-900 transition-colors dark:text-blue-200">
           Know Where to Seek Help
         </h2>
 
@@ -199,8 +199,8 @@ export default function DigitalPrivacyRightsPage() {
           rights and complaint options.
         </p>
 
-        <div className="rounded-xl border bg-gray-50 p-6">
-          <h3 className="text-xl font-bold text-blue-900">
+        <div className="rounded-xl border bg-gray-50 transition-colors dark:bg-slate-900 p-6">
+          <h3 className="text-xl font-bold text-blue-900 transition-colors dark:text-blue-200">
             Review Your Privacy Practices
           </h3>
 
@@ -212,7 +212,7 @@ export default function DigitalPrivacyRightsPage() {
 
           <Link
             href="/tools/privacy-checkup"
-            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2"
+            className="mt-4 inline-block rounded-lg bg-cyan-700 px-5 py-3 font-semibold text-white hover:bg-cyan-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-600 focus-visible:ring-offset-2 dark:bg-cyan-600 dark:hover:bg-cyan-500 dark:focus-visible:ring-cyan-400 dark:focus-visible:ring-offset-slate-800"
           >
             Open Privacy Checkup
           </Link>
@@ -221,6 +221,7 @@ export default function DigitalPrivacyRightsPage() {
     </div>
   );
 }
+
 
 
 
