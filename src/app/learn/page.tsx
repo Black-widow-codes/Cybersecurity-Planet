@@ -2,7 +2,7 @@
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Learn | Cybersecurity Planet",
+  title: "Learn",
   description:
     "Explore beginner-friendly learning paths on digital citizenship, digital safety, privacy and digital rights, digital health, AI literacy, and media literacy.",
 };

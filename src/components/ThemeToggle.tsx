@@ -3,31 +3,27 @@
 import { useSyncExternalStore } from "react";
 import { useTheme } from "next-themes";
 
-function subscribe() {
-  return () => {};
-}
+const emptySubscribe = () => () => {};
 
 export default function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
 
   const mounted = useSyncExternalStore(
-    subscribe,
+    emptySubscribe,
     () => true,
     () => false
   );
 
+  const isDark = resolvedTheme === "dark";
+
   if (!mounted) {
     return (
-      <button
-        type="button"
-        aria-label="Theme preference"
+      <div
         className="h-10 w-10 rounded-lg border border-gray-300 bg-white dark:border-slate-700 dark:bg-slate-900"
-        disabled
+        aria-hidden="true"
       />
     );
   }
-
-  const isDark = resolvedTheme === "dark";
 
   return (
     <button

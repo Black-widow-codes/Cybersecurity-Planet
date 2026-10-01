@@ -11,7 +11,10 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Cybersecurity Planet",
+  title: {
+    default: "Cybersecurity Planet",
+    template: "%s | Cybersecurity Planet",
+  },
   description:
     "Cybersecurity Planet provides education on digital citizenship, digital safety, privacy and digital rights, digital health, AI literacy, and media literacy.",
 
